@@ -1,0 +1,196 @@
+.language {
+  font-weight: bold;
+  font-size: 1em;
+  width: 140px;
+  z-index: 9999;
+  position: relative;
+  // display: flex;
+  align-items: center;
+  margin: 0.3em;
+  button,
+  & > a {
+    text-align: left;
+    display: block;
+    background: #fff;
+    box-sizing: border-box;
+    color: $colorWord;
+    padding: 0.4em 1em;
+    position: relative;
+    transition: 0.3s ease-out;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    &:after {
+      // position: absolute;
+      // right: 0.8em;
+      // top: 1em;
+      // content: '';
+      // width: 0;
+      // height: 0;
+      // border-style: solid;
+      // border-width: 3px 3px 0 3px;
+      // border-color: $colorWord transparent transparent transparent;
+      content: '';
+      position: absolute;
+      right: 0.8em;
+      top: 0.75em;
+      width: 6px;
+      height: 6px;
+      border: 2px solid $colorWord;
+      transform: rotate(135deg);
+      border-bottom: none;
+      border-left: none;
+    }
+    &:before {
+      position: absolute;
+      width: 1px;
+      height: 1.6em;
+      right: 1.6em;
+      top: 0.1em;
+      content: '';
+      // border-left: 1px solid #ddd;
+    }
+    // &:focus-visible {
+    //   box-shadow: none;
+    //   background: #444;
+    // }
+  }
+  ul {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1em 1.5em;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    border-radius: 5px;
+
+    font-size: 0.938em;
+    @include liReset;
+    li {
+      flex: 1;
+      box-sizing: border-box;
+      margin: 0;
+      a {
+        display: block;
+        color: #fff;
+        padding: 0.5em 0.5em 0.5em 1em;
+        transition: 0.3s ease-out;
+        border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+        &:hover,
+        &:focus-visible {
+          background: $colorPrimary;
+          // border-inline: $aHover 2px solid;
+        }
+      }
+    }
+  }
+}
+
+@include screen('mobileMin') {
+  .language.typeB {
+    width: auto;
+    & > button,
+    & > a {
+      text-indent: -9999px;
+      color: transparent;
+      width: 50px;
+      aspect-ratio: 1/1;
+      position: relative;
+      background: none;
+      padding: 0;
+      border: none;
+      &::before {
+        content: '';
+        width: 100%;
+        height: auto;
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        aspect-ratio: 1/1;
+        display: block;
+        mask: url('../images/icon/icon_global2.svg') center no-repeat;
+        mask-size: 40%;
+        background: #fff;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    ul {
+      width: 100px;
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%);
+      li a {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.infomenu {
+  position: static;
+  width: 40px;
+  button {
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    background: url('../images/infomenu_icon.png') no-repeat center center;
+    background-size: 20px auto;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  ul {
+    width: 98vw;
+    right: 1vw;
+    overflow: visible !important;
+    padding: 2em 2em 1.5em;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    height: auto !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 99;
+
+    @include screen('mobile') {
+      overflow: hidden !important;
+    }
+    li {
+      a {
+        margin-top: -1.8em;
+        margin-bottom: 0;
+        padding: 0.8em;
+        display: block;
+      }
+    }
+
+    ul {
+      position: relative;
+      display: block;
+      font-size: 0.938rem;
+      padding: 0;
+      background: none;
+      top: -2.5em;
+      margin: 0 0 0 8em;
+      height: 1em;
+      overflow: hidden;
+      z-index: 96;
+
+      li {
+        display: inline-block;
+        a {
+          border: none;
+        }
+      }
+    }
+  }
+}
