@@ -193,7 +193,6 @@ function jsFadeToggle(element) {
   let display = window.getComputedStyle(element).display;
   console.dir(element);
   if (display === 'none') {
-    console.log('a');
     display = 'block';
     element.style.display = display;
     element.style.opacity = 0;
@@ -396,7 +395,6 @@ function searchTypeB() {
       windowWidth = window.outerWidth;
       webSearch.removeAttribute('style');
       const observer = new ResizeObserver(function (entries) {
-        console.log(entries[0].contentRect.width);
         if (entries[0].contentRect.width <= 767) {
           !webSearchBtn.classList.contains('active') && webSearchBtn.classList.add('active');
           !webSearch.classList.contains('mobile') && webSearch.classList.add('mobile');
@@ -594,39 +592,53 @@ function mainMenuSetup() {
   });
 
   // --- PC版設定
-  function pcSet() {
+
+  let checkWindow = false;
+  // --- 切換 PC/Mobile 選單
+  let resizeTimeout;
+
+  function executeCode() {
     let language = document.querySelector('.language ul');
     hideSidebar();
     body.classList.remove('noscroll');
-    // mobileSearch !== null ? (mobileSearch.style.display = 'none') : '';
     language !== null ? (language.style.display = 'none') : '';
-    // --- 副選單滑出
 
     menuLiHasChild.forEach((i) => {
-      i.addEventListener('mouseenter', (e) => {
-        i.classList.add('active');
-      });
-      i.addEventListener('mouseleave', (e) => {
-        i.classList.remove('active');
-      });
+      i.querySelector('a').addEventListener('click', handleClick);
     });
 
-    menuLiHasChild.forEach((i) => {
-      i.addEventListener('click', (e) => {
-        e.stopPropagation();
-      });
-    });
+    checkWindow = true;
+    // fontSize();
   }
-  pcSet();
 
-  // --- 切換 PC/Mobile 選單
-  function switchMenu() {
-    if (windowWidth > windowWidthSmall) {
-      pcSet();
-      // fontSize();
+  function handleResize() {
+    if (window.innerWidth >= 1000 && !checkWindow) {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(executeCode, 200);
+    } else if (window.innerWidth < 1000 && checkWindow) {
+      body.classList.remove('largeSize', 'medium_size');
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        checkWindow = false;
+        // 移除 click 事件
+        menuLiHasChild.forEach((i) => {
+          i.querySelector('a').removeEventListener('click', handleClick);
+        });
+      }, 200);
     } else {
       body.classList.remove('largeSize', 'medium_size');
+      // 添加 click 事件
+      menuLiHasChild.forEach((i) => {
+        i.querySelector('a').addEventListener('click', handleClick);
+      });
     }
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var parentLi = e.currentTarget.parentNode;
+    parentLi.classList.toggle('active');
   }
 
   // --- 行動版/電腦版切換
@@ -634,13 +646,13 @@ function mainMenuSetup() {
   window.addEventListener('load', switchResizeFunction);
 
   function switchResizeFunction() {
-    setTimeout(() => {
-      // mobileSearch !== null ? (mobileSearch.style.display = 'none') : '';
-      windowWidth = window.outerWidth;
-      switchMenu();
-      checkUlWidth();
-      hideSidebar();
-    }, 50);
+    // setTimeout(() => {
+    // mobileSearch !== null ? (mobileSearch.style.display = 'none') : '';
+    windowWidth = window.outerWidth;
+    handleResize();
+    checkUlWidth();
+    hideSidebar();
+    // }, 50);
   }
 
   // --- 展開側邊選單函式
