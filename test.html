@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #test {
+        display: none;
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test">
+      <h2>AAA</h2>
+      <p>testtesttesttesttest</p>
+      <p>testtesttesttesttest</p>
+      <p>testtesttesttesttest</p>
+      <p>testtesttesttesttest</p>
+    </div>
+
+    <script src="vendor/fancybox/fancybox.js"></script>
+    <script>
+      Fancybox.show([{ src: '#test', type: 'inline' }]);
+    </script>
+  </body>
+</html>
