@@ -21,9 +21,13 @@ $colorPurple: #781f79;
 $colorGray: #ccc;
 $colorDark: #333333;
 $colorHr: #666; //hr顏色
-$colorWord: #333c46; //一般字的顏色
+$colorWord: #314868; //一般字的顏色
 $btnWordColor: #333c46; //按鈕字的顏色
 $btnBgColor: #005382; //按鈕背景的顏色
+$btnBgColor2: #4bc8e1; //按鈕背景的顏色
+$textContentBg: #fff;
+$npLitBorder: #4bc8e1;
+$pageSearchBg: #edf9fb;
 // 連結顏色
 $aColor: #005382;
 $aHover: #333c46;
@@ -32,9 +36,10 @@ $aFocus: #d04500;
 $formFocus: #00a4f9; //表單
 $form-btn: #00a4f9; //表單
 // 按鈕設定
-$btn-border: mix($btnWordColor, #000, 10%);
-$btnPadding: 0.5em 1.25em;
-$btnRadius: 0.2em;
+// $btn-border: mix($btnWordColor, #000, 10%);
+$btn-border: #4bc8e1;
+$btnPadding: 0.6em 1.25em;
+$btnRadius: 2em;
 $btnBg: #e0e0e0;
 
 //--------------------------------------------------------多色設定------//
@@ -59,7 +64,7 @@ $remFontSize: 16;
 // 格線系統
 $gridColumns: 12 !default; //格線欄位數
 $gridGutterWidth: 30px !default; //左右padding
-$containerMax: 100% !default; //container最大寬
+$containerMax: 1200px !default; //container最大寬
 
 //mediaquery
 $screenLg: 1400px !default; //電腦

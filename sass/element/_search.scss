@@ -343,3 +343,51 @@
     }
   }
 }
+
+//pageSearch
+.pageSearch {
+  margin-top: -2.8em;
+  margin-bottom: 1em;
+  @include screen('mobile') {
+    margin-top: -3.5em;
+  }
+  .pageSearchBtn {
+    background: #fff url('../images/search.svg') no-repeat 10px center;
+    background-size: 30px auto;
+    // height: 40px;
+    // width: 60px;
+    border: solid 1px $npLitBorder;
+    // font-size: 0;
+    border-radius: 30px;
+    margin-left: 0;
+    padding: 0.5em 1em 0.5em 40px;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: $btnBgColor url('../images/search_w.svg') no-repeat 10px center;
+      background-size: 30px auto;
+    }
+    @include screen('mobile') {
+      margin-left: 0;
+    }
+  }
+  .btn {
+    min-width: 12em;
+    @include screen('xsMobile') {
+      min-width: 7em;
+    }
+  }
+}
+#pageSearchBox {
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+  background-color: $pageSearchBg;
+  border-radius: 15px;
+  margin: 0.5em 0 2em;
+  display: none;
+  @include screen('mobile') {
+    padding: 1em;
+  }
+}

@@ -107,9 +107,15 @@
   }
   &.prevSlider {
     left: 0.8em;
+    @include screen('mobile') {
+      left: 0em;
+    }
   }
   &.nextSlider {
     right: 0.8em;
+    @include screen('mobile') {
+      right: 0em;
+    }
     &::before {
       transform: rotate(180deg);
     }
@@ -226,7 +232,7 @@
   }
   .swiperArrow {
     top: 45%;
-    z-index: 999;
+    z-index: 98;
   }
 }
 //albumSlider
@@ -247,6 +253,7 @@
     display: block;
     object-fit: fill;
     border-radius: 10px;
+    transition: 0.2s ease-out;
   }
   .caption {
     position: relative;
@@ -270,13 +277,28 @@
   .swiperArrow {
     top: auto;
     bottom: -1.6em;
-    z-index: 999;
+    z-index: 98;
     &::before {
       content: '';
       width: 20px;
       height: 30px;
       display: block;
       background: url('../images/ar2.svg') center no-repeat;
+    }
+    &.prevSlider {
+      left: 0.8em;
+      @include screen('mobile') {
+        left: 0.8em;
+      }
+    }
+    &.nextSlider {
+      right: 0.8em;
+      @include screen('mobile') {
+        right: 0.8em;
+      }
+      &::before {
+        transform: rotate(180deg);
+      }
     }
   }
   .swiperDots {
@@ -325,13 +347,28 @@
   .swiperArrow {
     top: auto;
     bottom: -1.6em;
-    z-index: 999;
+    z-index: 98;
     &::before {
       content: '';
       width: 20px;
       height: 30px;
       display: block;
       background: url('../images/ar2.svg') center no-repeat;
+    }
+    &.prevSlider {
+      left: 0.8em;
+      @include screen('mobile') {
+        left: 0.8em;
+      }
+    }
+    &.nextSlider {
+      right: 0.8em;
+      @include screen('mobile') {
+        right: 0.8em;
+      }
+      &::before {
+        transform: rotate(180deg);
+      }
     }
   }
   .swiperDots {

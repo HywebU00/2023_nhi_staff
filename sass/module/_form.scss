@@ -1,8 +1,8 @@
-@mixin formStyle($formColor: $colorWord, $formBorder: $colorGray, $formRadius: $btnRadius) {
+@mixin formStyle($formColor: $colorWord, $formBorder: #bde6f2, $formRadius: $btnRadius) {
   color: $formColor;
   font-size: 1em;
   border: 1px solid $formBorder;
-  padding: 0.5em;
+  padding: 0.6em 1.2em;
   background: #fff;
   vertical-align: middle;
   margin: 0.3em;
@@ -57,16 +57,16 @@ select::-ms-expand {
 }
 
 .formGrid {
-  border-top: 1px solid #ddd;
+  // border-top: 1px solid #ddd;
 
   .formGrp {
-    border-bottom: 1px dashed #ddd;
+    // border-bottom: 1px dashed #ddd;
     padding: 0.5em 0;
   }
 }
 
 .flexForm {
-  font-size: 0.938rem;
+  font-size: 1rem;
   margin: 0.5em;
 
   .formGrp {
@@ -91,12 +91,14 @@ select::-ms-expand {
     max-width: $formTitleWidth;
     flex: 0 0 $formTitleWidth;
     align-self: flex-start;
-    padding: 0.3em 1em;
+    padding: 0.8em 1em 0.3em;
+    text-align: right;
     @include screen('mobile') {
       max-width: calc(100% - 0.6em);
       flex-basis: calc(100% - 0.6em);
       margin: 0 0.3em;
       @include gutter(0);
+      text-align: left;
     }
 
     & + .formContent {
@@ -1272,9 +1274,9 @@ select:focus {
 //---------------------------------------------下拉選單--------//
 select {
   line-height: 1.35em;
-  padding: 0.5em 24px 0.5em 0.5em;
+  padding: 0.6em 1.2em;
   border: 1px solid $colorGray;
-  background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right center;
+  background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 8px center;
   background-size: 16px;
 
   option {
@@ -1327,11 +1329,11 @@ input[type='checkbox']:checked {
   box-shadow: $formFocus 0 0 0 2px;
   border-radius: 2px;
 }
-
+input[type='radio']:checked,
 input[type='radio']:focus {
-  border-color: $formFocus;
+  border-color: #fff;
   background-color: $formFocus;
-  box-shadow: #fff 0 0 0 3px inset, $formFocus 0 0 0 2px;
+  box-shadow: $formFocus 0 0 0 5px inset, $formFocus 0 0 0 2px;
 }
 
 input[type='checkbox']:focus {

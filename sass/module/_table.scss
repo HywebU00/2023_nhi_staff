@@ -19,6 +19,7 @@ table {
     text-align: left;
     font-size: 1.125rem;
     margin-bottom: 0.5em;
+    display: none;
     .summary {
       display: block;
       font-size: 1em;
@@ -26,18 +27,18 @@ table {
     }
   }
   td {
-    border: #ddd 1px solid;
+    border: #bde6f2 1px solid;
     word-break: break-all;
     a {
       word-break: break-all;
     }
   }
   th {
-    background-color: #f3f3f3;
-    color: #333;
-    border: #ddd 1px solid;
+    background-color: #edf9fb;
+    color: $colorWord;
+    border: #bde6f2 1px solid;
     text-align: center;
-    white-space: nowrap;
+    // white-space: nowrap;
   }
   &.tableHover {
     tr:hover {
@@ -51,6 +52,66 @@ table {
   }
 }
 .tableList {
+  table {
+    th {
+      background: #314868;
+      color: #fff;
+      border: none;
+      padding: 1em;
+      white-space: nowrap;
+      &:first-child {
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      &:last-child {
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+    }
+    td {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid 0px #bde6f2;
+      padding: 0.5em 1em;
+      @include screen('xsMobile') {
+        padding-left: 6em;
+        padding-top: 0.5em;
+        border: none;
+        &:before {
+          font-size: 0.938em;
+          padding: 0em 0 0 1em;
+        }
+      }
+
+      img {
+        vertical-align: middle;
+      }
+    }
+    tr:nth-child(even) {
+      td {
+        background: #edf9fb;
+        border: none;
+        &:first-child {
+          border-top-left-radius: 2em;
+          border-bottom-left-radius: 2em;
+        }
+        &:last-child {
+          border-top-right-radius: 2em;
+          border-bottom-right-radius: 2em;
+        }
+      }
+    }
+  }
+  .btn {
+    padding: 0.3em 1.25em;
+  }
+  .detail {
+    text-align: center;
+    @include screen('mobile') {
+      text-align: left;
+    }
+  }
   @include screen('xsMobile') {
     background-color: transparent; //Force table to not be like tables anymore
     thead,
@@ -66,8 +127,9 @@ table {
       left: -9999px;
     }
     tr {
-      border: 1px solid #ccc;
+      border: 1px solid $npLitBorder;
       margin-bottom: 10px; // background-color: #333;
+      border-radius: 10px;
     }
     td {
       // Behave  like a "row"
@@ -92,7 +154,7 @@ table {
         text-align: left;
         font-weight: normal;
         color: #888;
-        font-size: 0.688rem;
+        font-size: 0.938rem;
       }
     }
   }

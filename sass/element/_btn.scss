@@ -5,9 +5,9 @@
 }
 
 // 按鈕的共用設定
-@mixin btnSetting($btnBg: #e0e0e0, $btnWordColor: $btnWordColor) {
+@mixin btnSetting($btnBg: #fff, $btnWordColor: $btnWordColor) {
   background: $btnBg;
-  border: 1px solid $btnBg;
+  border: 1px solid $npLitBorder;
   color: $btnWordColor;
   // text-shadow:1px 1px 1px RGBA(0,0,0,.3);
   // border-radius: $btnRadius;
@@ -95,11 +95,12 @@
 }
 .btnSubmit {
   // @extend %btn;
-  @include btnSetting(lighten($colorPrimary, 5), #fff);
+  @include btnSetting(lighten($btnBgColor2, 0), #fff);
 }
 .btnReset {
   // @extend %btn;
-  color: lighten($colorWord, 15);
+  // color: $colorWord;
+  // background: $btnBg;
 }
 .btnSearch {
   // @extend %btn;

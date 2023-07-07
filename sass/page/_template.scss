@@ -25,6 +25,10 @@ body {
 .wrapper {
   width: 100%;
   margin: 0px auto;
+  .container {
+    padding: 0;
+    // max-width: 100%;
+  }
   @include screen('mobile') {
     // background: #fff;
     overflow: hidden;
@@ -52,6 +56,10 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerPage ClassName
 .innerPage {
+  margin-top: 120px;
+  @include screen('mobile') {
+    margin-top: 35px;
+  }
   & > .container {
     // padding-top: 1em;
     @include gutter(); //gutter 代表左右要留白
@@ -65,15 +73,17 @@ body {
     flex: none;
     flex-basis: 100%;
     max-width: 100%;
-    padding-top: 120px;
+    // padding-top: 120px;
     @include screen('mobile') {
-      padding-top: 50px;
+      padding-top: 0;
     }
   }
   .leftBlock {
     flex: none;
     flex-basis: 260px;
     max-width: 260px;
+    max-height: 80vh;
+    overflow-y: auto;
     margin-right: 40px;
     padding-left: 5px;
     align-self: flex-start;
@@ -103,4 +113,14 @@ body {
 }
 .hidden {
   display: none;
+}
+
+.pagebg {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2em;
+  @include screen('mobile') {
+    padding-top: 2em !important;
+    padding: 1em;
+  }
 }

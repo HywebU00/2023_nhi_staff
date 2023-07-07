@@ -2,11 +2,12 @@
   table {
     td {
       a {
-        @include aSetting($colorWord);
+        // @include aSetting($colorWord);
       }
       &.date {
         text-align: center;
         color: #666;
+        white-space: nowrap;
         @include screen('mobile') {
           text-align: left;
         }
@@ -30,18 +31,19 @@
         padding: 0.75em 0 0.5em;
         border-bottom: 1px solid #ddd;
         position: relative; // outline: 1px solid blue;
+        font-size: 1.125em;
         .tag {
           margin-left: 2em;
         }
         & > a {
           display: block;
-          padding-left: 2em;
+          padding-left: 2rem;
           position: relative;
-          line-height: 1.45em;
+          line-height: 1.6em;
           font-weight: bold;
-          color: $colorWord;
+          // color: $colorWord;
           &:hover {
-            color: $aHover;
+            // color: $aHover;
           }
           .num {
             width: 1.5em;
@@ -49,6 +51,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            font-size: 1rem;
             &:after {
               content: '.';
               display: inline-block;
@@ -57,17 +60,18 @@
         }
         span.dept {
           display: inline-block;
-          font-size: 0.938em;
+          font-size: 0.938rem;
           font-weight: normal;
           @include screen('mobile') {
-            display: block;
+            // display: block;
           }
         }
         time {
-          display: block;
+          display: inline-block;
           color: #aaa;
-          font-size: 0.938em;
+          font-size: 0.938rem;
           font-weight: normal;
+          margin-left: 2rem;
         }
       }
     }

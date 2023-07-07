@@ -4,7 +4,7 @@ h1.title,
 h2.title {
   font-size: 1.75em;
   line-height: 1.25em;
-  margin: 0.5em 0;
+  margin: 0.8em 0;
   color: $colorWord;
 }
 // .tt{ color: #222; }
@@ -305,4 +305,11 @@ h2.title {
       @include aSetting($colorWord);
     }
   }
+}
+
+//np
+.textContent {
+  line-height: 1.6em;
+  padding: 0 1em;
+  margin: 1em 0 2em;
 }

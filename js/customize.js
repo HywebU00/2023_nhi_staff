@@ -394,3 +394,13 @@ $(function () {
   $('.modal_overlay').click(closeModal);
   $('.modal .close').click(closeModal);
 });
+
+//pageSearch
+function pageSearch() {
+  var x = document.getElementById('pageSearchBox');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
