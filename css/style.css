@@ -2802,7 +2802,7 @@ img {
     }
   }
   .pageSearch {
-    margin-top: -2.8em;
+    margin-top: -3em;
     margin-bottom: 1em;
   }
   @media screen and (max-width: 767px) {
@@ -2839,7 +2839,7 @@ img {
   }
   #pageSearchBox {
     width: 100%;
-    padding: 2em;
+    padding: 1em 2em 0.5em;
     text-align: center;
     background-color: #edf9fb;
     border-radius: 15px;
@@ -6030,7 +6030,7 @@ img {
   select {
     line-height: 1.35em;
     padding: 0.6em 1.2em;
-    border: 1px solid #ccc;
+    border: 1px solid #bde6f2;
     background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 8px center;
     background-size: 16px;
   }
@@ -6254,27 +6254,32 @@ img {
   table.tableSprite tr:nth-child(even) {
     background: #f5f5f5;
   }
+  table .center {
+    text-align: center;
+  }
   .tableList table th {
     background: #314868;
     color: #fff;
     border: none;
-    padding: 1em;
+    padding: 0.5em;
     white-space: nowrap;
   }
   .tableList table th:first-child {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+    padding: 0.5em 0.5em 0.5em 1em;
   }
   .tableList table th:last-child {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    padding: 0.5em 1em 0.5em 0.5em;
   }
   .tableList table td {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: solid 0px #bde6f2;
-    padding: 0.5em 1em;
+    padding: 0.5em;
   }
   @media screen and (max-width: 575px) {
     .tableList table td {
@@ -6290,20 +6295,44 @@ img {
   .tableList table td img {
     vertical-align: middle;
   }
+  @media screen and (max-width: 575px) {
+    .tableList table tr:nth-child(even) {
+      background: #edf9fb;
+    }
+  }
   .tableList table tr:nth-child(even) td {
     background: #edf9fb;
     border: none;
   }
+  @media screen and (max-width: 575px) {
+    .tableList table tr:nth-child(even) td {
+      background: none;
+    }
+  }
   .tableList table tr:nth-child(even) td:first-child {
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+  }
+  @media screen and (max-width: 767px) {
+    .tableList table tr:nth-child(even) td:first-child {
+      border-radius: 0;
+    }
   }
   .tableList table tr:nth-child(even) td:last-child {
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+  }
+  @media screen and (max-width: 767px) {
+    .tableList table tr:nth-child(even) td:last-child {
+      border-radius: 0;
+    }
+  }
+  .tableList table tbody tr:nth-child(odd):last-child {
+    border-bottom: solid 1px #bde6f2;
   }
   .tableList .btn {
     padding: 0.3em 1.25em;
+    font-size: 0.938em;
   }
   .tableList .detail {
     text-align: center;
@@ -6330,9 +6359,9 @@ img {
       left: -9999px;
     }
     .tableList tr {
-      border: 1px solid #4bc8e1;
       margin-bottom: 10px;
       border-radius: 10px;
+      box-shadow: 0 0 0 1px #4bc8e1;
     }
     .tableList td {
       border: none;
@@ -6356,6 +6385,54 @@ img {
       color: #888;
       font-size: 0.938rem;
     }
+  }
+  .tableList .notify {
+    background: url("../images/notify_icon.png") no-repeat left center;
+    background-size: 20px auto;
+    padding: 0 0 0 25px;
+    font-size: 0.938em;
+    white-space: nowrap;
+  }
+  .tableList .signoff {
+    background: url("../images/signoff_icon.png") no-repeat left center;
+    background-size: 18px auto;
+    padding: 0 0 0 25px;
+    font-size: 0.938em;
+    white-space: nowrap;
+  }
+  .tableList .fillcase {
+    background: url("../images/fillcase_icon.png") no-repeat left center;
+    background-size: 18px auto;
+    padding: 0 0 0 25px;
+    font-size: 0.938em;
+    white-space: nowrap;
+  }
+  .tableList .course {
+    background: url("../images/course_icon.png") no-repeat left center;
+    background-size: 18px auto;
+    padding: 0 0 0 25px;
+    font-size: 0.938em;
+    white-space: nowrap;
+  }
+  .tableList .sorttag {
+    background: #eee;
+    font-size: 0.875em;
+    padding: 0.2em;
+    border-radius: 3px;
+    color: #333;
+    margin-right: 0.5em;
+    border: solid 1px #ddd;
+  }
+  .tableList .state_no {
+    color: #eb0202;
+    font-size: 0.938em;
+  }
+  .tableList .state_yes {
+    color: #13817d;
+    font-size: 0.938em;
+  }
+  .extensionTb td {
+    text-align: center;
   }
   .fixThTable {
     margin: 1em 0;
@@ -6482,11 +6559,20 @@ img {
   }
   .lp table td.date {
     text-align: center;
-    color: #666;
     white-space: nowrap;
+    font-size: 0.938em;
   }
   @media screen and (max-width: 767px) {
     .lp table td.date {
+      text-align: left;
+    }
+  }
+  .lp table td.datetime {
+    text-align: center;
+    font-size: 0.938em;
+  }
+  @media screen and (max-width: 767px) {
+    .lp table td.datetime {
       text-align: left;
     }
   }
@@ -6547,7 +6633,6 @@ img {
   .lp .list > ul > li time,
   .lp .list ol > li time {
     display: inline-block;
-    color: #aaa;
     font-size: 0.938rem;
     font-weight: normal;
     margin-left: 2rem;

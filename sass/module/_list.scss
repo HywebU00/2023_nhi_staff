@@ -6,8 +6,17 @@
       }
       &.date {
         text-align: center;
-        color: #666;
+        // color: #666;
         white-space: nowrap;
+        font-size: 0.938em;
+        @include screen('mobile') {
+          text-align: left;
+        }
+      }
+      &.datetime {
+        text-align: center;
+        // color: #666;
+        font-size: 0.938em;
         @include screen('mobile') {
           text-align: left;
         }
@@ -68,7 +77,7 @@
         }
         time {
           display: inline-block;
-          color: #aaa;
+          // color: #aaa;
           font-size: 0.938rem;
           font-weight: normal;
           margin-left: 2rem;

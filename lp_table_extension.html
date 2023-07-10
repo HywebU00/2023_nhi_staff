@@ -205,12 +205,11 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li><a href="#">最新消息</a></li>
-                <li aria-current="page">人事公告</li>
+                <li aria-current="page">分機查號台</li>
               </ul>
             </nav>
             <!-- h2節點 -->
-            <h2 class="title">最新公告</h2>
+            <h2 class="title">分機查號台</h2>
             <!-- functionPanel -->
             <div class="functionPanel">
               <!-- function功能區塊 -->
@@ -229,31 +228,8 @@
                 <!-- form -->
                 <div class="flexForm formGrid">
                   <div class="formGrp">
-                    <label for="email" class="formTitle" aria-required="true">消息主題：</label>
-                    <div class="formContent">
-                      <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                    </div>
-                  </div>
-                  <div class="formGrp">
-                    <label for="email" class="formTitle" aria-required="true">消息內容：</label>
-                    <div class="formContent">
-                      <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                    </div>
-                  </div>
-                  <div class="formGrp">
-                    <div class="formTitle">發布日期</div>
-                    <div class="formContent">
-                      <div class="datePick">
-                        <input name="" type="date" value="" class="calendar" placeholder="請輸入開始日期" title="請輸入開始日期" />
-                      </div>
-                      <div class="datePick">
-                        <input name="" type="date" value="" class="calendar" placeholder="請輸入結束日期" title="請輸入結束日期" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="formGrp">
-                    <div class="formTitle">發布單位：</div>
-                    <div class="formContent">
+                    <div class="formTitle">所屬單位：</div>
+                    <div class="formContent formCol_4_4_4">
                       <select id="selectSample" name="">
                         <option value="">請選擇單位</option>
                         <option value="">署本部</option>
@@ -264,24 +240,84 @@
                         <option value="">高屏業務組</option>
                         <option value="">東區業務組</option>
                       </select>
-                    </div>
-                  </div>
 
-                  <div class="formGrp">
-                    <div class="formTitle">類別：</div>
-                    <div class="formContent">
                       <select id="selectSample" name="">
-                        <option value="">全部</option>
-                        <option value="">陞遷</option>
-                        <option value="">福利</option>
-                        <option value="">其他</option>
+                        <option value="">請選擇組室/科別</option>
+                        <option value="">主任秘書室</option>
+                        <option value="">承保組</option>
+                        <option value="">財務組</option>
+                        <option value="">醫務管理組</option>
+                        <option value="">醫審及藥材組</option>
+                        <option value="">企劃組</option>
+                        <option value="">資訊組</option>
+                        <option value="">秘書室</option>
+                        <option value="">人事室</option>
+                        <option value="">主計室</option>
+                        <option value="">政風室</option>
+                        <option value="">新聞聯絡室</option>
+                        <option value="">國會聯絡室</option>
+                        <option value="">違規查處室</option>
+                      </select>
+
+                      <select id="selectSample" name="">
+                        <option value="">請選擇科室單位</option>
+                        <option value="">保險資訊科</option>
+                        <option value="">資訊工程科</option>
                       </select>
                     </div>
                   </div>
+                  <!-- col_6_6 -->
+                  <div class="col_6_6">
+                    <div class="col">
+                      <div class="formGrp">
+                        <label for="email" class="formTitle" aria-required="true">姓名：</label>
+                        <div class="formContent">
+                          <input name="" type="" id="" title="請輸入姓名" placeholder="請輸入姓名" />
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col">
+                      <div class="formGrp">
+                        <label for="email" class="formTitle" aria-required="true">分機號碼：</label>
+                        <div class="formContent">
+                          <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入分機號碼" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- col_6_6 end -->
+                  <!-- col_6_6 -->
+                  <div class="col_6_6">
+                    <div class="col">
+                      <div class="formGrp">
+                        <label for="email" class="formTitle" aria-required="true">直線電話：</label>
+                        <div class="formContent">
+                          <input name="" type="" id="" title="請輸入直線電話" placeholder="請輸入直線電話" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="formGrp">
+                        <label for="email" class="formTitle" aria-required="true">傳直號碼：</label>
+                        <div class="formContent">
+                          <input name="" type="" id="" title="請輸入傳直號碼" placeholder="請輸入傳直號碼" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- col_6_6 end -->
+
+                  <div class="formGrp">
+                    <label for="email" class="formTitle" aria-required="true">承辦業務：</label>
+                    <div class="formContent">
+                      <input name="" type="" id="" title="請輸入承辦業務" placeholder="請輸入承辦業務" />
+                    </div>
+                  </div>
                   <div class="btnGrp formInline">
-                    <button type="button" class="btn btnSubmit">送出</button>
-                    <button type="button" class="btn btnReset">清除重填</button>
+                    <button type="button" class="btn btnSubmit">查詢</button>
+                    <button type="button" class="btn btnReset">重設</button>
                   </div>
                 </div>
                 <!-- form end -->
@@ -290,7 +326,7 @@
             <!-- LP Start -->
             <section class="lp">
               <!-- tableList -->
-              <div class="tableList">
+              <div class="tableList extensionTb">
                 <table>
                   <!-- 無障礙 caption 標題預設隱藏 -->
                   <caption>
@@ -301,113 +337,186 @@
                   <thead>
                     <tr>
                       <th>項次</th>
-                      <th>消息主題</th>
-                      <th>發布日期</th>
-                      <th width="12%">公布期間</th>
-                      <th>發布單位</th>
-                      <th>明細</th>
+                      <th>所屬單位</th>
+                      <th>組室/科別</th>
+                      <th>
+                        科室單位<br />
+                        (編組別)
+                      </th>
+                      <th>所在位置</th>
+                      <th>職稱</th>
+                      <th>姓名</th>
+                      <th>網路電話</th>
+                      <th>分機</th>
+                      <th>直線電話</th>
+                      <th>傳真電話</th>
+                      <th>
+                        上層主管<br />
+                        (分機)
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td class="num">1</td>
-                      <td>
-                        <a href="#">補充保費申報E起來 多元管道免奔波</a>
-                      </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室臺北駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td>署本部</td>
+                      <td>主任秘書室</td>
+                      <td>&nbsp</td>
+                      <td>17樓</td>
+                      <td>組長</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>2251</td>
+                      <td>27024156</td>
+                      <td>27024414</td>
+                      <td>&nbsp</td>
                     </tr>
                     <tr>
                       <td class="num">2</td>
+                      <td>署本部</td>
+                      <td>主任秘書室</td>
+                      <td>&nbsp</td>
+                      <td>17樓</td>
+                      <td>參議</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>2811</td>
+                      <td>27026317</td>
+                      <td>27024414</td>
                       <td>
-                        <a href="#">健保澎湖離島IDS 25年 遠距醫療加值 就醫零距離</a>
+                        OOO<br />
+                        (2251)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室北區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                     <tr>
                       <td class="num">3</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>&nbsp</td>
+                      <td>11樓</td>
+                      <td>副組長</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>2252</td>
+                      <td>2754-6360</td>
+                      <td>27054411</td>
                       <td>
-                        <a href="#">要報稅了！輕鬆查詢年度健保費繳費金額</a>
+                        OOO<br />
+                        (2251)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室高屏駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                     <tr>
                       <td class="num">4</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>&nbsp</td>
+                      <td>7樓</td>
+                      <td>高級分析師</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>6005</td>
+                      <td>27054410</td>
+                      <td>27054411</td>
                       <td>
-                        <a href="#">單位通訊地址申請變更手續好簡單！健保通知不漏接!</a>
+                        OOO<br />
+                        (2252)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室東區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                     <tr>
                       <td class="num">5</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>&nbsp</td>
+                      <td>7樓</td>
+                      <td>專門委員</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>6008</td>
+                      <td>&nbsp</td>
+                      <td>27065441</td>
                       <td>
-                        <a href="#">歡慶全民健保28，響應2023世界衛生日Health for All in Taiwan</a>
+                        OOO<br />
+                        (2251)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                     <tr>
                       <td class="num">6</td>
-                      <td>
-                        <a href="#">健保署居家醫療整合服務 澎湖離島醫到家</a>
-                      </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室北區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>&nbsp</td>
+                      <td>7樓</td>
+                      <td>&nbsp</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>6006</td>
+                      <td>&nbsp</td>
+                      <td>27054411</td>
+                      <td>&nbsp</td>
                     </tr>
                     <tr>
                       <td class="num">7</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
                       <td>
-                        <a href="#">健保署與公所攜手合作 提供弱勢欠費協助服務</a>
+                        資訊工程科<br />
+                        (服務台)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td>11樓</td>
+                      <td>&nbsp</td>
+                      <td>電腦報修專線</td>
+                      <td>&nbsp</td>
+                      <td>2267</td>
+                      <td>&nbsp</td>
+                      <td>27024414</td>
+                      <td>&nbsp</td>
                     </tr>
                     <tr>
                       <td class="num">8</td>
-                      <td>
-                        <a href="#">健保署公布110年度225家院所財報與醫療服務申報情形</a>
-                      </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>保險資訊科</td>
+                      <td>11樓</td>
+                      <td>&nbsp</td>
+                      <td>&nbsp</td>
+                      <td>&nbsp</td>
+                      <td>&nbsp</td>
+                      <td>&nbsp</td>
+                      <td>27024414</td>
+                      <td>&nbsp</td>
                     </tr>
                     <tr>
                       <td class="num">9</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>保險資訊科</td>
+                      <td>11樓</td>
+                      <td>科長</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>2255</td>
+                      <td>&nbsp</td>
+                      <td>27024414</td>
                       <td>
-                        <a href="#">健康存摺SDK榮獲2023智慧城市創新應用獎!歡迎至智慧城市展健保署攤位體驗數位健康服務</a>
+                        OOO<br />
+                        (6068)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                     <tr>
                       <td class="num">10</td>
+                      <td>署本部</td>
+                      <td>資訊組</td>
+                      <td>保險資訊科</td>
+                      <td>11樓</td>
+                      <td>一等專員</td>
+                      <td>OOO</td>
+                      <td>#201</td>
+                      <td>2282</td>
+                      <td>&nbsp</td>
+                      <td>&nbsp</td>
                       <td>
-                        <a href="#">國際扶輪3470地區、3501地區、3502地區、3670地區攜手健保署及臺南市政府教育局，捐贈8座牙科診療椅，優化臺南市偏鄉小學牙科診療設備</a>
+                        OOO<br />
+                        (2255)
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
                     </tr>
                   </tbody>
                 </table>

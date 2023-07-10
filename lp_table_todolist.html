@@ -205,8 +205,8 @@
             <nav aria-label="Breadcrumb" class="breadcrumb">
               <ul>
                 <li><a href="#">首頁</a></li>
-                <li><a href="#">最新消息</a></li>
-                <li aria-current="page">人事公告</li>
+                <li><a href="#">個人資訊</a></li>
+                <li aria-current="page">待辦事項</li>
               </ul>
             </nav>
             <!-- h2節點 -->
@@ -229,19 +229,13 @@
                 <!-- form -->
                 <div class="flexForm formGrid">
                   <div class="formGrp">
-                    <label for="email" class="formTitle" aria-required="true">消息主題：</label>
+                    <label for="email" class="formTitle" aria-required="true">標題：</label>
                     <div class="formContent">
-                      <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入關鍵字" />
+                      <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入標題" />
                     </div>
                   </div>
                   <div class="formGrp">
-                    <label for="email" class="formTitle" aria-required="true">消息內容：</label>
-                    <div class="formContent">
-                      <input name="" type="" id="" title="請輸入關鍵字" placeholder="請輸入關鍵字" />
-                    </div>
-                  </div>
-                  <div class="formGrp">
-                    <div class="formTitle">發布日期</div>
+                    <div class="formTitle">通知日期：</div>
                     <div class="formContent">
                       <div class="datePick">
                         <input name="" type="date" value="" class="calendar" placeholder="請輸入開始日期" title="請輸入開始日期" />
@@ -252,36 +246,32 @@
                     </div>
                   </div>
                   <div class="formGrp">
-                    <div class="formTitle">發布單位：</div>
+                    <div class="formTitle">通知類型：</div>
                     <div class="formContent">
                       <select id="selectSample" name="">
-                        <option value="">請選擇單位</option>
-                        <option value="">署本部</option>
-                        <option value="">臺北業務組</option>
-                        <option value="">北區業務組</option>
-                        <option value="">中區業務組</option>
-                        <option value="">南區業務組</option>
-                        <option value="">高屏業務組</option>
-                        <option value="">東區業務組</option>
+                        <option value="">全部</option>
+                        <option value="">待簽核表單</option>
+                        <option value="">待填報案件</option>
+                        <option value="">待讀取公告</option>
+                        <option value="">待閱讀課程</option>
                       </select>
                     </div>
                   </div>
 
                   <div class="formGrp">
-                    <div class="formTitle">類別：</div>
+                    <div class="formTitle">讀取狀態：</div>
                     <div class="formContent">
                       <select id="selectSample" name="">
                         <option value="">全部</option>
-                        <option value="">陞遷</option>
-                        <option value="">福利</option>
-                        <option value="">其他</option>
+                        <option value="">未讀</option>
+                        <option value="">已讀</option>
                       </select>
                     </div>
                   </div>
 
                   <div class="btnGrp formInline">
-                    <button type="button" class="btn btnSubmit">送出</button>
-                    <button type="button" class="btn btnReset">清除重填</button>
+                    <button type="button" class="btn btnSubmit">查詢</button>
+                    <button type="button" class="btn btnReset">重設</button>
                   </div>
                 </div>
                 <!-- form end -->
@@ -300,114 +290,130 @@
                   </caption>
                   <thead>
                     <tr>
-                      <th>項次</th>
-                      <th>消息主題</th>
-                      <th>發布日期</th>
-                      <th width="12%">公布期間</th>
-                      <th>發布單位</th>
-                      <th>明細</th>
+                      <th>通知類型</th>
+                      <th>標題</th>
+                      <th width="13%">通知時間</th>
+                      <th>讀取狀態</th>
+                      <th>檢視</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="num">1</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">補充保費申報E起來 多元管道免奔波</a>
+                        <a href="#"><span class="sorttag">人事公告</span>補充保費申報E起來 多元管道免奔波</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室臺北駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_no">未讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">2</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">健保澎湖離島IDS 25年 遠距醫療加值 就醫零距離</a>
+                        <a href="#"><span class="sorttag">資訊公告</span>健保澎湖離島IDS 25年 遠距醫療加值 就醫零距離</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室北區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_no">未讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">3</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">要報稅了！輕鬆查詢年度健保費繳費金額</a>
+                        <a href="#"><span class="sorttag">業務公告</span>要報稅了！輕鬆查詢年度健保費繳費金額</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室高屏駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_no">未讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">4</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">單位通訊地址申請變更手續好簡單！健保通知不漏接!</a>
+                        <a href="#"><span class="sorttag">業務公告</span>單位通訊地址申請變更手續好簡單！健保通知不漏接!</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室東區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">5</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">歡慶全民健保28，響應2023世界衛生日Health for All in Taiwan</a>
+                        <a href="#"><span class="sorttag">宣導專區</span>歡慶全民健保28，響應2023世界衛生日Health for All in Taiwan</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">6</td>
+                      <td><span class="notify">待讀取公告</span></td>
                       <td>
-                        <a href="#">健保署居家醫療整合服務 澎湖離島醫到家</a>
+                        <a href="#"><span class="sorttag">其他訊息</span>健保署居家醫療整合服務 澎湖離島醫到家</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室北區駐區</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">7</td>
+                      <td><span class="signoff">待簽核表單</span></td>
                       <td>
-                        <a href="#">健保署與公所攜手合作 提供弱勢欠費協助服務</a>
+                        <a href="#"><span class="sorttag">權限申請</span>王小明權限申請單，請簽核。</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">8</td>
+                      <td><span class="signoff">待簽核表單</span></td>
                       <td>
-                        <a href="#">健保署公布110年度225家院所財報與醫療服務申報情形</a>
+                        <a href="#"><span class="sorttag">權限清查</span>王小明權限申請單，請簽核。</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">9</td>
+                      <td><span class="signoff">待簽核表單</span></td>
                       <td>
-                        <a href="#">健康存摺SDK榮獲2023智慧城市創新應用獎!歡迎至智慧城市展健保署攤位體驗數位健康服務</a>
+                        <a href="#"><span class="sorttag">新人介紹</span>王小明新人介紹資料請您簽核</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                     <tr>
-                      <td class="num">10</td>
+                      <td><span class="signoff">待簽核表單</span></td>
                       <td>
-                        <a href="#">國際扶輪3470地區、3501地區、3502地區、3670地區攜手健保署及臺南市政府教育局，捐贈8座牙科診療椅，優化臺南市偏鄉小學牙科診療設備</a>
+                        <a href="#"><span class="sorttag">案件追踨管理系統</span>有關藥局跨行政區域送藥爭議案件，請健保署、醫事司、法規會儘速釐清相關疑義並整合共識。</a>
                       </td>
-                      <td class="date">2023-01-31</td>
-                      <td class="datetime">2023-01-31~ 2023-04-07</td>
-                      <td>人事室</td>
-                      <td class="detail"><button class="btn btnSubmit">明細</button></td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
+                    </tr>
+                    <tr>
+                      <td><span class="fillcase">待填報案件</span></td>
+                      <td>
+                        <a href="#"><span class="sorttag">案件追踨管理系統</span>有關藥局跨行政區域送藥爭議案件，請健保署、醫事司、法規會儘速釐清相關疑義並整合共識。</a>
+                      </td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
+                    </tr>
+                    <tr>
+                      <td><span class="fillcase">待填報案件</span></td>
+                      <td>
+                        <a href="#"><span class="sorttag">權限清查</span>使用者權限清查，請您撥空盡速確認是否續用。</a>
+                      </td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_no">未讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
+                    </tr>
+                    <tr>
+                      <td><span class="course">待閱讀課程</span></td>
+                      <td>
+                        <a href="#"><span class="sorttag">知識管理系統</span>健保實務達人課程已上架，請抽空閱讀。</a>
+                      </td>
+                      <td class="date">2023-01-31 09:23</td>
+                      <td class="center"><span class="state_yes">已讀取</span></td>
+                      <td class="detail"><button class="btn btnSubmit">檢視</button></td>
                     </tr>
                   </tbody>
                 </table>
