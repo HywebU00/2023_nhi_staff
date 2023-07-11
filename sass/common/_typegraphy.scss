@@ -49,6 +49,7 @@
   td figure {
     font-size: 1em;
   }
+
   blockquote {
     background: #f1f1f1;
     font-style: normal;
@@ -65,6 +66,19 @@
       max-width: 100%;
       width: auto;
       clear: both;
+    }
+  }
+  table {
+    border-top: solid 3px $npLitBorder;
+    th {
+      border: none;
+    }
+    td {
+      border: none;
+      border-bottom: solid 1px #ddd;
+    }
+    .num {
+      text-align: center;
     }
   }
 }

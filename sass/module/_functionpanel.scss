@@ -119,6 +119,8 @@ div.function {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
+  float: right;
+  margin-top: -4em;
   .fontSize {
     padding: 0;
     flex: initial;

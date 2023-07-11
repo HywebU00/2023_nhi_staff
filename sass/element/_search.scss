@@ -346,10 +346,10 @@
 
 //pageSearch
 .pageSearch {
-  margin-top: -3em;
+  // margin-top: -3em;
   margin-bottom: 1em;
   @include screen('mobile') {
-    margin-top: -3.5em;
+    // margin-top: -3.5em;
   }
   .pageSearchBtn {
     background: #fff url('../images/search.svg') no-repeat 10px center;
@@ -389,5 +389,64 @@
   display: none;
   @include screen('mobile') {
     padding: 1em;
+  }
+}
+
+.eventSearch {
+  background: $pageSearchBg;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  .flexForm {
+    .formContent {
+      justify-content: center;
+    }
+    .btn {
+      flex: 0 1 auto;
+    }
+  }
+}
+.peopleSearch {
+  background: $pageSearchBg;
+  border-radius: 15px;
+  margin-bottom: 1em;
+  .formInline {
+    justify-content: center;
+    label {
+      margin: 0;
+    }
+    @media screen and (max-width: 1100px) {
+      display: block;
+
+      .formInline {
+        justify-content: start;
+      }
+      label {
+        margin: 0;
+        width: 6em;
+      }
+      select {
+        width: calc(100% - 7em);
+      }
+      input[type='text'] {
+        width: calc(100% - 7em);
+      }
+      .btn {
+        flex: 1 1 auto;
+      }
+    }
+  }
+  .flexForm {
+    .formContent {
+      justify-content: center;
+      max-width: 100%;
+      input[type='text'] {
+        width: auto;
+      }
+      @include screen('xsMobile') {
+        input[type='text'] {
+          width: calc(100% - 7em);
+        }
+      }
+    }
   }
 }

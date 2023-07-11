@@ -1926,6 +1926,19 @@ img {
       clear: both;
     }
   }
+  .cp table {
+    border-top: solid 3px #4bc8e1;
+  }
+  .cp table th {
+    border: none;
+  }
+  .cp table td {
+    border: none;
+    border-bottom: solid 1px #ddd;
+  }
+  .cp table .num {
+    text-align: center;
+  }
   a:focus-visible {
     outline: #d04500 2px solid;
   }
@@ -2802,13 +2815,7 @@ img {
     }
   }
   .pageSearch {
-    margin-top: -3em;
     margin-bottom: 1em;
-  }
-  @media screen and (max-width: 767px) {
-    .pageSearch {
-      margin-top: -3.5em;
-    }
   }
   .pageSearch .pageSearchBtn {
     background: #fff url("../images/search.svg") no-repeat 10px center;
@@ -2849,6 +2856,61 @@ img {
   @media screen and (max-width: 767px) {
     #pageSearchBox {
       padding: 1em;
+    }
+  }
+  .eventSearch {
+    background: #edf9fb;
+    border-radius: 15px;
+    margin-bottom: 1em;
+  }
+  .eventSearch .flexForm .formContent {
+    justify-content: center;
+  }
+  .eventSearch .flexForm .btn {
+    flex: 0 1 auto;
+  }
+  .peopleSearch {
+    background: #edf9fb;
+    border-radius: 15px;
+    margin-bottom: 1em;
+  }
+  .peopleSearch .formInline {
+    justify-content: center;
+  }
+  .peopleSearch .formInline label {
+    margin: 0;
+  }
+  @media screen and (max-width: 1100px) {
+    .peopleSearch .formInline {
+      display: block;
+    }
+    .peopleSearch .formInline .formInline {
+      justify-content: start;
+    }
+    .peopleSearch .formInline label {
+      margin: 0;
+      width: 6em;
+    }
+    .peopleSearch .formInline select {
+      width: calc(100% - 7em);
+    }
+    .peopleSearch .formInline input[type=text] {
+      width: calc(100% - 7em);
+    }
+    .peopleSearch .formInline .btn {
+      flex: 1 1 auto;
+    }
+  }
+  .peopleSearch .flexForm .formContent {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .peopleSearch .flexForm .formContent input[type=text] {
+    width: auto;
+  }
+  @media screen and (max-width: 575px) {
+    .peopleSearch .flexForm .formContent input[type=text] {
+      width: calc(100% - 7em);
     }
   }
   .btnGrp {
@@ -6637,6 +6699,155 @@ img {
     font-weight: normal;
     margin-left: 2rem;
   }
+  .lp .event_list {
+    position: relative;
+  }
+  .lp .event_list > ul,
+  .lp .event_list ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  .lp .event_list > ul > li,
+  .lp .event_list ol > li {
+    padding: 0 0 0 2em;
+    font-size: 1em;
+    background: url("../images/arrow.png") no-repeat left 10px top 0.5em;
+    background-size: 8px auto;
+    margin: 0 0 1em 0;
+  }
+  .lp .event_list > ul > li > a,
+  .lp .event_list ol > li > a {
+    display: block;
+    position: relative;
+    line-height: 1.6em;
+    color: #314868;
+  }
+  .lp .event_list > ul > li > a:hover,
+  .lp .event_list ol > li > a:hover {
+    color: #333c46;
+  }
+  .lp .event_list > ul > li time,
+  .lp .event_list ol > li time {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .lp .event_list ul {
+    padding: 0.5em 0 0.5em 8em;
+    margin: 0;
+    position: relative;
+  }
+  .lp .event_list ul:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #bde6f2;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+  }
+  .lp .event_list .year-mm {
+    background: #005382;
+    color: #fff;
+    padding: 0.5em 1em;
+    position: absolute;
+    left: 0.2em;
+    z-index: 2;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.125em;
+  }
+  .people_list {
+    width: 100%;
+    margin: 1em 0;
+    padding-left: 0.5em;
+  }
+  @media screen and (max-width: 767px) {
+    .people_list {
+      padding-left: 0;
+    }
+  }
+  .people_list ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .people_list ol li {
+    flex: 0 1 32%;
+    margin: 0.5em 0.5%;
+    border-radius: 15px;
+    border: solid 1px #4bc8e1;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 991px) {
+    .people_list ol li {
+      flex: 1 1 46%;
+      margin: 0.5em 1%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .people_list ol li {
+      flex: 1 1 100%;
+    }
+    .people_list ol li:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+  .people_list ol li:nth-child(n+10) {
+    display: none;
+  }
+  .people_list ol li img {
+    width: 120px;
+    float: left;
+  }
+  .people_list ol li a {
+    display: block;
+    overflow: hidden;
+  }
+  .people_list ol li a:hover {
+    background: #eee;
+  }
+  .people_list .more {
+    margin: 1em auto;
+    text-align: center;
+    background: #4bc8e1;
+    color: #fff;
+    position: relative;
+    padding: 0.5em 3em 0.5em 3em;
+  }
+  .people_list .more:before {
+    content: "";
+    position: absolute;
+    right: 1em;
+    top: 0.9em !important;
+    width: 6px !important;
+    height: 6px !important;
+    border: 2px solid #fff;
+    transform: rotate(135deg);
+    border-bottom: none;
+    border-left: none;
+  }
+  .people_list .more:hover, .people_list .more:active {
+    background: #005382 !important;
+    color: #fff;
+  }
+  .people_list .more:focus:before {
+    transform: rotate(-45deg);
+    top: 1.1em !important;
+  }
+  .people_list dl {
+    float: left;
+    margin: 1em 1em 0 1em;
+  }
+  .people_list dl dt {
+    padding: 0.5em 0;
+  }
   .submenu ul,
   .submenu ol {
     display: flex;
@@ -6976,6 +7187,8 @@ img {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
+    float: right;
+    margin-top: -4em;
   }
   .functionPanel .fontSize {
     padding: 0;
@@ -7605,26 +7818,29 @@ img {
   .leftBlock .listBlock {
     padding: 0 0 0.5em 0;
     margin-bottom: 1.5em;
+    border-radius: 15px;
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   .leftBlock .listBlock .title {
-    margin: 0 0 1em;
+    margin: 0 0 0.5em;
     padding: 0.5em;
     text-align: center;
     color: #fff;
-    background-color: #666;
+    background-color: #005382;
     font-size: 1.25em;
-    font-weight: bolder;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
   .leftBlock .listBlock ul {
     margin: 0;
-    padding: 0 1em;
+    padding: 0 1em 1em;
     list-style-type: none;
   }
   .leftBlock .listBlock ul li {
-    margin: 0 0 0.5em;
-    padding: 0 0 0.5em;
+    margin: 0;
+    padding: 0;
     border-bottom: 1px solid #ccc;
   }
   .leftBlock .listBlock ul li time {
@@ -7641,14 +7857,16 @@ img {
   }
   .leftBlock .listBlock ul li a {
     display: block;
-    padding: 0 0 0.25em;
-    line-height: 1.4em;
-    font-size: 0.938em;
+    padding: 0.8em 0.5em;
+    line-height: 1.5em;
     color: #333;
-    margin: 0.5em 0;
+    margin: 0;
   }
   .leftBlock .listBlock ul li a:hover {
     color: #333c46;
+  }
+  .leftBlock .listBlock ul li a:focus {
+    font-weight: bold;
   }
   .leftBlock .nodeMenu {
     padding: 0 0 0.5em 0;
@@ -9962,7 +10180,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_doc a:hover, .fileDownload li span.file_doc a:focus-visible {
     color: #fff;
@@ -9971,7 +10189,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_docx a:hover, .fileDownload li span.file_docx a:focus-visible {
     color: #fff;
@@ -9980,7 +10198,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_odt a:hover, .fileDownload li span.file_odt a:focus-visible {
     color: #fff;
@@ -9989,7 +10207,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_xls a:hover, .fileDownload li span.file_xls a:focus-visible {
     color: #fff;
@@ -9998,7 +10216,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_xlsx a:hover, .fileDownload li span.file_xlsx a:focus-visible {
     color: #fff;
@@ -10007,7 +10225,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_csv a:hover, .fileDownload li span.file_csv a:focus-visible {
     color: #fff;
@@ -10016,7 +10234,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_ods a:hover, .fileDownload li span.file_ods a:focus-visible {
     color: #fff;
@@ -10025,7 +10243,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_ppt a:hover, .fileDownload li span.file_ppt a:focus-visible {
     color: #fff;
@@ -10034,7 +10252,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_pptx a:hover, .fileDownload li span.file_pptx a:focus-visible {
     color: #fff;
@@ -10043,7 +10261,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_odp a:hover, .fileDownload li span.file_odp a:focus-visible {
     color: #fff;
@@ -10052,7 +10270,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_zip a:hover, .fileDownload li span.file_zip a:focus-visible {
     color: #fff;
@@ -10061,7 +10279,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_txt a:hover, .fileDownload li span.file_txt a:focus-visible {
     color: #fff;
@@ -10070,7 +10288,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_mov a:hover, .fileDownload li span.file_mov a:focus-visible {
     color: #fff;
@@ -10079,7 +10297,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_mp3 a:hover, .fileDownload li span.file_mp3 a:focus-visible {
     color: #fff;
@@ -10088,7 +10306,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_jpg a:hover, .fileDownload li span.file_jpg a:focus-visible {
     color: #fff;
@@ -10097,7 +10315,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_wmv a:hover, .fileDownload li span.file_wmv a:focus-visible {
     color: #fff;
@@ -10106,7 +10324,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_mp4 a:hover, .fileDownload li span.file_mp4 a:focus-visible {
     color: #fff;
@@ -10115,7 +10333,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_pdf a:hover, .fileDownload li span.file_pdf a:focus-visible {
     color: #fff;
@@ -10124,7 +10342,7 @@ img {
     color: #fff;
     font-weight: bold;
     padding: 0.2em 0.8em;
-    border-radius: 3px;
+    border-radius: 30px;
   }
   .fileDownload li span.file_other a:hover, .fileDownload li span.file_other a:focus-visible {
     color: #fff;

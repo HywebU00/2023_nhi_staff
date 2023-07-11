@@ -404,3 +404,26 @@ function pageSearch() {
     x.style.display = 'none';
   }
 }
+
+//people
+$(function () {
+  var _list = $('.people_list');
+  var i = 9; //不隱藏的個數
+
+  _list.each(function () {
+    var _slideItem = $(this).find('li').slice(i);
+    var _more = $(this).find('.more');
+    var moreText = _more.text();
+    var altText = '向上收合';
+
+    _more.click(function () {
+      if (_slideItem.is(':hidden')) {
+        _slideItem.slideDown();
+        _more.text(altText);
+      } else {
+        _slideItem.slideUp();
+        _more.text(moreText);
+      }
+    });
+  });
+});
