@@ -3,6 +3,7 @@
 .cp {
   font-size: 1em * 1.0666666;
   line-height: 1.65em;
+
   @include screen('xsMobile') {
     font-size: 1em * 1.2;
   }
@@ -66,19 +67,6 @@
       max-width: 100%;
       width: auto;
       clear: both;
-    }
-  }
-  table {
-    border-top: solid 3px $npLitBorder;
-    th {
-      border: none;
-    }
-    td {
-      border: none;
-      border-bottom: solid 1px #ddd;
-    }
-    .num {
-      text-align: center;
     }
   }
 }

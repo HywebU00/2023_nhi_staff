@@ -59,3 +59,57 @@
     }
   }
 }
+
+//2
+.submenu2 {
+  margin-bottom: 1em;
+  h3 {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    background: $pageSearchBg;
+    // color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+  }
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  li {
+    flex: 1 1 30%;
+    margin: 0.3em 0.5em;
+
+    @include screen('mobile') {
+      flex: 1 1 100%;
+    }
+    a {
+      border: 1px solid $npLitBorder;
+      border-left: 5px solid $npLitBorder;
+      background: $textContentBg;
+      padding: 0.8em 1em;
+      display: block;
+      vertical-align: top;
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+      border-radius: 10px;
+      @include aSetting($colorWord);
+      // @include textOverflow;
+
+      &:hover,
+      &:focus-visible {
+        background: $colorPrimary;
+        border: 1px solid $aHover;
+        color: #fff !important;
+      }
+    }
+  }
+}

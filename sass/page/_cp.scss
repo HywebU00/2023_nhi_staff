@@ -9,6 +9,14 @@ h2.title {
 }
 // .tt{ color: #222; }
 .cp {
+  p {
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
   .pic {
     float: left;
     margin: 0px 1em 1em 0;
@@ -36,6 +44,59 @@ h2.title {
       margin: 0px auto;
       display: block;
       margin-bottom: 0.5em;
+    }
+  }
+  .pic2 {
+    margin: 0px 1em 1em 0;
+    width: auto;
+    width: 90%;
+    max-width: 400px;
+    // background: #f1f1f1;
+    overflow: hidden;
+    padding: 0 0.5em 0.2em;
+    img {
+      float: none;
+      width: 100%;
+      margin: 0;
+      display: block;
+    }
+    span {
+      text-align: center;
+      display: block;
+      font-size: 0.938em;
+    }
+    figcaption {
+      text-align: center;
+      padding: 0.5em 0;
+      font-weight: bold;
+    }
+    @include screen('mobile') {
+      float: none;
+      max-width: 80%;
+      width: auto;
+      margin: 0px auto;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+  .video {
+    max-width: 80%;
+    margin: 0 auto;
+    @include screen('mobile') {
+      max-width: 100%;
+    }
+    iframe {
+      width: 100% !important;
+      aspect-ratio: 2/1.2 !important;
+      transition: 0.2s ease-out;
+    }
+    img {
+      width: 100%;
+      aspect-ratio: 3/2;
+      display: block;
+      object-fit: fill;
+      border-radius: 10px;
+      transition: 0.2s ease-out;
     }
   }
   table {
@@ -91,6 +152,20 @@ h2.title {
       }
     }
   }
+  table {
+    border-top: solid 3px $npLitBorder;
+    th {
+      border: none;
+      border-bottom: solid 1px #ddd;
+    }
+    td {
+      border: none;
+      border-bottom: solid 1px #ddd;
+    }
+    .num {
+      text-align: center;
+    }
+  }
 }
 
 // 檔案下載
@@ -115,6 +190,7 @@ h2.title {
     position: relative;
     padding: 0.5em 0 0.5em 1.5em;
     border-bottom: solid 1px #eee;
+    margin: 0;
     &:before {
       content: '·';
       font-size: 2em;
@@ -288,6 +364,7 @@ h2.title {
     padding: 0.25em 0;
     border-bottom: solid 1px #eee;
     padding-left: 1.5em;
+    margin: 0;
     &:before {
       content: '·';
       font-size: 2em;

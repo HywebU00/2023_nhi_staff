@@ -1926,19 +1926,6 @@ img {
       clear: both;
     }
   }
-  .cp table {
-    border-top: solid 3px #4bc8e1;
-  }
-  .cp table th {
-    border: none;
-  }
-  .cp table td {
-    border: none;
-    border-bottom: solid 1px #ddd;
-  }
-  .cp table .num {
-    text-align: center;
-  }
   a:focus-visible {
     outline: #d04500 2px solid;
   }
@@ -4438,7 +4425,7 @@ img {
     color: #314868;
     box-sizing: border-box;
     background: #fff;
-    border-radius: 30px;
+    border-radius: 3em;
   }
   .mainMenu > ul > li > a:focus-visible {
     box-shadow: 0 0 0 2px inset #d04500;
@@ -6324,7 +6311,6 @@ img {
     color: #fff;
     border: none;
     padding: 0.5em;
-    white-space: nowrap;
   }
   .tableList table th:first-child {
     border-top-left-radius: 3em;
@@ -6479,7 +6465,7 @@ img {
   .tableList .sorttag {
     background: #eee;
     font-size: 0.875em;
-    padding: 0.2em;
+    padding: 0 0.2em;
     border-radius: 3px;
     color: #333;
     margin-right: 0.5em;
@@ -6619,6 +6605,10 @@ img {
     background: url(../images/basic/icon_ar.svg) no-repeat center;
     cursor: pointer;
   }
+  .int table th {
+    white-space: nowrap;
+    width: 30%;
+  }
   .lp table td.date {
     text-align: center;
     white-space: nowrap;
@@ -6670,7 +6660,6 @@ img {
     padding-left: 2rem;
     position: relative;
     line-height: 1.6em;
-    font-weight: bold;
   }
   .lp .list > ul > li > a .num,
   .lp .list ol > li > a .num {
@@ -6746,6 +6735,11 @@ img {
     top: 0;
     left: 50px;
     z-index: 1;
+  }
+  @media screen and (max-width: 575px) {
+    .lp .event_list ul {
+      padding: 0.5em 0 0.5em 6em;
+    }
   }
   .lp .event_list .year-mm {
     background: #005382;
@@ -6910,6 +6904,63 @@ img {
     background: #005382;
     border: 1px solid #333c46;
     color: #fff;
+  }
+  .submenu2 {
+    margin-bottom: 1em;
+  }
+  .submenu2 h3 {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+    background: #edf9fb;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+  }
+  .submenu2 ul,
+  .submenu2 ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  .submenu2 li {
+    flex: 1 1 30%;
+    margin: 0.3em 0.5em;
+  }
+  @media screen and (max-width: 767px) {
+    .submenu2 li {
+      flex: 1 1 100%;
+    }
+  }
+  .submenu2 li a {
+    border: 1px solid #4bc8e1;
+    border-left: 5px solid #4bc8e1;
+    background: #fff;
+    padding: 0.8em 1em;
+    display: block;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #314868;
+  }
+  .submenu2 li a:hover, .submenu2 li a:focus-visible {
+    color: #333c46;
+    cursor: pointer;
+  }
+  .submenu2 li a:focus-visible {
+    outline: #333c46 2px solid;
+  }
+  .submenu2 li a:hover, .submenu2 li a:focus-visible {
+    background: #005382;
+    border: 1px solid #333c46;
+    color: #fff !important;
   }
   .tabSet {
     margin: 30px auto;
@@ -8032,7 +8083,12 @@ img {
   .pagebg {
     background: #fff;
     border-radius: 15px;
-    padding: 2em;
+    padding: 2em 3em;
+  }
+  @media screen and (max-width: 991px) {
+    .pagebg {
+      padding: 2em;
+    }
   }
   @media screen and (max-width: 767px) {
     .pagebg {
@@ -10019,6 +10075,12 @@ img {
     margin: 0.8em 0;
     color: #314868;
   }
+  .cp p a {
+    text-decoration: underline;
+  }
+  .cp p a:hover {
+    text-decoration: none;
+  }
   .cp .pic {
     float: left;
     margin: 0px 1em 1em 0;
@@ -10049,6 +10111,62 @@ img {
       display: block;
       margin-bottom: 0.5em;
     }
+  }
+  .cp .pic2 {
+    margin: 0px 1em 1em 0;
+    width: auto;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    padding: 0 0.5em 0.2em;
+  }
+  .cp .pic2 img {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .cp .pic2 span {
+    text-align: center;
+    display: block;
+    font-size: 0.938em;
+  }
+  .cp .pic2 figcaption {
+    text-align: center;
+    padding: 0.5em 0;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 767px) {
+    .cp .pic2 {
+      float: none;
+      max-width: 80%;
+      width: auto;
+      margin: 0px auto;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  }
+  .cp .video {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 767px) {
+    .cp .video {
+      max-width: 100%;
+    }
+  }
+  .cp .video iframe {
+    width: 100% !important;
+    aspect-ratio: 2/1.2 !important;
+    transition: 0.2s ease-out;
+  }
+  .cp .video img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: block;
+    object-fit: fill;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
   }
   .cp table {
     background: #fff;
@@ -10116,6 +10234,20 @@ img {
       flex: 1 1 100%;
     }
   }
+  .cp table {
+    border-top: solid 3px #4bc8e1;
+  }
+  .cp table th {
+    border: none;
+    border-bottom: solid 1px #ddd;
+  }
+  .cp table td {
+    border: none;
+    border-bottom: solid 1px #ddd;
+  }
+  .cp table .num {
+    text-align: center;
+  }
   .fileDownload {
     width: 100%;
     margin: 0 auto 2em;
@@ -10146,6 +10278,7 @@ img {
     position: relative;
     padding: 0.5em 0 0.5em 1.5em;
     border-bottom: solid 1px #eee;
+    margin: 0;
   }
   .fileDownload li:before {
     content: "·";
@@ -10431,6 +10564,7 @@ img {
     padding: 0.25em 0;
     border-bottom: solid 1px #eee;
     padding-left: 1.5em;
+    margin: 0;
   }
   .webLink li:before {
     content: "·";

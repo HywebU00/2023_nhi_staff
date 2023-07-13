@@ -118,7 +118,10 @@ body {
 .pagebg {
   background: #fff;
   border-radius: 15px;
-  padding: 2em;
+  padding: 2em 3em;
+  @include screen('tablet') {
+    padding: 2em;
+  }
   @include screen('mobile') {
     padding-top: 2em !important;
     padding: 1em;
