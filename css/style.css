@@ -4534,6 +4534,95 @@ img {
     left: auto;
     right: 100%;
   }
+  .themeMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+  .themeMenu .title {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background-color: #005382;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .themeMenu ul {
+    margin: 0;
+    padding: 0;
+  }
+  .themeMenu ul > li {
+    border-bottom: 1px dotted #4bc8e1;
+  }
+  .themeMenu li {
+    display: block;
+    margin: 0;
+  }
+  .themeMenu li a {
+    display: block;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    position: relative;
+  }
+  .themeMenu li a:active, .themeMenu li a:focus {
+    font-weight: bold;
+    color: #333c46;
+  }
+  .themeMenu li a:after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 1.1em;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #314868;
+    transform: rotate(135deg);
+    border-bottom: none;
+    border-left: none;
+  }
+  .themeMenu li ul {
+    display: none;
+    margin: 0 1em 1em;
+    background: #edf9fb;
+    border-radius: 10px;
+    font-size: 0.938em;
+  }
+  .themeMenu li ul li {
+    border: none;
+    background: url("../images/dot.png") no-repeat left 1em top 1.2em;
+    background-size: 6px auto;
+    padding-left: 0.8em;
+  }
+  .themeMenu li ul li a {
+    padding: 0.6em 1.2em;
+  }
+  .themeMenu li a:hover ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    z-index: 999;
+  }
+  .themeMenu li:not(:has(ul)) a:after {
+    display: none;
+  }
+  .centerBlock .themeMenu {
+    display: none;
+  }
+  @media screen and (max-width: 991px) {
+    .centerBlock .themeMenu {
+      display: block;
+    }
+  }
   .megaMenu > ul {
     position: relative;
   }
@@ -6661,6 +6750,11 @@ img {
     position: relative;
     line-height: 1.6em;
   }
+  .lp .list > ul > li > a:hover, .lp .list > ul > li > a:focus,
+  .lp .list ol > li > a:hover,
+  .lp .list ol > li > a:focus {
+    color: #333c46;
+  }
   .lp .list > ul > li > a .num,
   .lp .list ol > li > a .num {
     width: 1.5em;
@@ -6988,6 +7082,7 @@ img {
     text-align: center;
     border: none;
     margin: 0;
+    padding: 0.6em 0;
     border-radius: 0;
     box-shadow: none;
     background: rgba(255, 255, 255, 0);
@@ -7866,59 +7961,6 @@ img {
     top: 0;
     left: 0;
   }
-  .leftBlock .listBlock {
-    padding: 0 0 0.5em 0;
-    margin-bottom: 1.5em;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  .leftBlock .listBlock .title {
-    margin: 0 0 0.5em;
-    padding: 0.5em;
-    text-align: center;
-    color: #fff;
-    background-color: #005382;
-    font-size: 1.25em;
-    font-weight: bold;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .leftBlock .listBlock ul {
-    margin: 0;
-    padding: 0 1em 1em;
-    list-style-type: none;
-  }
-  .leftBlock .listBlock ul li {
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid #ccc;
-  }
-  .leftBlock .listBlock ul li time {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0.813rem;
-  }
-  .leftBlock .listBlock ul li .dept {
-    display: inline-block;
-    padding: 0 0.5em;
-    background-color: #f1f1f1;
-    color: #555;
-    font-size: 0.813em;
-  }
-  .leftBlock .listBlock ul li a {
-    display: block;
-    padding: 0.8em 0.5em;
-    line-height: 1.5em;
-    color: #333;
-    margin: 0;
-  }
-  .leftBlock .listBlock ul li a:hover {
-    color: #333c46;
-  }
-  .leftBlock .listBlock ul li a:focus {
-    font-weight: bold;
-  }
   .leftBlock .nodeMenu {
     padding: 0 0 0.5em 0;
     margin-bottom: 1.5em;
@@ -7956,6 +7998,66 @@ img {
   }
   .leftBlock .nodeMenu ul li a:hover {
     color: #333c46;
+  }
+  .listBlock {
+    padding: 0;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+  .listBlock .title {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background-color: #005382;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .listBlock ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .listBlock ul li {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dotted #4bc8e1;
+  }
+  .listBlock ul li time {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.813rem;
+  }
+  .listBlock ul li .dept {
+    display: inline-block;
+    padding: 0 0.5em;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 0.813em;
+  }
+  .listBlock ul li a {
+    display: block;
+    padding: 0.8em 1em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+  .listBlock ul li a:hover {
+    color: #333c46;
+  }
+  .listBlock ul li a:active, .listBlock ul li a:focus {
+    font-weight: bold;
+    color: #333c46;
+  }
+  .centerBlock .listBlock {
+    display: none;
+  }
+  @media screen and (max-width: 991px) {
+    .centerBlock .listBlock {
+      display: block;
+    }
   }
   * {
     box-sizing: border-box;
@@ -9854,7 +9956,6 @@ img {
     display: none;
   }
   .meeting .tableList th {
-    background: #edf9fb;
     border: none;
     text-align: left;
     padding: 1em;
@@ -9871,7 +9972,6 @@ img {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: solid 1px #bde6f2;
     padding: 1em;
   }
   @media screen and (max-width: 575px) {
@@ -10078,7 +10178,7 @@ img {
   .cp p a {
     text-decoration: underline;
   }
-  .cp p a:hover {
+  .cp p a:hover, .cp p a:focus {
     text-decoration: none;
   }
   .cp .pic {
@@ -10592,8 +10692,14 @@ img {
   }
   .textContent {
     line-height: 1.6em;
-    padding: 0 1em;
+    padding: 0;
     margin: 1em 0 2em;
+  }
+  .textContent a {
+    text-decoration: underline;
+  }
+  .textContent a:hover, .textContent a:focus {
+    text-decoration: none;
   }
 }
 .colorA a:hover {

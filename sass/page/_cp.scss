@@ -12,8 +12,10 @@ h2.title {
   p {
     a {
       text-decoration: underline;
-      &:hover {
+      &:hover,
+      &:focus {
         text-decoration: none;
+        // color: $aFocus;
       }
     }
   }
@@ -387,6 +389,14 @@ h2.title {
 //np
 .textContent {
   line-height: 1.6em;
-  padding: 0 1em;
+  padding: 0;
   margin: 1em 0 2em;
+  a {
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      // color: $aFocus;
+    }
+  }
 }

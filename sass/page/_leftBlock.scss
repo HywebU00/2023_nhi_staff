@@ -27,60 +27,7 @@
       }
     }
   }
-  .listBlock {
-    padding: 0 0 0.5em 0;
-    margin-bottom: 1.5em;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    .title {
-      margin: 0 0 0.5em;
-      padding: 0.5em;
-      text-align: center;
-      color: #fff;
-      background-color: $colorPrimary;
-      font-size: 1.25em;
-      font-weight: bold;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-    }
-    ul {
-      margin: 0;
-      padding: 0 1em 1em;
-      list-style-type: none;
-      li {
-        margin: 0;
-        padding: 0;
-        border-bottom: 1px solid #ccc;
-        time {
-          display: inline-block;
-          vertical-align: middle;
-          font-size: 0.813rem;
-        }
-        .dept {
-          display: inline-block;
-          padding: 0 0.5em;
-          background-color: #f1f1f1;
-          color: #555;
-          font-size: 0.813em;
-        }
-        a {
-          display: block;
-          padding: 0.8em 0.5em;
-          line-height: 1.5em;
-          // font-size: 0.938em;
-          color: #333;
-          margin: 0;
-          &:hover {
-            color: $aHover;
-          }
-          &:focus {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
+
   // 左側節點選單
   .nodeMenu {
     padding: 0 0 0.5em 0;
@@ -118,6 +65,73 @@
           }
         }
       }
+    }
+  }
+}
+
+//listBlock
+.listBlock {
+  padding: 0;
+  margin-bottom: 1.5em;
+  border-radius: 15px;
+  background-color: #fff;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .title {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    color: #fff;
+    background-color: $colorPrimary;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px dotted $npLitBorder;
+      time {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.813rem;
+      }
+      .dept {
+        display: inline-block;
+        padding: 0 0.5em;
+        background-color: #f1f1f1;
+        color: #555;
+        font-size: 0.813em;
+      }
+      a {
+        display: block;
+        padding: 0.8em 1em;
+        line-height: 1.5em;
+        // font-size: 0.938em;
+        // color: #333;
+        margin: 0;
+        &:hover {
+          color: $aHover;
+        }
+        &:active,
+        &:focus {
+          font-weight: bold;
+          color: $aHover;
+        }
+      }
+    }
+  }
+}
+
+.centerBlock {
+  .listBlock {
+    display: none;
+    @include screen('tablet') {
+      display: block;
     }
   }
 }

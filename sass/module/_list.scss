@@ -51,8 +51,9 @@
           line-height: 1.6em;
           // font-weight: bold;
           // color: $colorWord;
-          &:hover {
-            // color: $aHover;
+          &:hover,
+          &:focus {
+            color: $aHover;
           }
           .num {
             width: 1.5em;

@@ -821,7 +821,7 @@ section {
       display: none;
     }
     th {
-      background: #edf9fb;
+      // background: #edf9fb;
       border: none;
       text-align: left;
       padding: 1em;
@@ -838,7 +838,7 @@ section {
       border-top: none;
       border-left: none;
       border-right: none;
-      border-bottom: solid 1px #bde6f2;
+      // border-bottom: solid 1px #bde6f2;
       padding: 1em;
       @include screen('xsMobile') {
         padding-left: 6em;
