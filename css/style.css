@@ -8153,6 +8153,7 @@ img {
     max-width: 260px;
     max-height: 80vh;
     overflow-y: auto;
+    overflow-x: hidden;
     margin-right: 40px;
     padding-left: 5px;
     align-self: flex-start;
@@ -8604,7 +8605,7 @@ img {
     border-top: none;
   }
   .menuOverlay {
-    background: RGBA(0, 0, 0, 0.5);
+    background: RGBA(0, 0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
