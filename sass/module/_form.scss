@@ -1311,7 +1311,9 @@ input[type='radio'] {
 input[type='radio'] {
   border-radius: 50%;
 }
-
+input[type='checkbox'] {
+  border-radius: 3px;
+}
 input[type='checkbox']:checked,
 input[type='checkbox']:focus,
 input[type='radio']:checked,
@@ -1369,22 +1371,27 @@ input[type='checkbox']:focus {
   input[disable] {
     background: transparent;
     color: #666;
+    opacity: 1;
   }
 
   .uploadBtn {
     position: absolute;
     overflow: hidden;
-    top: 10px;
-    right: 0.5em;
+    top: 5px;
+    right: 0.1em;
     @extend %btn;
     @include btnSetting($formFocus, #fff);
-    padding: 0.2em 1em;
-    border-radius: 4px;
-
+    padding: 0.6em 1em;
+    border-radius: 2em;
     &:hover,
     &:focus-visible {
       cursor: pointer;
     }
+  }
+  .inttxt {
+    color: $colorImportant;
+    padding-left: 1em;
+    font-size: 0.875em;
   }
 }
 
@@ -1393,7 +1400,7 @@ input[type='file'] {
   top: 0;
   right: 0;
   margin: 0;
-  padding: 0;
+  padding: 0 8em 0 0;
   font-size: 1.25em;
   cursor: pointer;
   opacity: 0;
@@ -1495,5 +1502,117 @@ abbr[title] {
   }
   &.hide::before {
     background: url('../images/icon/icon_eye_dark.svg') center no-repeat;
+  }
+}
+
+//自訂
+
+.batch {
+  // justify-content: flex-end !important;
+  margin: 0 0 0 -0.8em;
+  padding: 0;
+
+  > select {
+    flex: 0 1 18em !important;
+  }
+
+  label {
+    font-size: 0;
+  }
+}
+
+.listDel {
+  flex: 1 1 100%;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid rgba(75, 200, 255, 0.3);
+  border-radius: 10px;
+
+  .closable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      border: 1px solid rgba(75, 200, 255, 0.2);
+      padding: 0.3em 1.5em 0.23em 0.3em;
+      margin: 0.15em;
+      display: inline-block;
+      line-height: 1em;
+      background: $pageSearchBg;
+      border-radius: 3px;
+      font-size: 0.875em;
+
+      // cursor: pointer;
+      position: relative;
+      &:hover {
+      }
+    }
+    .delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: red;
+      cursor: pointer;
+      width: 1.5em;
+      height: 1.5em;
+      background: url(../images/icon-del.png) no-repeat center center;
+      background-size: 10px auto;
+      &:hover,
+      &:focus {
+        background: url(../images/icon-del-ov.png) no-repeat center center;
+        background-size: 10px auto;
+      }
+    }
+  }
+}
+//fileListDel
+.fileListDel {
+  flex: 1 1 100%;
+  padding: 0.5em;
+  margin: 0.5em;
+  // border: 1px solid rgba(75, 200, 255, 0.3);
+  border-radius: 10px;
+  background: $pageSearchBg;
+
+  .closable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 0 2.5em 0 20px;
+      margin: 0.15em;
+      border-bottom: 1px solid rgba(75, 200, 255, 0.2);
+      line-height: 1.5em;
+      border-radius: 3px;
+      font-size: 0.875em;
+      background: url('../images/icon_appendix.png') no-repeat left 2px top 0.6em;
+      background-size: 16px auto;
+
+      // cursor: pointer;
+      position: relative;
+      a {
+        padding: 0.5em;
+        display: inline-block;
+        &:hover {
+        }
+      }
+    }
+    .delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: red;
+      cursor: pointer;
+      width: 2.4em;
+      height: 2.4em;
+      background: url(../images/icon-del2.png) no-repeat center center;
+      background-size: 20px auto;
+      &:hover,
+      &:focus {
+        background: url(../images/icon-del2-ov.png) no-repeat center center;
+        background-size: 20px auto;
+      }
+    }
   }
 }

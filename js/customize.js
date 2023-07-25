@@ -436,6 +436,16 @@ $(function () {
   });
 });
 
+//Closable
+// 當使用者點擊清單項目時，顯示刪除按鈕
+$('.closable-list li').on('click', function () {
+  $(this).find('.delete').show();
+});
+
+// 當使用者點擊刪除按鈕時，刪除清單項目
+$('.closable-list .delete').on('click', function () {
+  $(this).closest('li').remove();
+});
 //themeMenu
 // 定義一個變數，用來存放目前開啟的選單項目
 var currentMenu = null;

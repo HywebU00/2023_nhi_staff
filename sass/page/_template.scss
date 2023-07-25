@@ -128,3 +128,18 @@ body {
     padding: 1em;
   }
 }
+.pagebg2 {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2em;
+  @include screen('tablet') {
+    padding: 2em;
+  }
+  @include screen('mobile') {
+    padding-top: 2em !important;
+    padding: 1em;
+  }
+  .btnGrp {
+    justify-content: center;
+  }
+}

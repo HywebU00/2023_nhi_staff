@@ -1891,6 +1891,7 @@ img {
     font-size: 1em;
     line-height: 1.85em;
     margin-top: 0;
+    word-wrap: break-word;
   }
   .cp ul,
   .cp ol {
@@ -3028,6 +3029,7 @@ img {
     background: #ff5c46;
     border: 1px solid #4bc8e1;
     color: #fff;
+    border: solid 1px #ff5c46;
   }
   .btnOrange:hover {
     background: #ff2f13;
@@ -6192,6 +6194,9 @@ img {
   input[type=radio] {
     border-radius: 50%;
   }
+  input[type=checkbox] {
+    border-radius: 3px;
+  }
   input[type=checkbox]:checked,
   input[type=checkbox]:focus,
   input[type=radio]:checked,
@@ -6226,17 +6231,18 @@ img {
   .uploadGrp input[disable] {
     background: transparent;
     color: #666;
+    opacity: 1;
   }
   .uploadGrp .uploadBtn {
     position: absolute;
     overflow: hidden;
-    top: 10px;
-    right: 0.5em;
+    top: 5px;
+    right: 0.1em;
     background: #00a4f9;
     border: 1px solid #4bc8e1;
     color: #fff;
-    padding: 0.2em 1em;
-    border-radius: 4px;
+    padding: 0.6em 1em;
+    border-radius: 2em;
   }
   .uploadGrp .uploadBtn:hover {
     background: #0082c6;
@@ -6260,12 +6266,17 @@ img {
   .uploadGrp .uploadBtn:hover, .uploadGrp .uploadBtn:focus-visible {
     cursor: pointer;
   }
+  .uploadGrp .inttxt {
+    color: #eb0202;
+    padding-left: 1em;
+    font-size: 0.875em;
+  }
   input[type=file] {
     position: absolute;
     top: 0;
     right: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 8em 0 0;
     font-size: 1.25em;
     cursor: pointer;
     opacity: 0;
@@ -6347,6 +6358,96 @@ img {
   .passwordEye.hide::before {
     background: url("../images/icon/icon_eye_dark.svg") center no-repeat;
   }
+  .batch {
+    margin: 0 0 0 -0.8em;
+    padding: 0;
+  }
+  .batch > select {
+    flex: 0 1 18em !important;
+  }
+  .batch label {
+    font-size: 0;
+  }
+  .listDel {
+    flex: 1 1 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid rgba(75, 200, 255, 0.3);
+    border-radius: 10px;
+  }
+  .listDel .closable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .listDel .closable-list li {
+    border: 1px solid rgba(75, 200, 255, 0.2);
+    padding: 0.3em 1.5em 0.23em 0.3em;
+    margin: 0.15em;
+    display: inline-block;
+    line-height: 1em;
+    background: #edf9fb;
+    border-radius: 3px;
+    font-size: 0.875em;
+    position: relative;
+  }
+  .listDel .closable-list .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    background: url(../images/icon-del.png) no-repeat center center;
+    background-size: 10px auto;
+  }
+  .listDel .closable-list .delete:hover, .listDel .closable-list .delete:focus {
+    background: url(../images/icon-del-ov.png) no-repeat center center;
+    background-size: 10px auto;
+  }
+  .fileListDel {
+    flex: 1 1 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+    background: #edf9fb;
+  }
+  .fileListDel .closable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .fileListDel .closable-list li {
+    padding: 0 2.5em 0 20px;
+    margin: 0.15em;
+    border-bottom: 1px solid rgba(75, 200, 255, 0.2);
+    line-height: 1.5em;
+    border-radius: 3px;
+    font-size: 0.875em;
+    background: url("../images/icon_appendix.png") no-repeat left 2px top 0.6em;
+    background-size: 16px auto;
+    position: relative;
+  }
+  .fileListDel .closable-list li a {
+    padding: 0.5em;
+    display: inline-block;
+  }
+  .fileListDel .closable-list .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    width: 2.4em;
+    height: 2.4em;
+    background: url(../images/icon-del2.png) no-repeat center center;
+    background-size: 20px auto;
+  }
+  .fileListDel .closable-list .delete:hover, .fileListDel .closable-list .delete:focus {
+    background: url(../images/icon-del2-ov.png) no-repeat center center;
+    background-size: 20px auto;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -6417,6 +6518,11 @@ img {
     border-right: none;
     border-bottom: solid 0px #bde6f2;
     padding: 0.5em;
+  }
+  @media screen and (min-width: 767px) {
+    .tableList table td:first-child {
+      padding: 0.5em 0.5em 0.5em 1em;
+    }
   }
   @media screen and (max-width: 575px) {
     .tableList table td {
@@ -6514,9 +6620,9 @@ img {
       position: absolute;
       top: 0.5em;
       left: 0.5em;
-      width: 30%;
+      width: 4em;
       padding-right: 10px;
-      white-space: nowrap;
+      white-space: normal;
       text-align: left;
       font-weight: normal;
       color: #888;
@@ -6563,10 +6669,15 @@ img {
   .tableList .state_no {
     color: #eb0202;
     font-size: 0.938em;
+    white-space: nowrap;
   }
   .tableList .state_yes {
     color: #13817d;
     font-size: 0.938em;
+    white-space: nowrap;
+  }
+  .tableList label {
+    display: inline;
   }
   .extensionTb td {
     text-align: center;
@@ -6697,6 +6808,10 @@ img {
   .int table th {
     white-space: nowrap;
     width: 30%;
+  }
+  .checkboxtd {
+    text-align: center;
+    width: 2em;
   }
   .lp table td.date {
     text-align: center;
@@ -8198,6 +8313,25 @@ img {
       padding-top: 2em !important;
       padding: 1em;
     }
+  }
+  .pagebg2 {
+    background: #fff;
+    border-radius: 15px;
+    padding: 2em;
+  }
+  @media screen and (max-width: 991px) {
+    .pagebg2 {
+      padding: 2em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .pagebg2 {
+      padding-top: 2em !important;
+      padding: 1em;
+    }
+  }
+  .pagebg2 .btnGrp {
+    justify-content: center;
   }
   .mobileSidebar {
     position: fixed;

@@ -79,6 +79,12 @@ table {
       border-right: none;
       border-bottom: solid 0px #bde6f2;
       padding: 0.5em;
+      @include screen('mobileMin') {
+        &:first-child {
+          padding: 0.5em 0.5em 0.5em 1em;
+        }
+      }
+
       @include screen('xsMobile') {
         padding-left: 6em;
         padding-top: 0.5em;
@@ -174,9 +180,9 @@ table {
         position: absolute;
         top: 0.5em;
         left: 0.5em;
-        width: 30%;
+        width: 4em;
         padding-right: 10px;
-        white-space: nowrap;
+        white-space: normal;
         text-align: left;
         font-weight: normal;
         color: #888;
@@ -224,10 +230,15 @@ table {
   .state_no {
     color: $colorImportant;
     font-size: 0.938em;
+    white-space: nowrap;
   }
   .state_yes {
     color: #13817d;
     font-size: 0.938em;
+    white-space: nowrap;
+  }
+  label {
+    display: inline;
   }
 }
 .extensionTb {
@@ -435,4 +446,9 @@ table {
       width: 30%;
     }
   }
+}
+
+.checkboxtd {
+  text-align: center;
+  width: 2em;
 }
