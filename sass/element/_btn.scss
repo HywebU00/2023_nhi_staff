@@ -72,10 +72,12 @@
 .btnGreen {
   // @extend %btn;
   @include btnSetting($colorGreen, #fff);
+  border: 1px solid $colorGreen;
 }
 .btnBlue {
   // @extend %btn;
   @include btnSetting($colorBlue, #fff);
+  border: 1px solid $colorBlue;
 }
 .btnYellow {
   // @extend %btn;
@@ -89,6 +91,7 @@
 .btnRed {
   // @extend %btn;
   @include btnSetting($colorRed, #fff);
+  border: 1px solid $colorRed;
 }
 .btnPurple {
   // @extend %btn;
@@ -97,6 +100,7 @@
 .btnSubmit {
   // @extend %btn;
   @include btnSetting(lighten($btnBgColor2, 0), #fff);
+  border: 1px solid $btnBgColor2;
 }
 .btnReset {
   // @extend %btn;

@@ -68,6 +68,9 @@ select::-ms-expand {
 .flexForm {
   font-size: 1rem;
   margin: 0.5em;
+  .aRight {
+    justify-content: end;
+  }
 
   .formGrp {
     display: flex;

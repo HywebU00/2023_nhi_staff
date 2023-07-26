@@ -2954,33 +2954,35 @@ img {
     outline: none;
   }
   .btnGreen {
-    background: #1dc2bd;
+    background: #159995;
     border: 1px solid #4bc8e1;
     color: #fff;
+    border: 1px solid #159995;
   }
   .btnGreen:hover {
-    background: #169692;
-    border: 1px solid #106967;
+    background: #0f6c69;
+    border: 1px solid #093f3e;
     cursor: pointer;
     color: #fff;
     outline: none;
   }
   .btnGreen:focus-visible {
-    background: #169692;
-    border: 1px solid #106967;
+    background: #0f6c69;
+    border: 1px solid #093f3e;
     cursor: pointer;
     color: #fff;
     outline: none;
     box-shadow: 0 0px 0px 2px #d04500;
   }
   .btnGreen.active {
-    background: #20d8d3;
+    background: #18afab;
     cursor: pointer;
   }
   .btnBlue {
     background: #314868;
     border: 1px solid #4bc8e1;
     color: #fff;
+    border: 1px solid #314868;
   }
   .btnBlue:hover {
     background: #213045;
@@ -3054,6 +3056,7 @@ img {
     background: #d30000;
     border: 1px solid #4bc8e1;
     color: #fff;
+    border: 1px solid #d30000;
   }
   .btnRed:hover {
     background: #a00000;
@@ -3102,6 +3105,7 @@ img {
     background: #4bc8e1;
     border: 1px solid #4bc8e1;
     color: #fff;
+    border: 1px solid #4bc8e1;
   }
   .btnSubmit:hover {
     background: #24b8d5;
@@ -5073,6 +5077,9 @@ img {
     font-size: 1rem;
     margin: 0.5em;
   }
+  .flexForm .aRight {
+    justify-content: end;
+  }
   .flexForm .formGrp {
     display: flex;
     flex-wrap: wrap;
@@ -6678,6 +6685,16 @@ img {
   }
   .tableList label {
     display: inline;
+  }
+  .tableList .sortby {
+    text-align: center;
+  }
+  .tableList .sortby img {
+    width: 21px;
+  }
+  .tableList .t3 {
+    float: left;
+    margin: -2.5em 4em 0 0.5em;
   }
   .extensionTb td {
     text-align: center;
