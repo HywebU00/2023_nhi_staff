@@ -2459,7 +2459,7 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1000;
     text-indent: -9999px;
     color: transparent;
     background: transparent;
@@ -2774,7 +2774,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.8);
-    margin-top: 0;
+    margin-top: 100px;
     border-radius: 10px;
   }
   @media screen and (max-width: 767px) {
@@ -4297,7 +4297,7 @@ img {
     border: none;
     box-shadow: none;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 1000;
   }
   @media screen and (max-width: 767px) {
     .sidebarCtrlBtn {
@@ -4347,7 +4347,7 @@ img {
     border: none;
     box-shadow: none;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 1000;
   }
   @media screen and (max-width: 767px) {
     .searchCtrlBtn {
