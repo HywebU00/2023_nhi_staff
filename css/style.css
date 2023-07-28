@@ -2456,7 +2456,7 @@ img {
   }
   .mobileSearchBtn {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 100;
@@ -2901,6 +2901,115 @@ img {
       width: calc(100% - 7em);
     }
   }
+  .sLink {
+    position: relative;
+  }
+  .sLink .sLinkBtn {
+    padding: 0.6em 1em 0.6em 1.2em;
+  }
+  .sLink .sLinkBtn [class^=i_]:before {
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.3em;
+    top: 0.1em;
+  }
+  .sLink #sLinkBox {
+    width: 250px;
+    display: none;
+    position: absolute;
+    padding: 0.5em;
+    right: 0;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  @media screen and (max-width: 885px) {
+    .sLink #sLinkBox {
+      right: auto;
+      left: 0;
+    }
+  }
+  .sLink #sLinkBox input[type=search] {
+    width: calc(100% - 2.7em);
+    border-radius: 5px;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+  }
+  .sLink #sLinkBox .sBtn {
+    border: none;
+    position: absolute;
+    right: 0.8em;
+    top: 0.8em;
+    z-index: 9999;
+    padding: 0.4em 0.5em;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0);
+  }
+  .sLink #sLinkBox ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0.938em;
+  }
+  .sLink #sLinkBox li {
+    display: block;
+    margin: 0;
+    background: url("../images/dot.png") no-repeat left 0.5em top 0.9em;
+    background-size: 6px auto;
+    padding: 0 0 0 1.5em;
+  }
+  .sLink #sLinkBox li a {
+    display: block;
+    padding: 0.3em 0 0.3em 0;
+    text-decoration: none;
+    position: relative;
+  }
+  .sLink #sLinkBox li a:active, .sLink #sLinkBox li a:focus {
+    font-weight: bold;
+    color: #333c46;
+  }
+  .sLink #sLinkBox li a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 6px auto;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #333;
+    top: 0.4em;
+    right: 0.6em;
+  }
+  .sLink #sLinkBox li ul {
+    display: none;
+    margin: 0;
+    font-size: 0.938em;
+  }
+  .sLink #sLinkBox li ul li {
+    border: none;
+    background: url("../images/dot.png") no-repeat left 0.3em top 0.8em;
+    background-size: 6px auto;
+    padding: 0 0 0 1em;
+  }
+  .sLink #sLinkBox li ul li a {
+    padding: 0.2em;
+  }
+  .sLink #sLinkBox li a:hover ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    z-index: 999;
+  }
+  .sLink #sLinkBox li:not(:has(ul)) a:after {
+    display: none;
+  }
+  .sLink .sLinkSearch label {
+    display: none;
+  }
   .btnGrp {
     text-align: center;
     padding: 1em 0;
@@ -3099,6 +3208,31 @@ img {
   }
   .btnPurple.active {
     background: #a029a2;
+    cursor: pointer;
+  }
+  .btnGray {
+    background: #555;
+    border: 1px solid #4bc8e1;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  .btnGray:hover {
+    background: #3c3c3c;
+    border: 1px solid #222222;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+  }
+  .btnGray:focus-visible {
+    background: #3c3c3c;
+    border: 1px solid #222222;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0px 0px 2px #d04500;
+  }
+  .btnGray.active {
+    background: #626262;
     cursor: pointer;
   }
   .btnSubmit {
@@ -4233,18 +4367,9 @@ img {
     display: block;
   }
   .header {
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     z-index: 99;
     transition: 0.3s ease-out;
-  }
-  @media screen and (max-width: 767px) {
-    .header {
-      position: fixed;
-      width: 100%;
-    }
   }
   .header:before {
     position: absolute;
@@ -5077,8 +5202,26 @@ img {
     font-size: 1rem;
     margin: 0.5em;
   }
+  @media screen and (max-width: 767px) {
+    .flexForm {
+      margin: 0 0.8em;
+    }
+  }
   .flexForm .aRight {
     justify-content: end;
+  }
+  .flexForm hr {
+    margin: 1em;
+    border: dotted 1px #ddd;
+  }
+  @media screen and (max-width: 767px) {
+    .flexForm hr {
+      margin: 0.5em;
+    }
+  }
+  .flexForm .editTime {
+    font-size: 0.938em;
+    line-height: 1.5em;
   }
   .flexForm .formGrp {
     display: flex;
@@ -5180,6 +5323,11 @@ img {
     font-size: 0.813em;
     color: #888;
     padding: 0 0.5em;
+  }
+  .flexForm .formContent .remarktxt {
+    font-size: 0.875em;
+    color: #eb0202;
+    margin-left: 0.5em;
   }
   .flexForm .formContent .formGrp {
     flex: 0 0 100%;
@@ -5528,7 +5676,7 @@ img {
     max-width: 75%;
     width: 75%;
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .flexForm .formCol_9_3 > .formGrp {
       flex-basis: 100%;
       max-width: 100%;
@@ -5540,7 +5688,7 @@ img {
     max-width: 25%;
     width: 25%;
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .flexForm .formCol_9_3 > .formGrp:nth-child(2) {
       flex-basis: 100%;
       max-width: 100%;
@@ -5552,7 +5700,7 @@ img {
     max-width: calc(75% - 0.6em);
     flex-basis: calc(75% - 0.6em);
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .flexForm .formCol_9_3 > input, .flexForm .formCol_9_3 > select, .flexForm .formCol_9_3 > label {
       width: calc(100% - 0.6em);
       max-width: calc(100% - 0.6em);
@@ -5564,7 +5712,7 @@ img {
     max-width: calc(25% - 0.6em);
     flex-basis: calc(25% - 0.6em);
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 767px) {
     .flexForm .formCol_9_3 > input:nth-child(2), .flexForm .formCol_9_3 > select:nth-child(2), .flexForm .formCol_9_3 > label:nth-child(2) {
       width: calc(100% - 0.6em);
       max-width: calc(100% - 0.6em);
@@ -6145,6 +6293,7 @@ img {
     transition: all 0.3s ease-out;
     height: 5em;
     overflow-y: scroll;
+    border-radius: 5px;
   }
   @media screen and (max-width: 575px) {
     textarea {
@@ -6395,7 +6544,6 @@ img {
     line-height: 1em;
     background: #edf9fb;
     border-radius: 3px;
-    font-size: 0.875em;
     position: relative;
   }
   .listDel .closable-list .delete {
@@ -6431,7 +6579,6 @@ img {
     border-bottom: 1px solid rgba(75, 200, 255, 0.2);
     line-height: 1.5em;
     border-radius: 3px;
-    font-size: 0.875em;
     background: url("../images/icon_appendix.png") no-repeat left 2px top 0.6em;
     background-size: 16px auto;
     position: relative;
@@ -6454,6 +6601,20 @@ img {
   .fileListDel .closable-list .delete:hover, .fileListDel .closable-list .delete:focus {
     background: url(../images/icon-del2-ov.png) no-repeat center center;
     background-size: 20px auto;
+  }
+  .editBlock fieldset {
+    border: solid 1px #4bc8e1;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+  }
+  .editBlock fieldset legend {
+    font-size: 1.35em;
+    font-weight: bold;
+    margin: 0 0 0.5em 0.5em;
+  }
+  .editBlock fieldset.review {
+    background: #edf9fb;
   }
   table {
     width: 100%;
@@ -7067,6 +7228,81 @@ img {
   }
   .people_list dl dt {
     padding: 0.5em 0;
+  }
+  .editlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  .editlist li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #edf9fb;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    padding: 0.5em;
+  }
+  .editlist li button {
+    padding: 0.3em 1em;
+  }
+  .editlist li span {
+    display: inline-block;
+    flex: 1 1 auto;
+    padding: 0.5em;
+  }
+  .editlist li span.arrayimg {
+    flex: 0 0 6%;
+    text-align: center;
+  }
+  .editlist li span.arrayimg img {
+    width: 100%;
+    max-width: 18px;
+    min-width: 18px;
+  }
+  .editlist li span.photoimg {
+    flex: 0 0 10%;
+  }
+  .editlist li span.photoimg img {
+    width: 100%;
+    max-width: 120px;
+    min-width: 120px;
+  }
+  .editlist li span.textC {
+    flex: 1 1 40%;
+    word-break: break-all;
+  }
+  .editlist li span.textC p {
+    margin: 0;
+    word-break: break-all;
+    max-width: 22em;
+  }
+  @media screen and (max-width: 575px) {
+    .editlist li span.textC {
+      flex: 1 1 70%;
+    }
+  }
+  .editlist li span.funBtn {
+    flex: 0 0 10%;
+  }
+  @media screen and (max-width: 575px) {
+    .editlist li span.funBtn {
+      flex: 1 1 20%;
+      text-align: center;
+    }
+  }
+  .editlist li span.funBtn2 {
+    flex: 1 1 35%;
+    text-align: right;
+  }
+  @media screen and (max-width: 575px) {
+    .editlist li span.funBtn2 {
+      flex: 1 1 40%;
+      text-align: center;
+    }
   }
   .submenu ul,
   .submenu ol {
@@ -8247,14 +8483,6 @@ img {
   .main h2 {
     line-height: 1.25em;
   }
-  .innerPage {
-    margin-top: 120px;
-  }
-  @media screen and (max-width: 767px) {
-    .innerPage {
-      margin-top: 35px;
-    }
-  }
   .innerPage > .container {
     position: relative;
     min-height: 1px;
@@ -8289,8 +8517,6 @@ img {
     margin-right: 40px;
     padding-left: 5px;
     align-self: flex-start;
-    position: sticky;
-    top: 125px;
   }
   .innerPage .leftBlock.hidden + .centerBlock {
     flex: none;

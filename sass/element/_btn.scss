@@ -97,6 +97,11 @@
   // @extend %btn;
   @include btnSetting(lighten($colorPurple, 5), #fff);
 }
+.btnGray {
+  // @extend %btn;
+  @include btnSetting($colorGray2, #fff);
+  border: 1px solid $colorGray2;
+}
 .btnSubmit {
   // @extend %btn;
   @include btnSetting(lighten($btnBgColor2, 0), #fff);

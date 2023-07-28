@@ -396,15 +396,6 @@ const videoSlider = new Swiper('.videoSlider .swiper', {
 // });
 
 //pageSearch
-// function pageSearch() {
-//   var x = document.getElementById('pageSearchBox');
-//   console.log(x.style.display);
-//   if (x.style.display === 'none') {
-//     x.style.display = 'block';
-//   } else {
-//     x.style.display = 'none';
-//   }
-// }
 (function () {
   const pageSearchBtn = document.querySelector('.pageSearchBtn');
   const pageSearchBox = document.querySelector('#pageSearchBox');
@@ -412,6 +403,33 @@ const videoSlider = new Swiper('.videoSlider .swiper', {
     window.getComputedStyle(pageSearchBox).display === 'none' ? (pageSearchBox.style.display = 'block') : (pageSearchBox.style.display = 'none');
   });
 })();
+
+//sLinkBtn
+(function () {
+  const sLinkBtn = document.querySelector('.sLinkBtn');
+  const sLinkBox = document.querySelector('#sLinkBox');
+  sLinkBtn?.addEventListener('click', () => {
+    window.getComputedStyle(sLinkBox).display === 'none' ? (sLinkBox.style.display = 'block') : (sLinkBox.style.display = 'none');
+  });
+})();
+//sLink
+// 定義一個變數，用來存放目前開啟的選單項目
+var currentMenu = null;
+
+// 當選單項目被點擊時
+$('.sLink li a').on('click', function () {
+  // 將選單項目的子選單顯示或隱藏
+  $(this).next('ul').toggle();
+
+  // 當目前開啟的選單項目不是被點擊的選單項目時
+  if (currentMenu !== this) {
+    // 將目前開啟的選單項目向上close
+    $('.sLink li.current').removeClass('current').next('ul').hide();
+
+    // 將被點擊的選單項目設定為目前開啟的選單項目
+    $(this).addClass('current');
+  }
+});
 
 //people
 $(function () {
@@ -466,13 +484,13 @@ $('.themeMenu li a').on('click', function () {
 });
 
 //左邊滑出選單
-function toggleMenu() {
-  var menuContainer = document.getElementById('menu-container');
-  if (menuContainer.style.display === 'none') {
-    menuContainer.style.display = 'block';
-  } else {
-    menuContainer.style.display = 'none';
-  }
-}
+// function toggleMenu() {
+//   var menuContainer = document.getElementById('menu-container');
+//   if (menuContainer.style.display === 'none') {
+//     menuContainer.style.display = 'block';
+//   } else {
+//     menuContainer.style.display = 'none';
+//   }
+// }
 
-document.getElementById('menu-button').addEventListener('click', toggleMenu);
+// document.getElementById('menu-button').addEventListener('click', toggleMenu);

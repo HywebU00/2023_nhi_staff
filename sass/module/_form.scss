@@ -68,8 +68,22 @@ select::-ms-expand {
 .flexForm {
   font-size: 1rem;
   margin: 0.5em;
+  @include screen('mobile') {
+    margin: 0 0.8em;
+  }
   .aRight {
     justify-content: end;
+  }
+  hr {
+    margin: 1em;
+    border: dotted 1px #ddd;
+    @include screen('mobile') {
+      margin: 0.5em;
+    }
+  }
+  .editTime {
+    font-size: 0.938em;
+    line-height: 1.5em;
   }
 
   .formGrp {
@@ -178,6 +192,11 @@ select::-ms-expand {
       font-size: 0.813em;
       color: #888;
       padding: 0 0.5em;
+    }
+    .remarktxt {
+      font-size: 0.875em;
+      color: $colorImportant;
+      margin-left: 0.5em;
     }
 
     // 第二層的設定
@@ -582,7 +601,7 @@ select::-ms-expand {
       max-width: 75%;
       width: 75%;
 
-      @include screen('xsMobile') {
+      @include screen('mobile') {
         flex-basis: 100%;
         max-width: 100%;
         width: 100%;
@@ -592,7 +611,7 @@ select::-ms-expand {
         max-width: 25%;
         width: 25%;
 
-        @include screen('xsMobile') {
+        @include screen('mobile') {
           flex-basis: 100%;
           max-width: 100%;
           width: 100%;
@@ -606,7 +625,7 @@ select::-ms-expand {
       max-width: calc(75% - 0.6em);
       flex-basis: calc(75% - 0.6em);
 
-      @include screen('xsMobile') {
+      @include screen('mobile') {
         width: calc(100% - 0.6em);
         max-width: calc(100% - 0.6em);
         flex-basis: calc(100% - 0.6em);
@@ -617,7 +636,7 @@ select::-ms-expand {
         max-width: calc(25% - 0.6em);
         flex-basis: calc(25% - 0.6em);
 
-        @include screen('xsMobile') {
+        @include screen('mobile') {
           width: calc(100% - 0.6em);
           max-width: calc(100% - 0.6em);
           flex-basis: calc(100% - 0.6em);
@@ -1242,6 +1261,7 @@ textarea {
   @include formStyle();
   height: 5em;
   overflow-y: scroll;
+  border-radius: 5px;
 
   @include screen('xsMobile') {
     width: 100%;
@@ -1543,7 +1563,7 @@ abbr[title] {
       line-height: 1em;
       background: $pageSearchBg;
       border-radius: 3px;
-      font-size: 0.875em;
+      // font-size: 0.875em;
 
       // cursor: pointer;
       position: relative;
@@ -1588,7 +1608,7 @@ abbr[title] {
       border-bottom: 1px solid rgba(75, 200, 255, 0.2);
       line-height: 1.5em;
       border-radius: 3px;
-      font-size: 0.875em;
+      // font-size: 0.875em;
       background: url('../images/icon_appendix.png') no-repeat left 2px top 0.6em;
       background-size: 16px auto;
 
@@ -1616,6 +1636,23 @@ abbr[title] {
         background: url(../images/icon-del2-ov.png) no-repeat center center;
         background-size: 20px auto;
       }
+    }
+  }
+}
+
+.editBlock {
+  fieldset {
+    border: solid 1px $npLitBorder;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    legend {
+      font-size: 1.35em;
+      font-weight: bold;
+      margin: 0 0 0.5em 0.5em;
+    }
+    &.review {
+      background: $pageSearchBg;
     }
   }
 }
