@@ -717,15 +717,15 @@ function navSticky() {
   function sticky(mainMenuTop) {
     offsetTop = Math.floor(mainMenuTop) || null;
     // --- 如果 offsetTop 不等於 null 則運行下方函式
-    if (offsetTop != null) {
-      if (windowWidth >= windowWidthSmall && window.scrollY > offsetTop) {
-        mainMenu.classList.add('sticky');
-        main.style = `padding-top: ${menuHeight}px`;
-      } else {
-        mainMenu.classList.remove('sticky');
-        main.removeAttribute('style');
-      }
-    }
+    // if (offsetTop != null) {
+    //   if (windowWidth >= windowWidthSmall && window.scrollY > offsetTop) {
+    //     mainMenu.classList.add('sticky');
+    //     main.style = `padding-top: ${menuHeight}px`;
+    //   } else {
+    //     mainMenu.classList.remove('sticky');
+    //     main.removeAttribute('style');
+    //   }
+    // }
   }
 
   // --- 當 scroll 觸發
