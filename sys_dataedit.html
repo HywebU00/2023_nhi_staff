@@ -436,7 +436,7 @@
                     <div class="formGrp">
                       <label for="" class="formTitle">相關圖片</label>
                       <div class="formContent formInline">
-                        <button type="button" class="btn btnOrange">管理圖片</button>
+                        <button type="button" class="btn btnOrange" data-fancybox data-src="#dialog-content">管理圖片</button>
                         <ul class="editlist">
                           <li>
                             <span class="arrayimg"><img src="images/icon-sortby.png" alt="排列" /></span>
@@ -467,7 +467,7 @@
                     <div class="formGrp">
                       <label for="" class="formTitle">相關附件</label>
                       <div class="formContent formInline">
-                        <button type="button" class="btn btnOrange">管理附件</button>
+                        <button type="button" class="btn btnOrange" data-fancybox data-src="#dialog-content2">管理附件</button>
                         <ul class="editlist">
                           <li>
                             <span class="arrayimg"><img src="images/icon-sortby.png" alt="排列" /></span>
@@ -496,7 +496,7 @@
                     <div class="formGrp">
                       <label for="" class="formTitle">相關連結</label>
                       <div class="formContent formInline">
-                        <button type="button" class="btn btnOrange">管理連結</button>
+                        <button type="button" class="btn btnOrange" data-fancybox data-src="#dialog-content3">管理連結</button>
                         <ul class="editlist">
                           <li>
                             <span class="arrayimg"><img src="images/icon-sortby.png" alt="排列" /></span>
@@ -515,8 +515,13 @@
                     <div class="formGrp">
                       <label for="" class="formTitle">影片</label>
                       <div class="formContent formInline">
-                        <button type="button" class="btn btnOrange">選擇檔案</button>
-                        <span class="remarktxt">允許上傳副檔名為( mp4 | wmv | avi ) 單一檔案上限為200M</span>
+                        <!-- <button type="button" class="btn btnOrange">選擇檔案</button>
+                        <span class="remarktxt">允許上傳副檔名為( mp4 | wmv | avi ) 單一檔案上限為200M</span> -->
+                        <div class="formInline upload_file3">
+                          <label for="profile_pic">選擇檔案</label>
+                          <input type="file" id="profile_pic" name="profile_pic" accept=".mp4, .wmv, .avi" />
+                          <span class="remarktxt">允許上傳副檔名為(mp4, wmv, avi) 單一檔案上限為200M</span>
+                        </div>
                         <ul class="editlist">
                           <li>
                             <span class="textC">
@@ -563,7 +568,7 @@
                         <div class="datepick">
                           <input name="" id="" type="date" value="" class="calendar" placeholder="請輸入公開起日" />
                         </div>
-                        <label for="" class="formTitle" style="flex: 0 1 6em;">公開迄日</label>
+                        <label for="" class="formTitle" style="flex: 0 1 6em">公開迄日</label>
                         <div class="datepick">
                           <input name="" id="" type="date" value="" class="calendar" placeholder="請輸入公開迄日" />
                         </div>
@@ -682,15 +687,7 @@
                       <li>最後編修時間：2023/05/07 16:52</li>
                       <li>最後編修人員：賴怡儒 (A123456)</li>
                     </ul>
-                    <!-- <div class="formGrp">
-                      <div for="" class="formTitle" style="padding: 0.3em 1em">最後編修時間</div>
-                      <div class="formContent">2023/05/07 16:52</div>
-                    </div>
-                    <div class="formGrp">
-                      <div for="" class="formTitle" style="padding: 0.3em 1em">最後編修人員</div>
-                      <div class="formContent">賴怡儒 (A123456)</div>
-                    </div>
-                  </div> -->
+                  </div>
                 </fieldset>
                 <!-- fieldset end-->
 
@@ -742,6 +739,363 @@
       <!-- footer End -->
     </div>
     <a href="javascript:;" class="scrollToTop" role="button">回頁首</a>
+    <!-- 管理圖片 燈箱 -->
+    <div class="modal" id="dialog-content" style="display: none">
+      <h2>相關圖片</h2>
+      <!-- div內的內容可以自行設定 -->
+      <form method="post" enctype="multipart/form-data">
+        <div class="upload_file2">
+          <label for="profile_pic">選擇檔案</label>
+          <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .gif, .png, .bmp" />
+          <div class="inttxt">允許上傳副檔名為(jpg, jpeg, gif, png, bmp)單一檔案上限為3M，檔名限制200個字</div>
+        </div>
+        <!-- tableList -->
+        <div class="tableList modaltbList">
+          <table>
+            <!-- 無障礙 caption 標題預設隱藏 -->
+            <caption>
+              選單名稱：主題連結表格
+            </caption>
+            <thead>
+              <tr>
+                <th>排序</th>
+                <th>縮圖</th>
+                <th>前台顯示文字</th>
+                <th>類型</th>
+                <th>是否公開</th>
+                <th>更換檔案</th>
+                <th>刪除檔案</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo colored pencils on a wooden background" value="Photo colored pencils on a wooden background" /></td>
+                <td class="center">.jpg</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="listPho"><img src="images/demo/02.jpg" alt="圖片說明" /></td>
+                <td class="center"><input type="text" placeholder="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" value="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" /></td>
+                <td class="center">.jpg</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="listPho"><img src="images/demo/03.jpg" alt="圖片說明" /></td>
+                <td class="center"><input type="text" placeholder="Free photo colorful paint trails on white background" value="Free photo colorful paint trails on white background" /></td>
+                <td class="center">.jpg</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="listPho"><img src="images/demo/04.jpg" alt="圖片說明" /></td>
+                <td class="center"><input type="text" placeholder="Photo colored pencils on a wooden background" value="Photo colored pencils on a wooden background" /></td>
+                <td class="center">.jpg</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開">公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架" selected>下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="listPho"><img src="images/demo/05.jpg" alt="圖片說明" /></td>
+                <td class="center"><input type="text" placeholder="Photo more beautiful exotic tropical leaves isolated leaf background" value="Photo more beautiful exotic tropical leaves isolated leaf background" /></td>
+                <td class="center">.jpg</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- tableList end-->
+        <div class="btnGrp">
+          <button class="btn btnOrange" type="button">編修存檔</button>
+          <button class="btn btnGray" type="button">關閉視窗</button>
+        </div>
+      </form>
+    </div>
+    <!-- 管理圖片 燈箱 end-->
+
+    <!-- 管理附件 燈箱 -->
+    <div class="modal" id="dialog-content2" style="display: none">
+      <h2>相關附件</h2>
+      <!-- div內的內容可以自行設定 -->
+      <form method="post" enctype="multipart/form-data">
+        <div class="upload_file2">
+          <label for="profile_pic">選擇檔案</label>
+          <input type="file" id="profile_pic" name="profile_pic" accept=".doc, .docx, .ppt, .pptx, .xls, .xlsx, .tif, .pdf, .txt, .zip, .wma, .mp3, .mp4, .wmv, .avi, .flv, .swf, .odt, .ods, .odp, .ai, .jpg, .xml, .csv, .epub, .7z, .rar, .htm, .html" />
+          <div class="inttxt">允許上傳副檔名為(doc, docx, ppt, pptx, xls, xlsx, tif, pdf, txt, zip, wma, mp3, mp4, wmv, avi, flv, swf, odt, ods, odp, ai, jpg, xml, csv, epub, 7z, rar, htm, html ) 單一檔案上限為200M，檔名限制200個字</div>
+        </div>
+        <!-- tableList -->
+        <div class="tableList modaltbList">
+          <table>
+            <!-- 無障礙 caption 標題預設隱藏 -->
+            <caption>
+              選單名稱：主題連結表格
+            </caption>
+            <thead>
+              <tr>
+                <th>排序</th>
+                <th>前台顯示文字</th>
+                <th>類型</th>
+                <th>是否公開</th>
+                <th>更換檔案</th>
+                <th>刪除檔案</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo colored pencils on a wooden background" value="Photo colored pencils on a wooden background" /></td>
+                <td class="center">.docx</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" value="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" /></td>
+                <td class="center">.pdf</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Free photo colorful paint trails on white background" value="Free photo colorful paint trails on white background" /></td>
+                <td class="center">.pdf</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo colored pencils on a wooden background" value="Photo colored pencils on a wooden background" /></td>
+                <td class="center">.pdf</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開">公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架" selected>下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo more beautiful exotic tropical leaves isolated leaf background" value="Photo more beautiful exotic tropical leaves isolated leaf background" /></td>
+                <td class="center">.pdf</td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnGreen" type="button">更換</button></td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- tableList end-->
+        <div class="btnGrp">
+          <button class="btn btnOrange" type="button">編修存檔</button>
+          <button class="btn btnGray" type="button">關閉視窗</button>
+        </div>
+      </form>
+    </div>
+    <!-- 管理附件 燈箱 end-->
+
+    <!-- 管理連結 燈箱 -->
+    <div class="modal" id="dialog-content3" style="display: none">
+      <h2>相關連結</h2>
+      <!-- div內的內容可以自行設定 -->
+      <form method="post" enctype="multipart/form-data">
+        <div class="upload_file2">
+          <button type="button" class="btn btnOrange">新增連結</button>
+          <div class="inttxt">註：* 欄位必填, 不能空白。</div>
+        </div>
+        <!-- tableList -->
+        <div class="tableList modaltbList">
+          <table>
+            <!-- 無障礙 caption 標題預設隱藏 -->
+            <caption>
+              選單名稱：主題連結表格
+            </caption>
+            <thead>
+              <tr>
+                <th>排序</th>
+                <th><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr> 連結名稱</th>
+                <th><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr> 連結網址</th>
+                <th><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr> 連結方式</th>
+                <th><abbr class="necessary" title="為必填(選)欄位,不能為空白。">*</abbr> 是否公開</th>
+                <th>刪除連結</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo colored pencils on a wooden background" value="Photo colored pencils on a wooden background" /></td>
+                <td class="center"><input type="text" placeholder="https://eng.nhi.gov.tw" value="https://eng.nhi.gov.tw" /></td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="原視窗" selected>原視窗</option>
+                    <option value="新視窗">新視窗</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" value="Photo gray little kitten looks and scratches the window cat on the windowsill looks at the rain" /></td>
+                <td class="center"><input type="text" placeholder="https://eng.nhi.gov.tw" value="https://eng.nhi.gov.tw" /></td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="原視窗">原視窗</option>
+                    <option value="新視窗" selected>新視窗</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="Free photo colorful paint trails on white background" value="Free photo colorful paint trails on white background" /></td>
+                <td class="center"><input type="text" placeholder="https://eng.nhi.gov.tw" value="https://eng.nhi.gov.tw" /></td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="原視窗" selected>原視窗</option>
+                    <option value="新視窗">新視窗</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開">公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架" selected>下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+              <tr>
+                <td class="sortby"><img src="images/icon-sortby.png" alt="拖拉排序圖示" /></td>
+                <td class="center"><input type="text" placeholder="" value="" /></td>
+                <td class="center"><input type="text" placeholder="" value="" /></td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="原視窗" selected>原視窗</option>
+                    <option value="新視窗">新視窗</option>
+                  </select>
+                </td>
+                <td>
+                  <select>
+                    <option value="請選擇">請選擇</option>
+                    <option value="公開" selected>公開</option>
+                    <option value="隱藏">隱藏</option>
+                    <option value="下架">下架</option>
+                  </select>
+                </td>
+                <td class="center"><button class="btn btnOrange" type="button">刪除</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- tableList end-->
+        <div class="btnGrp">
+          <button class="btn btnOrange" type="button">編修存檔</button>
+          <button class="btn btnGray" type="button">關閉視窗</button>
+        </div>
+      </form>
+    </div>
+    <!-- 管理連結 燈箱 end-->
 
     <!-- lazyload -->
     <script src="vendor/lazyload/lazyload.js"></script>

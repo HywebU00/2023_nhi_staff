@@ -185,7 +185,7 @@ table {
         white-space: normal;
         text-align: left;
         font-weight: normal;
-        color: #888;
+        color: #333;
         font-size: 0.938rem;
       }
     }
@@ -244,6 +244,9 @@ table {
     text-align: center;
     img {
       width: 21px;
+    }
+    @include screen('tablet') {
+      text-align: left;
     }
   }
   .t3 {
@@ -461,4 +464,96 @@ table {
 .checkboxtd {
   text-align: center;
   width: 2em;
+}
+
+.modaltbList {
+  max-height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1em 2em;
+  table {
+    th {
+      &:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 0.5em 0.5em 0.5em 1em;
+      }
+      &:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0.5em 1em 0.5em 0.5em;
+      }
+    }
+    td {
+      &:first-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        @include screen('mobile') {
+          border-radius: 0;
+        }
+      }
+      &:last-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        @include screen('mobile') {
+          border-radius: 0;
+        }
+      }
+    }
+    tr {
+      border-bottom: solid 1px #bde6f2;
+    }
+    tr:nth-child(even) {
+      @include screen('xsMobile') {
+        background: #fff;
+      }
+      td {
+        background: #fff;
+        border: none;
+        @include screen('xsMobile') {
+          background: none;
+        }
+        &:first-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          @include screen('mobile') {
+            border-radius: 0;
+          }
+        }
+        &:last-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          @include screen('mobile') {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .listPho {
+    img {
+      width: 100px !important;
+      vertical-align: top;
+    }
+  }
+  @include screen('xsMobile') {
+    input,
+    select {
+      width: 98%;
+    }
+    &.loaded td {
+      &:before {
+        content: attr(data-title);
+        width: 6em;
+        left: 0;
+      }
+    }
+    tr {
+      // margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 1px 0 0px $npLitBorder;
+      border: solid 1px $npLitBorder;
+    }
+  }
 }

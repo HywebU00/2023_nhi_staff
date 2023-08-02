@@ -1656,3 +1656,51 @@ abbr[title] {
     }
   }
 }
+
+.upload_file3 {
+  margin: 0;
+  label {
+    cursor: pointer;
+    @include btnSetting(lighten($colorOrange, 0), #fff);
+    border: solid 1px $colorOrange;
+    padding: 0.8em 1.2em;
+    border-radius: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+  }
+  .inttxt {
+    display: inline-block;
+    color: $colorImportant;
+    font-size: 0.938em;
+    margin: 0 0 0.5em 0.5em;
+    width: 80%;
+    vertical-align: middle;
+    @include screen('xsMobile') {
+      width: 96%;
+    }
+  }
+}
+
+.upload_file2 {
+  margin: 0 2em;
+  label {
+    cursor: pointer;
+    @include btnSetting(lighten($colorOrange, 0), #fff);
+    border: solid 1px $colorOrange;
+    padding: 0.8em 1.2em;
+    border-radius: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+  }
+  .inttxt {
+    display: inline-block;
+    color: $colorImportant;
+    font-size: 0.938em;
+    margin: 0 0 0.5em 0.5em;
+    width: 80%;
+    vertical-align: middle;
+    @include screen('xsMobile') {
+      width: 96%;
+    }
+  }
+}

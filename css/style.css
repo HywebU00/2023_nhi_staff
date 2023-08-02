@@ -6599,6 +6599,98 @@ img {
   .editBlock fieldset.review {
     background: #edf9fb;
   }
+  .upload_file3 {
+    margin: 0;
+  }
+  .upload_file3 label {
+    cursor: pointer;
+    background: #ff5c46;
+    border: 1px solid #4bc8e1;
+    color: #fff;
+    border: solid 1px #ff5c46;
+    padding: 0.8em 1.2em;
+    border-radius: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+  }
+  .upload_file3 label:hover {
+    background: #ff2f13;
+    border: 1px solid #df1b00;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+  }
+  .upload_file3 label:focus-visible {
+    background: #ff2f13;
+    border: 1px solid #df1b00;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0px 0px 2px #d04500;
+  }
+  .upload_file3 label.active {
+    background: #ff7260;
+    cursor: pointer;
+  }
+  .upload_file3 .inttxt {
+    display: inline-block;
+    color: #eb0202;
+    font-size: 0.938em;
+    margin: 0 0 0.5em 0.5em;
+    width: 80%;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 575px) {
+    .upload_file3 .inttxt {
+      width: 96%;
+    }
+  }
+  .upload_file2 {
+    margin: 0 2em;
+  }
+  .upload_file2 label {
+    cursor: pointer;
+    background: #ff5c46;
+    border: 1px solid #4bc8e1;
+    color: #fff;
+    border: solid 1px #ff5c46;
+    padding: 0.8em 1.2em;
+    border-radius: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+  }
+  .upload_file2 label:hover {
+    background: #ff2f13;
+    border: 1px solid #df1b00;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+  }
+  .upload_file2 label:focus-visible {
+    background: #ff2f13;
+    border: 1px solid #df1b00;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0px 0px 2px #d04500;
+  }
+  .upload_file2 label.active {
+    background: #ff7260;
+    cursor: pointer;
+  }
+  .upload_file2 .inttxt {
+    display: inline-block;
+    color: #eb0202;
+    font-size: 0.938em;
+    margin: 0 0 0.5em 0.5em;
+    width: 80%;
+    vertical-align: middle;
+  }
+  @media screen and (max-width: 575px) {
+    .upload_file2 .inttxt {
+      width: 96%;
+    }
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -6776,7 +6868,7 @@ img {
       white-space: normal;
       text-align: left;
       font-weight: normal;
-      color: #888;
+      color: #333;
       font-size: 0.938rem;
     }
   }
@@ -6835,6 +6927,11 @@ img {
   }
   .tableList .sortby img {
     width: 21px;
+  }
+  @media screen and (max-width: 991px) {
+    .tableList .sortby {
+      text-align: left;
+    }
   }
   .tableList .t3 {
     float: left;
@@ -6973,6 +7070,95 @@ img {
   .checkboxtd {
     text-align: center;
     width: 2em;
+  }
+  .modaltbList {
+    max-height: 55vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1em 2em;
+  }
+  .modaltbList table th:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0.5em 0.5em 0.5em 1em;
+  }
+  .modaltbList table th:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0.5em 1em 0.5em 0.5em;
+  }
+  .modaltbList table td:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .modaltbList table td:first-child {
+      border-radius: 0;
+    }
+  }
+  .modaltbList table td:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .modaltbList table td:last-child {
+      border-radius: 0;
+    }
+  }
+  .modaltbList table tr {
+    border-bottom: solid 1px #bde6f2;
+  }
+  @media screen and (max-width: 575px) {
+    .modaltbList table tr:nth-child(even) {
+      background: #fff;
+    }
+  }
+  .modaltbList table tr:nth-child(even) td {
+    background: #fff;
+    border: none;
+  }
+  @media screen and (max-width: 575px) {
+    .modaltbList table tr:nth-child(even) td {
+      background: none;
+    }
+  }
+  .modaltbList table tr:nth-child(even) td:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .modaltbList table tr:nth-child(even) td:first-child {
+      border-radius: 0;
+    }
+  }
+  .modaltbList table tr:nth-child(even) td:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .modaltbList table tr:nth-child(even) td:last-child {
+      border-radius: 0;
+    }
+  }
+  .modaltbList .listPho img {
+    width: 100px !important;
+    vertical-align: top;
+  }
+  @media screen and (max-width: 575px) {
+    .modaltbList input,
+    .modaltbList select {
+      width: 98%;
+    }
+    .modaltbList.loaded td:before {
+      content: attr(data-title);
+      width: 6em;
+      left: 0;
+    }
+    .modaltbList tr {
+      border-radius: 8px;
+      box-shadow: 0 1px 0 0px #4bc8e1;
+      border: solid 1px #4bc8e1;
+    }
   }
   .lp table td.date {
     text-align: center;
