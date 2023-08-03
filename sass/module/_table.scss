@@ -53,6 +53,9 @@ table {
   .center {
     text-align: center;
   }
+  .left {
+    text-align: left;
+  }
 }
 .tableList {
   table {
@@ -86,7 +89,7 @@ table {
       }
 
       @include screen('xsMobile') {
-        padding-left: 6em;
+        padding-left: 7em;
         padding-top: 0.5em;
         border: none;
         &:before {
@@ -143,6 +146,9 @@ table {
       text-align: left;
     }
   }
+  .selAll {
+    display: none;
+  }
   @include screen('xsMobile') {
     background-color: transparent; //Force table to not be like tables anymore
     thead,
@@ -180,7 +186,7 @@ table {
         position: absolute;
         top: 0.5em;
         left: 0.5em;
-        width: 4em;
+        width: 7em;
         padding-right: 10px;
         white-space: normal;
         text-align: left;
@@ -188,6 +194,9 @@ table {
         color: #333;
         font-size: 0.938rem;
       }
+    }
+    .selAll {
+      display: block;
     }
   }
   .notify {
@@ -470,7 +479,10 @@ table {
   max-height: 55vh;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 1em 2em;
+  padding: 0 1em 1em;
+  @include screen('xsMobile') {
+    padding: 1em;
+  }
   table {
     th {
       &:first-child {
@@ -542,7 +554,10 @@ table {
     select {
       width: 98%;
     }
-    &.loaded td {
+    input[type='checkbox'] {
+      width: 1em;
+    }
+    input ty &.loaded td {
       &:before {
         content: attr(data-title);
         width: 6em;

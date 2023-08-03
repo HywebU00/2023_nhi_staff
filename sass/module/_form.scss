@@ -977,6 +977,77 @@ select::-ms-expand {
     }
   }
 
+  //formCol_2_2_2_4_2
+  .formCol_2_2_2_4_2 {
+    & > .formGrp {
+      width: calc(100% / 12 * 2);
+      max-width: calc(100% / 12 * 2);
+      flex-basis: calc(100% / 12 * 2);
+      padding: 0;
+
+      @include screen('xsMobile') {
+        width: 50%;
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+
+      &:last-child {
+        width: calc(100% / 12 * 5);
+        max-width: calc(100% / 12 * 5);
+        flex-basis: calc(100% / 12 * 5);
+
+        @include screen('xsMobile') {
+          width: 100%;
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    & > input,
+    & > select,
+    & > label {
+      width: calc(100% / 12 * 2 - 0.6em);
+      max-width: calc(100% / 12 * 2 - 0.6em);
+      flex-basis: calc(100% / 12 * 2 - 0.6em);
+
+      @include screen('xsMobile') {
+        width: calc(100% - 0.6em);
+        max-width: calc(100% - 0.6em);
+        flex-basis: calc(100% - 0.6em);
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: calc(100% / 12 * 2.5 - 0.6em);
+        max-width: calc(100% / 12 * 2.5 - 0.6em);
+        flex-basis: calc(100% / 12 * 2.5 - 0.6em);
+
+        @include screen('xsMobile') {
+          width: calc(100% - 0.6em);
+          max-width: calc(100% - 0.6em);
+          flex-basis: calc(100% - 0.6em);
+        }
+      }
+      &:nth-child(4) {
+        width: calc(100% / 12 * 3 - 0.6em);
+        max-width: calc(100% / 12 * 3 - 0.6em);
+        flex-basis: calc(100% / 12 * 3 - 0.6em);
+
+        @include screen('xsMobile') {
+          width: calc(100% - 0.6em);
+          max-width: calc(100% - 0.6em);
+          flex-basis: calc(100% - 0.6em);
+        }
+      }
+    }
+    .btn {
+      flex: 0 0 auto;
+      @include screen('xsMobile') {
+        flex: 1 1 auto;
+      }
+    }
+  }
+
   .btnGrp {
     justify-content: center;
 
@@ -1682,7 +1753,7 @@ abbr[title] {
 }
 
 .upload_file2 {
-  margin: 0 2em;
+  margin: 0 1em;
   label {
     cursor: pointer;
     @include btnSetting(lighten($colorOrange, 0), #fff);
@@ -1703,4 +1774,11 @@ abbr[title] {
       width: 96%;
     }
   }
+}
+
+.excelInt {
+  background: $pageSearchBg;
+  padding: 1em 2em;
+  border-radius: 10px;
+  margin: 1em 2em;
 }

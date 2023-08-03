@@ -160,3 +160,19 @@
     }
   }
 }
+
+// 雙欄 3-9
+.col_3_9 {
+  .col {
+    @include makeXsColumn(12);
+    @include makeSmColumn(3);
+    @include makeMdColumn(3);
+    @include makeLgColumn(3);
+  }
+  .col:nth-of-type(2n) {
+    @include makeXsColumn(12);
+    @include makeSmColumn(9);
+    @include makeMdColumn(9);
+    @include makeLgColumn(9);
+  }
+}
