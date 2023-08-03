@@ -7632,7 +7632,7 @@ img {
     border: solid 1px rgba(75, 200, 225, 0.3);
     border-radius: 6px;
   }
-  .peopleGroup li a:hover, .peopleGroup li a:focus {
+  .peopleGroup li a:hover {
     background: #d5f7fd url("../images/icon-people2.png") no-repeat left 0.5em top 0.7em;
     background-size: 1em auto;
   }
@@ -7640,7 +7640,7 @@ img {
     background: #edf9fb url("../images/icon-people1.png") no-repeat left 0.5em top 0.7em;
     background-size: 0.8em auto;
   }
-  .peopleGroup li.single a:hover, .peopleGroup li.single a:focus {
+  .peopleGroup li.single a:hover {
     background: #d5f7fd url("../images/icon-people1.png") no-repeat left 0.5em top 0.7em;
     background-size: 0.8em auto;
   }
