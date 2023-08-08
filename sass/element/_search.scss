@@ -308,10 +308,10 @@
 .webSearch.typeB {
   position: absolute;
   right: 15px;
-  top: 0;
+  top: 0 !important;
   display: none;
   width: 300px;
-  z-index: 100;
+  z-index: 1;
   .content {
     padding: 15px 10px 10px 10px;
     display: flex;
@@ -594,5 +594,146 @@
 .popupSearch {
   label {
     display: none;
+  }
+}
+
+.fullSearch {
+  vertical-align: top;
+  font-size: 0.938em;
+  margin: 0;
+  box-sizing: border-box;
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &.active {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+    background: #444;
+    label {
+      display: none;
+    }
+    .formGrp {
+      display: flex;
+      flex-grow: 1;
+      input {
+        flex-grow: 1;
+      }
+    }
+    .keywordHot ul a {
+      color: #fff;
+    }
+  }
+  &.mobile {
+    display: none;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    margin: 0;
+    .content {
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      background: #444;
+    }
+    .formGrp {
+      display: flex;
+      flex-grow: 1;
+      input {
+        flex-grow: 1;
+        margin: 0;
+        margin-right: 8px;
+      }
+    }
+    .keywordHot {
+      ul {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  label {
+    font-size: 0em;
+    margin: 0;
+  }
+  .formGrp {
+    flex: 0 0 auto;
+    margin: 0;
+    input {
+      margin: 0 0.2em 0 0;
+      padding: 0.5em 1em;
+      box-shadow: none;
+      width: 1 1 86%;
+      max-width: 86%;
+      @include screen('mobile') {
+        max-width: 85%;
+        width: 1 1 85%;
+      }
+      @include screen('xsMobile') {
+        max-width: 75%;
+        width: 1 1 75%;
+      }
+      &[type='submit'] {
+        min-width: auto;
+        padding: 0.2em 0.8em;
+      }
+      &:focus-visible {
+        box-shadow: 0 0px 0px 2px $aFocus;
+      }
+    }
+    button,
+    .btn,
+    .btnSearch {
+      min-width: auto;
+      padding: 0.5em 1em;
+      &:hover,
+      &:focus-visible {
+        box-shadow: none;
+      }
+    }
+  }
+  .btnGrp {
+    flex: 0 0 auto;
+    padding: 0 0 0 0.5em;
+    margin: 0 0 0.5em;
+    button,
+    .btn,
+    .btnSearch {
+      min-width: auto;
+      padding: 0.2em 0.8em;
+      margin: 0;
+      &:hover,
+      &:focus-visible {
+        box-shadow: none;
+      }
+    }
+  }
+  .keywordHot {
+    flex: 1 1 100%;
+    ul {
+      font-size: 0.813em;
+      line-height: 1.65em;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      li {
+        margin: 0;
+        padding: 0 0.5em;
+        flex: 0 0 auto;
+      }
+      a {
+        @include aSetting($colorWord);
+      }
+    }
   }
 }

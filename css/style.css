@@ -1984,7 +1984,7 @@ img {
     top: 5px;
     left: 5px;
     z-index: 9;
-    color: #314868;
+    color: rgba(255, 255, 255, 0.2);
     font-size: 1em;
   }
   @media screen and (max-width: 767px) {
@@ -2808,10 +2808,10 @@ img {
   .webSearch.typeB {
     position: absolute;
     right: 15px;
-    top: 0;
+    top: 0 !important;
     display: none;
     width: 300px;
-    z-index: 100;
+    z-index: 1;
   }
   .webSearch.typeB .content {
     padding: 15px 10px 10px 10px;
@@ -3056,6 +3056,159 @@ img {
   }
   .popupSearch label {
     display: none;
+  }
+  .fullSearch {
+    vertical-align: top;
+    font-size: 0.938em;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .fullSearch .content {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .fullSearch.active {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px;
+    background: #444;
+  }
+  .fullSearch.active label {
+    display: none;
+  }
+  .fullSearch.active .formGrp {
+    display: flex;
+    flex-grow: 1;
+  }
+  .fullSearch.active .formGrp input {
+    flex-grow: 1;
+  }
+  .fullSearch.active .keywordHot ul a {
+    color: #fff;
+  }
+  .fullSearch.mobile {
+    display: none;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .fullSearch.mobile .content {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #444;
+  }
+  .fullSearch.mobile .formGrp {
+    display: flex;
+    flex-grow: 1;
+  }
+  .fullSearch.mobile .formGrp input {
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 8px;
+  }
+  .fullSearch.mobile .keywordHot ul a {
+    color: #fff;
+  }
+  .fullSearch label {
+    font-size: 0em;
+    margin: 0;
+  }
+  .fullSearch .formGrp {
+    flex: 0 0 auto;
+    margin: 0;
+  }
+  .fullSearch .formGrp input {
+    margin: 0 0.2em 0 0;
+    padding: 0.5em 1em;
+    box-shadow: none;
+    width: 1 1 86%;
+    max-width: 86%;
+  }
+  @media screen and (max-width: 767px) {
+    .fullSearch .formGrp input {
+      max-width: 85%;
+      width: 1 1 85%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .fullSearch .formGrp input {
+      max-width: 75%;
+      width: 1 1 75%;
+    }
+  }
+  .fullSearch .formGrp input[type=submit] {
+    min-width: auto;
+    padding: 0.2em 0.8em;
+  }
+  .fullSearch .formGrp input:focus-visible {
+    box-shadow: 0 0px 0px 2px #d04500;
+  }
+  .fullSearch .formGrp button,
+  .fullSearch .formGrp .btn,
+  .fullSearch .formGrp .btnSearch {
+    min-width: auto;
+    padding: 0.5em 1em;
+  }
+  .fullSearch .formGrp button:hover, .fullSearch .formGrp button:focus-visible,
+  .fullSearch .formGrp .btn:hover,
+  .fullSearch .formGrp .btn:focus-visible,
+  .fullSearch .formGrp .btnSearch:hover,
+  .fullSearch .formGrp .btnSearch:focus-visible {
+    box-shadow: none;
+  }
+  .fullSearch .btnGrp {
+    flex: 0 0 auto;
+    padding: 0 0 0 0.5em;
+    margin: 0 0 0.5em;
+  }
+  .fullSearch .btnGrp button,
+  .fullSearch .btnGrp .btn,
+  .fullSearch .btnGrp .btnSearch {
+    min-width: auto;
+    padding: 0.2em 0.8em;
+    margin: 0;
+  }
+  .fullSearch .btnGrp button:hover, .fullSearch .btnGrp button:focus-visible,
+  .fullSearch .btnGrp .btn:hover,
+  .fullSearch .btnGrp .btn:focus-visible,
+  .fullSearch .btnGrp .btnSearch:hover,
+  .fullSearch .btnGrp .btnSearch:focus-visible {
+    box-shadow: none;
+  }
+  .fullSearch .keywordHot {
+    flex: 1 1 100%;
+  }
+  .fullSearch .keywordHot ul {
+    font-size: 0.813em;
+    line-height: 1.65em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  .fullSearch .keywordHot ul li {
+    margin: 0;
+    padding: 0 0.5em;
+    flex: 0 0 auto;
+  }
+  .fullSearch .keywordHot ul a {
+    text-decoration: none;
+    color: #314868;
+  }
+  .fullSearch .keywordHot ul a:hover, .fullSearch .keywordHot ul a:focus-visible {
+    color: #333c46;
+    cursor: pointer;
+  }
+  .fullSearch .keywordHot ul a:focus-visible {
+    outline: #333c46 2px solid;
   }
   .btnGrp {
     text-align: center;
@@ -6813,6 +6966,86 @@ img {
     border-radius: 10px;
     margin: 1em 2em;
   }
+  @media screen and (max-width: 575px) {
+    .excelInt {
+      margin: 1em;
+    }
+  }
+  .dataScreen {
+    flex: 1 1 98%;
+    padding: 0.5em;
+    margin: 0.5em 2em 0.5em 0;
+  }
+  @media screen and (max-width: 575px) {
+    .dataScreen {
+      margin: 0.5em 0;
+    }
+  }
+  .dataScreen h2 {
+    font-size: 1.125em;
+    margin: -0.6em 0 0 0;
+    vertical-align: middle;
+    border-bottom: dotted 1px #005382;
+    padding-bottom: 0.3em;
+  }
+  .dataScreen h2 button {
+    float: right;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    vertical-align: middle;
+    margin-top: -0.3em;
+  }
+  .dataScreen h3 {
+    border-left: solid 5px #4bc8e1;
+    padding-left: 0.5em;
+    margin: 1em 0 0.5em 0;
+  }
+  .dataScreen .closable-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .dataScreen .closable-list li {
+    border-radius: 3px;
+    margin: 0.2em 0;
+    position: relative;
+  }
+  .dataScreen .closable-list li a {
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0.9em;
+    line-height: 1em;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .dataScreen .closable-list li a:hover {
+    background: #edf9fb;
+  }
+  @media screen and (max-width: 575px) {
+    .dataScreen .closable-list li {
+      display: inline-block;
+      width: 48%;
+    }
+  }
+  .dataScreen .closable-list .active {
+    background: #edf9fb;
+  }
+  .dataScreen .closable-list .delete {
+    position: absolute;
+    top: 0.25em;
+    right: 0.2em;
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    background: url(../images/icon-del.png) no-repeat center center;
+    background-size: 10px auto;
+  }
+  .dataScreen .closable-list .delete:hover, .dataScreen .closable-list .delete:focus {
+    background: url(../images/icon-del-ov.png) no-repeat center center;
+    background-size: 10px auto;
+  }
+  .dataScreen .closable-list .num {
+    color: #ff5c46;
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -7643,6 +7876,91 @@ img {
   .peopleGroup li.single a:hover {
     background: #d5f7fd url("../images/icon-people1.png") no-repeat left 0.5em top 0.7em;
     background-size: 0.8em auto;
+  }
+  .searchlist > ul,
+  .searchlist ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  .searchlist > ul > li,
+  .searchlist ol > li {
+    padding: 1em 1.5em;
+    border: 1px solid #4bc8e1;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+    background: #fff;
+  }
+  @media screen and (max-width: 575px) {
+    .searchlist > ul > li,
+    .searchlist ol > li {
+      padding: 1em;
+    }
+  }
+  .searchlist > ul > li .tag2,
+  .searchlist ol > li .tag2 {
+    background: #ff5c46;
+    color: #fff;
+    font-size: 0.875em;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+  }
+  .searchlist > ul > li > a,
+  .searchlist ol > li > a {
+    display: block;
+    position: relative;
+    line-height: 1.6em;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0.25em 0;
+  }
+  .searchlist > ul > li > a:hover, .searchlist > ul > li > a:focus,
+  .searchlist ol > li > a:hover,
+  .searchlist ol > li > a:focus {
+    color: #333c46;
+  }
+  .searchlist > ul > li > a .num,
+  .searchlist ol > li > a .num {
+    width: 1.5em;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+  }
+  .searchlist > ul > li > a .num:after,
+  .searchlist ol > li > a .num:after {
+    content: ".";
+    display: inline-block;
+  }
+  .searchlist > ul > li span.dept,
+  .searchlist ol > li span.dept {
+    display: inline-block;
+    font-size: 0.938rem;
+    font-weight: normal;
+  }
+  .searchlist > ul > li time,
+  .searchlist ol > li time {
+    display: inline-block;
+    font-size: 0.938rem;
+    font-weight: normal;
+  }
+  .searchlist > ul > li p,
+  .searchlist ol > li p {
+    margin: 0 0 0.5em;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.6em;
+    height: calc(1.6em * 2);
+  }
+  .searchlist > ul > li .txtmask,
+  .searchlist ol > li .txtmask {
+    color: #d30000;
   }
   .submenu ul,
   .submenu ol {
@@ -9331,7 +9649,7 @@ img {
     opacity: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
     z-index: 90;
     cursor: pointer;
   }
