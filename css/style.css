@@ -7532,6 +7532,21 @@ img {
       border: solid 1px #4bc8e1;
     }
   }
+  .metting table thead {
+    border-top: solid 1px #a3d7e6;
+    border-bottom: solid 2px #a3d7e6;
+  }
+  .metting table tbody {
+    border-top: solid 2px #a3d7e6;
+    border-bottom: solid 2px #a3d7e6;
+  }
+  .metting .info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.938em;
+    margin: 0 0 0.3em 0.1em;
+  }
   .lp table td.date {
     text-align: center;
     white-space: nowrap;
