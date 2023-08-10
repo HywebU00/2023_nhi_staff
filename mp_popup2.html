@@ -18,6 +18,7 @@
   <body>
     <!-- 直接跳主內容區 -->
     <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+
     <!-- wrapper Start -->
     <div class="wrapper">
       <!-- header Start -->
@@ -773,7 +774,75 @@
       <!-- footer End -->
     </div>
     <a href="javascript:;" class="scrollToTop" role="button">回頁首</a>
+    <!-- 彈窗橫幅-圖片 -->
+    <div class="modal" id="popup" style="display: none">
+      <div class="popupContent">
+        <h2>&nbsp;</h2>
+        <!-- 圖片輪播 start -->
+        <section class="popupSlider">
+          <div class="swiperBox">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- 此區塊以下為一筆 -->
+                <div class="imgContainer swiper-slide" data-title="圖說1">
+                  <div class="caption">健保快易通APP實用功能開箱健保快易通APP實用功能開箱1健保快易通APP實用功能開箱健保快易通APP實用功能開箱1健保快易通APP實用功能開箱健保快易通APP實用功能開箱1健保快易通APP實用功能開箱健保快易通APP實用功能開箱1</div>
+                  <a href="#" title="">
+                    <picture>
+                      <source media="(min-width: 1200px)" data-srcset="images/demo/01.jpg" />
+                      <source media="(min-width: 992px)" data-srcset="images/demo/01.jpg" />
+                      <source media="(min-width: 576px)" data-srcset="images/demo/01.jpg" />
+                      <source media="(max-width: 575px)" data-srcset="images/demo/01.jpg" />
+                      <img data-src="images/demo/01.jpg" class="swiper-lazy" alt="圖說1" />
+                      <noscript><img src="images/demo/01.jpg" alt="圖說1" /></noscript>
+                    </picture>
+                  </a>
+                </div>
+                <!-- 此區塊以上為一筆 -->
+                <!-- 此區塊以下為一筆 -->
+                <div class="imgContainer swiper-slide" data-title="圖說1">
+                  <div class="caption">標題標題標題標題標題標題</div>
+                  <a href="#" title="">
+                    <picture>
+                      <source media="(min-width: 1200px)" data-srcset="images/demo/02.jpg" />
+                      <source media="(min-width: 992px)" data-srcset="images/demo/02.jpg" />
+                      <source media="(min-width: 576px)" data-srcset="images/demo/02.jpg" />
+                      <source media="(max-width: 575px)" data-srcset="images/demo/02.jpg" />
+                      <img data-src="images/demo/02.jpg" class="swiper-lazy" alt="圖說2" />
+                      <noscript><img src="images/demo/02.jpg" alt="圖說2" /></noscript>
+                    </picture>
+                  </a>
+                </div>
+                <!-- 此區塊以上為一筆 -->
+                <!-- 此區塊以下為一筆 -->
+                <div class="imgContainer swiper-slide" data-title="圖說1">
+                  <div class="caption">系統停機公告</div>
+                  <a href="#" title="">
+                    <picture>
+                      <source media="(min-width: 1200px)" data-srcset="images/banner05.png" />
+                      <source media="(min-width: 992px)" data-srcset="images/banner05.png" />
+                      <source media="(min-width: 576px)" data-srcset="images/banner05.png" />
+                      <source media="(max-width: 575px)" data-srcset="images/banner05.png" />
+                      <img data-src="images/banner05.png" class="swiper-lazy" alt="圖說2" />
+                      <noscript><img src="images/banner05.png" alt="圖說2" /></noscript>
+                    </picture>
+                  </a>
+                </div>
+                <!-- 此區塊以上為一筆 -->
+              </div>
+            </div>
 
+            <!--操控物件可以隨意放，但注意設定要對應到-->
+            <!--前一筆-->
+            <button class="prevSlider swiperArrow"></button>
+            <!--下一筆-->
+            <button class="nextSlider swiperArrow"></button>
+            <!--圓點-->
+            <div class="swiperDots"></div>
+          </div>
+        </section>
+        <!-- 圖片輪播 end -->
+      </div>
+    </div>
     <!-- lazyload -->
     <script src="vendor/lazyload/lazyload.js"></script>
     <!-- picturefill -->
@@ -784,6 +853,10 @@
     <script src="js/main.js"></script>
     <!-- fancybox -->
     <script src="vendor/fancybox/fancybox.js"></script>
+    <!-- popupPhoto -->
+    <script>
+      Fancybox.show([{ src: '#popup', type: 'inline' }]);
+    </script>
     <!-- js -->
     <script src="js/customize.js"></script>
     <script>
@@ -795,5 +868,6 @@
       //   });
       // });
     </script>
+    <!-- fancybox -->
   </body>
 </html>

@@ -18,6 +18,7 @@
   <body>
     <!-- 直接跳主內容區 -->
     <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+
     <!-- wrapper Start -->
     <div class="wrapper">
       <!-- header Start -->
@@ -773,7 +774,54 @@
       <!-- footer End -->
     </div>
     <a href="javascript:;" class="scrollToTop" role="button">回頁首</a>
+    <!-- 彈窗橫幅-圖片 -->
+    <div class="modal" id="popup" style="display: none">
+      <div class="popupContent">
+        <h2>&nbsp;</h2>
+        <!-- 影音快遞輪播 start -->
+        <div class="popupSlider">
+          <div class="swiperBox">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- 此區塊以下為一筆 -->
+                <div class="swiper-slide" data-title="">
+                  <div class="popupText">
+                    <div class="title">系統停機公告</div>
+                    <p>112年4月19日(五)晚上10時30分至 3月21日(日)晚上8時進行系統更新維護作業，屆時將暫停網站服務。</p>
+                    <p>
+                      暫停項目：<br />
+                      員工入口網系統、會議管理系統、主管會報管理系統、知識管理系統、財產申報系統、健保業務國際交流管理系統
+                    </p>
+                  </div>
+                </div>
+                <!-- 此區塊以上為一筆 -->
+                <!-- 此區塊以下為一筆 -->
+                <div class="swiper-slide" data-title="">
+                  <div class="popupText">
+                    <div class="title">系統停機公告2</div>
+                    <p>112年2月20日(五)晚上10時30分至 3月21日(日)晚上8時進行系統更新維護作業，屆時將暫停網站服務。</p>
+                    <p>
+                      暫停項目：<br />
+                      員工入口網系統、會議管理系統、主管會報管理系統、知識管理系統、財產申報系統、健保業務國際交流管理系統
+                    </p>
+                  </div>
+                </div>
+                <!-- 此區塊以上為一筆 -->
+              </div>
+            </div>
 
+            <!--操控物件可以隨意放，但注意設定要對應到-->
+            <!--前一筆-->
+            <button class="prevSlider swiperArrow"></button>
+            <!--下一筆-->
+            <button class="nextSlider swiperArrow"></button>
+            <!--圓點-->
+            <div class="swiperDots"></div>
+          </div>
+        </div>
+        <!-- 影音快遞輪播 end -->
+      </div>
+    </div>
     <!-- lazyload -->
     <script src="vendor/lazyload/lazyload.js"></script>
     <!-- picturefill -->
@@ -784,6 +832,10 @@
     <script src="js/main.js"></script>
     <!-- fancybox -->
     <script src="vendor/fancybox/fancybox.js"></script>
+    <!-- popupPhoto -->
+    <script>
+      Fancybox.show([{ src: '#popup', type: 'inline' }]);
+    </script>
     <!-- js -->
     <script src="js/customize.js"></script>
     <script>
@@ -795,5 +847,6 @@
       //   });
       // });
     </script>
+    <!-- fancybox -->
   </body>
 </html>

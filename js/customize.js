@@ -193,6 +193,35 @@ const bannerSlider = new Swiper('.bannerSlider .swiper', {
   lazy: true,
 });
 
+//popupSlider
+const popupSlider = new Swiper('.popupSlider .swiper', {
+  slidesPerView: 1, //顯示張數
+  navigation: {
+    nextEl: '.popupSlider .nextSlider.swiperArrow', //下一張class，無障礙設定關係需要增加.nextSlider
+    prevEl: '.popupSlider .prevSlider.swiperArrow', //前一張class，無障礙設定關係需要增加.prevSlider
+  },
+  pagination: {
+    //顯示圓點
+    el: '.popupSlider .swiperDots', //圓點 class
+    type: 'bullets', //樣式參考 https://www.swiper.com.cn/api/pagination/299.html
+    clickable: true, //設定後圓點才可以點擊
+  },
+  autoplay: {
+    //自動播放
+    delay: 5000, //自動播放的間隔
+  },
+  loop: true, //無限輪播
+  effect: 'fade', //淡入
+  lazy: true,
+  preloadImages: false, // 多筆設定lazy時須設定
+  centeredSlides: false, // 多筆設定lazy時須設定
+  watchSlidesVisibility: true, // 多筆設定lazy時須設定
+  fadeEffect: {
+    crossFade: true, //上一張淡出，false上一張不淡出，下一張疊在上方
+  },
+  // lazy: true,
+});
+
 //tabSet
 function tabFunction(elem) {
   const activeClass = 'active'; // --- 啟動的 class
