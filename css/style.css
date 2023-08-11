@@ -7532,6 +7532,10 @@ img {
       border: solid 1px #4bc8e1;
     }
   }
+  .metting table {
+    font-size: 1.35em;
+    font-weight: bold;
+  }
   .metting table thead {
     border-top: solid 1px #a3d7e6;
     border-bottom: solid 2px #a3d7e6;
