@@ -7548,8 +7548,9 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 0.938em;
+    font-size: 1em;
     margin: 0 0 0.3em 0.1em;
+    font-weight: bold;
   }
   .lp table td.date {
     text-align: center;
