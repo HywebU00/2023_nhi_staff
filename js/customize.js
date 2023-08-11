@@ -212,14 +212,10 @@ const popupSlider = new Swiper('.popupSlider .swiper', {
   },
   loop: true, //無限輪播
   effect: 'fade', //淡入
-  lazy: true,
-  preloadImages: false, // 多筆設定lazy時須設定
-  centeredSlides: false, // 多筆設定lazy時須設定
-  watchSlidesVisibility: true, // 多筆設定lazy時須設定
   fadeEffect: {
     crossFade: true, //上一張淡出，false上一張不淡出，下一張疊在上方
   },
-  // lazy: true,
+  lazy: true,
 });
 
 //tabSet
