@@ -10809,7 +10809,6 @@ img {
   .personalinfo .flexSet .datetime {
     margin: 0;
     padding: 5px;
-    z-index: 9;
     position: relative;
   }
   .personalinfo .flexSet .datetime li {
