@@ -493,13 +493,14 @@ $('.closable-list .delete').on('click', function () {
 // 定義一個變數，用來存放目前開啟的選單項目
 var currentMenu = null;
 
+$('.themeMenu li').has('ul').addClass('nextLv');
 // 當選單項目被點擊時
 $('.themeMenu li a').on('click', function () {
   // 將選單項目的子選單顯示或隱藏
   $(this).next('ul').toggle();
 
-  // 當目前開啟的選單項目不是被點擊的選單項目時
   if (currentMenu !== this) {
+    // 當目前開啟的選單項目不是被點擊的選單項目時
     // 將目前開啟的選單項目向上close
     $('.themeMenu li.current').removeClass('current').next('ul').hide();
 

@@ -2044,7 +2044,8 @@ img {
     display: none;
   }
   .no-js .mpSlider .imgContainer img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .no-js .mpSlider .imgContainer:nth-child(1) {
     display: block;
@@ -2121,7 +2122,8 @@ img {
     }
   }
   .no-js .cpSlider .imgContainer img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .no-js .adSlider .imgContainer {
     display: inline-block;
@@ -2136,14 +2138,16 @@ img {
     }
   }
   .no-js .adSlider .imgContainer img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .no-js img.lazy {
     display: none;
   }
   .no-js img.lazy + noscript img {
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   body {
     font-size: 1em;
@@ -2419,8 +2423,10 @@ img {
       z-index: 2;
       aspect-ratio: 1/1;
       display: block;
-      mask: url("../images/icon/icon_global2.svg") center no-repeat;
-      mask-size: 40%;
+      -webkit-mask: url("../images/icon/icon_global2.svg") center no-repeat;
+              mask: url("../images/icon/icon_global2.svg") center no-repeat;
+      -webkit-mask-size: 40%;
+              mask-size: 40%;
       background: #fff;
     }
     .language.typeB > button::after, .language.typeB > a::after {
@@ -3581,7 +3587,6 @@ img {
     white-space: nowrap;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
     font-size: 0.813em;
@@ -3617,7 +3622,6 @@ img {
     width: auto;
     height: 50%;
     line-height: 0;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .dividerVertical:after, .dividerVertical:before {
@@ -4347,7 +4351,9 @@ img {
   [tooltip]:before,
   [tooltip]:after {
     text-transform: none;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     pointer-events: none;
     position: absolute;
     display: none;
@@ -4888,7 +4894,7 @@ img {
     font-weight: bold;
     color: #333c46;
   }
-  .themeMenu li a:after {
+  .themeMenu li.nextLv a:after {
     content: "";
     position: absolute;
     right: 25px;
@@ -4925,9 +4931,6 @@ img {
     background-color: #fff;
     padding: 10px 20px;
     z-index: 999;
-  }
-  .themeMenu li:not(:has(ul)) a:after {
-    display: none;
   }
   .centerBlock .themeMenu {
     display: none;
@@ -5584,14 +5587,16 @@ img {
   .flexForm .formContent .birthday select {
     display: inline-block;
     margin-right: 0.5em;
-    text-align-last: center;
+    -moz-text-align-last: center;
+         text-align-last: center;
   }
   @media screen and (max-width: 575px) {
     .flexForm .formContent .birthday select {
       width: 88%;
       min-width: 88%;
       display: inline-block;
-      text-align-last: left;
+      -moz-text-align-last: left;
+           text-align-last: left;
     }
   }
   .flexForm .formContent .birthday select option {
@@ -8250,8 +8255,10 @@ img {
     width: 100%;
     aspect-ratio: 4/3;
     display: block;
-    object-fit: cover;
-    object-position: 50% 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
   .thumbnail h2,
   .thumbnail h3,
@@ -8555,8 +8562,6 @@ img {
     position: relative;
     min-height: 1px;
     padding-left: 30px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #dadada;
   }
@@ -8994,8 +8999,10 @@ img {
     width: 100%;
     aspect-ratio: 3/1;
     display: block;
-    object-fit: cover;
-    object-position: 50% 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
   .leftBlock .banner .item a:focus-visible:after {
     position: absolute;
@@ -9707,19 +9714,24 @@ img {
     background: #f1f1f1;
   }
   .imgContainer .fill {
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .imgContainer .contain {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .imgContainer .cover {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .imgContainer .none {
-    object-fit: none;
+    -o-object-fit: none;
+       object-fit: none;
   }
   .imgContainer .scale-down {
-    object-fit: scale-down;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
   }
   br {
     font-family: unset !important;
@@ -9810,7 +9822,8 @@ img {
   .mpSlider img {
     width: 100%;
     aspect-ratio: 3/2;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .cpSlider {
     padding: 1em 0;
@@ -9929,8 +9942,10 @@ img {
     width: 100%;
     aspect-ratio: 4/3;
     display: block;
-    object-fit: contain;
-    object-position: 50% 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
   .cpSlider .swiper .caption {
     padding: 0.5em;
@@ -9964,13 +9979,15 @@ img {
   .navSlider img {
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .adSlider img {
     width: 100%;
     aspect-ratio: 2/1;
     display: block;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .bannerSlider {
     position: relative;
@@ -9983,7 +10000,8 @@ img {
     width: 100%;
     aspect-ratio: 3/1;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 10px;
   }
   .bannerSlider .caption {
@@ -10037,7 +10055,8 @@ img {
     width: 100%;
     aspect-ratio: 3/2;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 10px;
     transition: 0.2s ease-out;
   }
@@ -10111,7 +10130,8 @@ img {
     width: 100%;
     aspect-ratio: 3/2;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 10px;
   }
   .videoSlider .caption {
@@ -10182,7 +10202,8 @@ img {
     width: 80%;
     aspect-ratio: 6/4;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     margin: 0 auto;
     position: absolute;
     top: 3rem;
@@ -10207,7 +10228,8 @@ img {
     width: 80%;
     aspect-ratio: 6/4;
     display: block;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin: 0 auto;
   }
   .popupSlider .caption {
@@ -10240,7 +10262,8 @@ img {
   }
   .mpSlider .item img {
     min-height: 350px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mpSlider .item .titleBox {
     position: absolute;
@@ -10533,7 +10556,8 @@ img {
     width: 100%;
     aspect-ratio: 23/31;
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .listTypeD .topBox {
     position: absolute;
@@ -10642,7 +10666,8 @@ img {
     width: 100%;
     aspect-ratio: 1/2;
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .listTypeG .topBox {
     position: absolute;
@@ -11210,7 +11235,8 @@ img {
     width: 100%;
     aspect-ratio: 3/2;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -11386,7 +11412,8 @@ img {
     width: 100%;
     aspect-ratio: 3/2;
     display: block;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
     border-radius: 10px;
     transition: 0.2s ease-out;
   }
