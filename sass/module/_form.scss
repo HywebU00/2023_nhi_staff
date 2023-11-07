@@ -1298,12 +1298,12 @@ input[type='mail'],
 input[type='number'] {
   &::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: darken($colorGray, 20);
+    color: darken($colorGray, 50);
   }
 
   &::-moz-placeholder {
     /* Firefox 19+ */
-    color: darken($colorGray, 20);
+    color: darken($colorGray, 50);
   }
 
   &:-ms-input-placeholder {
@@ -1464,7 +1464,7 @@ input[type='checkbox']:focus {
   input[readonly],
   input[disable] {
     background: transparent;
-    color: #666;
+    color: #333;
     opacity: 1;
   }
 

@@ -134,7 +134,7 @@
 
 .infomenu {
   position: static;
-  width: 40px;
+  width: 32px;
   button {
     font-size: 0;
     width: 32px;
@@ -194,6 +194,71 @@
           border: none;
         }
       }
+    }
+  }
+}
+
+.colorSelect {
+  // position: static;
+  width: 32px;
+  button.colorIcon {
+    font-size: 0;
+    width: 32px;
+    height: 32px;
+    background: url('../images/icon_color.png') no-repeat center center;
+    background-size: 26px auto;
+    // @include screen('mobile') {
+    //   font-size: 1em;
+    //   height: auto;
+    // }
+
+    &:after {
+      display: none;
+      // @include screen('mobile') {
+      //   display: block;
+      // }
+    }
+  }
+  ul {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0;
+    height: auto !important;
+    li {
+      margin: 2px 0;
+    }
+  }
+  .colorBtn {
+    font-size: 0;
+    background: #94ced4;
+    border: solid 2px #fff;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 7px;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .color1 {
+    background: #94ced4;
+    &:hover,
+    &:focus {
+      background: darken(#94ced4, 20);
+    }
+  }
+  .color2 {
+    background: #c5e670;
+    &:hover,
+    &:focus {
+      background: darken(#c5e670, 20);
+    }
+  }
+  .color3 {
+    background: #fbe326;
+    &:hover,
+    &:focus {
+      background: darken(#fbe326, 10);
     }
   }
 }

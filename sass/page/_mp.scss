@@ -548,7 +548,7 @@ section {
           text-align: center;
           font-weight: 500;
           color: $colorWord;
-          border: solid 1px #bde6f2;
+          // border: solid 1px #bde6f2;
           @include screenWidth('1200') {
             width: 85px;
           }
@@ -694,7 +694,7 @@ section {
     text-align: left;
     position: absolute;
     left: 2em;
-    top: 0.8em;
+    top: 0.5em;
     @include screenWidth('1200') {
       text-align: center;
       position: relative;
@@ -1037,3 +1037,5 @@ section {
     }
   }
 }
+
+//切換顏色

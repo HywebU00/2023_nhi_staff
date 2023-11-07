@@ -126,6 +126,7 @@
   &:focus-visible {
     background: darken($colorPrimary, 10);
     border: solid 1px $colorPrimary;
+    color: #fff;
   }
 }
 // 次要按鈕
@@ -192,4 +193,23 @@
 }
 .btnXs {
   font-size: $fontSize * 0.75; //12px
+}
+
+//新增
+.rightBtnGrp {
+  text-align: right;
+  padding: 1em 0;
+  .btnPrimary {
+    // background: $colorPrimary;
+    background: lighten($colorPrimary, 10);
+    color: #fff;
+    border: solid 1px lighten($colorPrimary, 10);
+
+    &:hover,
+    &:focus-visible {
+      background: darken($colorPrimary, 0);
+      border: solid 1px $colorPrimary;
+      color: #fff;
+    }
+  }
 }

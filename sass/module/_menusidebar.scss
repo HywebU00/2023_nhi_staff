@@ -325,6 +325,60 @@
         }
       }
     }
+    .colorSelect {
+      position: relative;
+      width: 98%;
+      button.colorIcon {
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        background: #eee url('none');
+        background-size: 20px auto;
+
+        &:after {
+          display: block;
+        }
+      }
+      ul {
+        background: rgba(255, 255, 255, 0);
+        border-radius: 0;
+        height: auto !important;
+        display: none;
+        li {
+          margin: 5px 2px 2px;
+          display: inline-block;
+          flex: 0 0 40px;
+          flex-wrap: nowrap;
+          border: none;
+          width: auto;
+          &:nth-child(odd):last-child {
+            width: auto;
+          }
+        }
+      }
+      .colorBtn {
+        font-size: 0;
+        background: #94ced4;
+        border: solid 2px #fff;
+        border-radius: 0;
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 7px;
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+      .color1 {
+        background: #94ced4;
+      }
+      .color2 {
+        background: #c5e670;
+      }
+      .color3 {
+        background: #fbe326;
+      }
+    }
 
     .fontSize {
       display: none;

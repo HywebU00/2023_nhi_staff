@@ -202,17 +202,17 @@
       // background: linear-gradient(135deg, #005d9d 0%, #98d1a7 100%);
       position: relative;
       & > div {
-        + div::after {
-          content: '';
-          width: 1px;
-          height: 17px;
-          background: #fff;
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 50%;
-          transform: translateY(-50%);
-        }
+        // + div::after {
+        //   content: '';
+        //   width: 1px;
+        //   height: 17px;
+        //   background: #fff;
+        //   display: block;
+        //   position: absolute;
+        //   left: 0;
+        //   top: 50%;
+        //   transform: translateY(-50%);
+        // }
       }
     }
   }
