@@ -187,6 +187,8 @@
         li.hasChild {
           & > ul {
             z-index: 999;
+            left: 1em;
+            font-size: 0.938em;
           }
 
           & > a {

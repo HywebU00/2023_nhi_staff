@@ -4869,6 +4869,8 @@ img {
   }
   .mainMenu ul li ul li.hasChild > ul {
     z-index: 999;
+    left: 1em;
+    font-size: 0.938em;
   }
   .mainMenu ul li ul li.hasChild > a:hover:after, .mainMenu ul li ul li.hasChild > a:focus-visible:after {
     transform: rotate(-45deg);
