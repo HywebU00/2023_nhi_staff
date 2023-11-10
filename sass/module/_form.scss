@@ -1268,6 +1268,7 @@ textarea,
 select,
 button {
   @include formStyle(); // 預設載入formStyle設定
+  color: #333;
 }
 
 input,

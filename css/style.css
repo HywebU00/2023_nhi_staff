@@ -1972,7 +1972,7 @@ img {
     }
   }
   a:focus-visible {
-    outline: #d04500 2px solid;
+    outline: #00a4f9 2px solid;
   }
   @media screen and (max-width: 767px) {
     a:focus-visible {
@@ -2682,7 +2682,7 @@ img {
     padding: 0.2em 0.8em;
   }
   .webSearch .formGrp input:focus-visible {
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .webSearch .formGrp button,
   .webSearch .formGrp .btn,
@@ -3040,6 +3040,7 @@ img {
     padding: 0.4em 0.5em;
     border-radius: 0;
     background: rgba(255, 255, 255, 0);
+    border: none !important;
   }
   .sLink #sLinkBox ul {
     margin: 0;
@@ -3199,7 +3200,7 @@ img {
     padding: 0.2em 0.8em;
   }
   .fullSearch .formGrp input:focus-visible {
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .fullSearch .formGrp button,
   .fullSearch .formGrp .btn,
@@ -3303,7 +3304,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btn.active {
     background: white;
@@ -3332,7 +3333,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnGreen.active {
     background: #18afab;
@@ -3357,7 +3358,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnBlue.active {
     background: #395479;
@@ -3381,7 +3382,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnYellow.active {
     background: #fecd36;
@@ -3406,7 +3407,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnOrange.active {
     background: #ff7260;
@@ -3431,7 +3432,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnRed.active {
     background: #ed0000;
@@ -3455,7 +3456,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnPurple.active {
     background: #a029a2;
@@ -3480,7 +3481,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnGray.active {
     background: #626262;
@@ -3505,7 +3506,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnSubmit.active {
     background: #61cfe5;
@@ -3529,7 +3530,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .btnSearch.active {
     background: #0074b5;
@@ -4797,7 +4798,7 @@ img {
     border-radius: 3em;
   }
   .mainMenu > ul > li > a:focus-visible {
-    box-shadow: 0 0 0 2px inset #d04500;
+    box-shadow: 0 0 0 2px inset #00a4f9;
   }
   .mainMenu > ul > li.hasChild > a:after {
     content: "";
@@ -4862,7 +4863,7 @@ img {
     background: rgba(255, 255, 255, 0.6);
   }
   .mainMenu ul li ul li a:focus-visible {
-    box-shadow: 0 0 0 2px inset #d04500;
+    box-shadow: 0 0 0 2px inset #00a4f9;
   }
   .mainMenu ul li ul li ul {
     width: 94%;
@@ -4933,6 +4934,9 @@ img {
   .themeMenu li {
     display: block;
     margin: 0;
+  }
+  .themeMenu li:last-child {
+    border-bottom: none !important;
   }
   .themeMenu li a {
     display: block;
@@ -6533,6 +6537,7 @@ img {
     box-sizing: border-box;
     border-radius: 2em;
     transition: all 0.3s ease-out;
+    color: #333;
   }
   input,
   select,
@@ -6721,7 +6726,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .uploadGrp .uploadBtn.active {
     background: #14afff;
@@ -6951,7 +6956,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .upload_file3 label.active {
     background: #ff7260;
@@ -6997,7 +7002,7 @@ img {
     cursor: pointer;
     color: #fff;
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500;
+    box-shadow: 0 0px 0px 2px #00a4f9;
   }
   .upload_file2 label.active {
     background: #ff7260;
@@ -8200,7 +8205,7 @@ img {
   }
   .tabSet .tabItems button:focus-visible {
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500 inset;
+    box-shadow: 0 0px 0px 2px #00a4f9 inset;
   }
   @media screen and (max-width: 767px) {
     .tabSet .tabItems button:focus-visible {
@@ -8231,7 +8236,7 @@ img {
   }
   .tabSet .tabContent a:focus {
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500 inset;
+    box-shadow: 0 0px 0px 2px #00a4f9 inset;
   }
   @media screen and (max-width: 767px) {
     .tabSet .tabContent a:focus {
@@ -11103,7 +11108,7 @@ img {
   }
   .meeting .tabItems .item:focus-visible {
     outline: none;
-    box-shadow: 0 0px 0px 2px #d04500 inset;
+    box-shadow: 0 0px 0px 2px #00a4f9 inset;
   }
   @media screen and (max-width: 767px) {
     .meeting .tabItems .item:focus-visible {
@@ -12004,6 +12009,9 @@ body.colorC .videoSlider .swiperArrow::before {
 .colorA h2 {
   color: #005382;
 }
+.colorA .accessKey {
+  color: #4bc8e1;
+}
 .colorA .unit {
   background: #005382;
 }
@@ -12045,6 +12053,65 @@ body.colorC .videoSlider .swiperArrow::before {
   background-color: #00a4f9;
   box-shadow: #00a4f9 0 0 0 2px;
 }
+.colorA .btnGreen {
+  background-color: #159995 !important;
+  border: 1px solid #159995 !important;
+}
+.colorA .btnBlue {
+  background-color: #314868 !important;
+  border: 1px solid #314868 !important;
+}
+.colorA .btnYellow {
+  background: #fec61c;
+}
+.colorA .btnOrange {
+  background: #ff5c46 !important;
+  border: 1px solid #ff5c46 !important;
+}
+.colorA .btnRed {
+  background-color: #d30000;
+  border: 1px solid #d30000;
+}
+.colorA .btnPurple {
+  background: #8c248d;
+}
+.colorA .btnGray {
+  background-color: #555;
+  border: 1px solid #555;
+}
+.colorA .metting table th {
+  background-color: #edf9fb;
+  color: #314868;
+  border: solid 1px #8ddcec;
+}
+.colorA .metting table td {
+  border: solid 1px #8ddcec;
+}
+.colorA .metting table thead {
+  border-top: solid 1px #4bc8e1;
+  border-bottom: solid 2px #4bc8e1;
+}
+.colorA .metting table tbody {
+  border-top: solid 2px #4bc8e1;
+  border-bottom: solid 2px #4bc8e1;
+}
+.colorA .metting .info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1em;
+  margin: 0 0 0.3em 0.1em;
+  font-weight: bold;
+}
+.colorA .sitemap li a {
+  border-bottom: solid 2px #0074b5;
+}
+.colorA .sitemap li a:hover, .colorA .sitemap li a:focus-visible {
+  color: #0074b5;
+}
+.colorA .sitemap li ul li a {
+  border-bottom: 1px dotted #ccc;
+}
 .colorA .personalinfo .flexSet .pending li a {
   color: #314868;
 }
@@ -12069,7 +12136,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorA .tabSet .tabItems button:focus-visible {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorA .tabSet .tabItems button:focus-visible {
@@ -12089,7 +12156,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorA .tabSet .tabContent a:focus {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorA .tabSet .tabContent a:focus {
@@ -12143,9 +12210,11 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorA .tableList .btn {
   background: #4bc8e1;
+  border: solid 1px #4bc8e1;
 }
 .colorA .tableList .btn:hover, .colorA .tableList .btn:focus {
-  background: #35c1dd;
+  background: #24b8d5;
+  border: solid 1px #24b8d5;
 }
 .colorA .albumSlider .caption,
 .colorA .videoSlider .caption {
@@ -12235,7 +12304,7 @@ body.colorC .videoSlider .swiperArrow::before {
 .colorA .peopleSearch .btnSubmit:hover, .colorA .peopleSearch .btnSubmit:focus,
 .colorA .eventSearch .btnSubmit:hover,
 .colorA .eventSearch .btnSubmit:focus {
-  background: #24b8d5;
+  background: #20a5c0;
 }
 .colorA .people_list ol li {
   border: solid 1px #4bc8e1;
@@ -12274,6 +12343,10 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorA .cp table th {
   background: #edf9fb;
+  color: #314868;
+}
+.colorA .cp blockquote {
+  border-left: 5px solid #005382;
 }
 .colorA .fileDownload span a {
   color: #fff;
@@ -12356,6 +12429,57 @@ body.colorC .videoSlider .swiperArrow::before {
   border: solid 1px #005382;
   color: #fff;
 }
+.colorA .fileListDel {
+  background: #edf9fb;
+}
+.colorA .fileListDel li {
+  border-bottom: 1px solid #a2e3f0;
+}
+.colorA .listDel {
+  border: 1px solid #a2e3f0;
+}
+.colorA .listDel li {
+  border: 1px solid #a2e3f0;
+  background: #edf9fb;
+}
+.colorA .uploadBtn {
+  background: #005382;
+  border: 1px solid #005382;
+}
+.colorA .editBlock fieldset {
+  border: solid 1px #4bc8e1;
+}
+.colorA .editBlock fieldset.review {
+  background: #edf9fb;
+}
+.colorA .editlist li {
+  background: #edf9fb;
+}
+.colorA .excelInt {
+  background: #edf9fb;
+}
+.colorA .modaltbList table tr {
+  border-bottom: solid 1px #a2e3f0;
+}
+.colorA .peopleGroup li a {
+  background-color: #edf9fb;
+  border: solid 1px #a2e3f0;
+}
+.colorA .fancybox__content h2 {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  border-left: solid 6px #4bc8e1;
+}
+.colorA .searchlist > ul > li,
+.colorA .searchlist ol > li {
+  border: solid 1px #8ddcec;
+}
+.colorA .dataScreen h3 {
+  border-left: solid 5px #4bc8e1;
+}
+.colorA .dataScreen .closable-list .active {
+  background-color: #edf9fb;
+}
 
 .colorB a {
   color: #284b36;
@@ -12365,6 +12489,9 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorB h2 {
   color: #284b36;
+}
+.colorB .accessKey {
+  color: #d5eba6;
 }
 .colorB .unit {
   background: #284b36;
@@ -12407,6 +12534,65 @@ body.colorC .videoSlider .swiperArrow::before {
   background-color: #298729;
   box-shadow: #298729 0 0 0 2px;
 }
+.colorB .btnGreen {
+  background-color: #159995 !important;
+  border: 1px solid #159995 !important;
+}
+.colorB .btnBlue {
+  background-color: #314868 !important;
+  border: 1px solid #314868 !important;
+}
+.colorB .btnYellow {
+  background: #fec61c;
+}
+.colorB .btnOrange {
+  background: #ff5c46 !important;
+  border: 1px solid #ff5c46 !important;
+}
+.colorB .btnRed {
+  background-color: #d30000;
+  border: 1px solid #d30000;
+}
+.colorB .btnPurple {
+  background: #8c248d;
+}
+.colorB .btnGray {
+  background-color: #555;
+  border: 1px solid #555;
+}
+.colorB .metting table th {
+  background-color: #ebfae0;
+  color: #333;
+  border: solid 1px #b7d181;
+}
+.colorB .metting table td {
+  border: solid 1px #b7d181;
+}
+.colorB .metting table thead {
+  border-top: solid 1px #97bc49;
+  border-bottom: solid 2px #97bc49;
+}
+.colorB .metting table tbody {
+  border-top: solid 2px #97bc49;
+  border-bottom: solid 2px #97bc49;
+}
+.colorB .metting .info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1em;
+  margin: 0 0 0.3em 0.1em;
+  font-weight: bold;
+}
+.colorB .sitemap li a {
+  border-bottom: solid 2px #3a6c4e;
+}
+.colorB .sitemap li a:hover, .colorB .sitemap li a:focus-visible {
+  color: #3a6c4e;
+}
+.colorB .sitemap li ul li a {
+  border-bottom: 1px dotted #ccc;
+}
 .colorB .personalinfo .flexSet .pending li a {
   color: #333;
 }
@@ -12431,7 +12617,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorB .tabSet .tabItems button:focus-visible {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorB .tabSet .tabItems button:focus-visible {
@@ -12451,7 +12637,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorB .tabSet .tabContent a:focus {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorB .tabSet .tabContent a:focus {
@@ -12505,9 +12691,11 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorB .tableList .btn {
   background: #298729;
+  border: solid 1px #298729;
 }
 .colorB .tableList .btn:hover, .colorB .tableList .btn:focus {
-  background: #237323;
+  background: #1d601d;
+  border: solid 1px #1d601d;
 }
 .colorB .albumSlider .caption,
 .colorB .videoSlider .caption {
@@ -12597,7 +12785,7 @@ body.colorC .videoSlider .swiperArrow::before {
 .colorB .peopleSearch .btnSubmit:hover, .colorB .peopleSearch .btnSubmit:focus,
 .colorB .eventSearch .btnSubmit:hover,
 .colorB .eventSearch .btnSubmit:focus {
-  background: #1d601d;
+  background: #174c17;
 }
 .colorB .people_list ol li {
   border: solid 1px #97bc49;
@@ -12636,6 +12824,10 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorB .cp table th {
   background: #ebfae0;
+  color: #333;
+}
+.colorB .cp blockquote {
+  border-left: 5px solid #284b36;
 }
 .colorB .fileDownload span a {
   color: #fff;
@@ -12718,6 +12910,57 @@ body.colorC .videoSlider .swiperArrow::before {
   border: solid 1px #284b36;
   color: #fff;
 }
+.colorB .fileListDel {
+  background: #ebfae0;
+}
+.colorB .fileListDel li {
+  border-bottom: 1px solid #c2d794;
+}
+.colorB .listDel {
+  border: 1px solid #c2d794;
+}
+.colorB .listDel li {
+  border: 1px solid #c2d794;
+  background: #ebfae0;
+}
+.colorB .uploadBtn {
+  background: #284b36;
+  border: 1px solid #284b36;
+}
+.colorB .editBlock fieldset {
+  border: solid 1px #97bc49;
+}
+.colorB .editBlock fieldset.review {
+  background: #ebfae0;
+}
+.colorB .editlist li {
+  background: #ebfae0;
+}
+.colorB .excelInt {
+  background: #ebfae0;
+}
+.colorB .modaltbList table tr {
+  border-bottom: solid 1px #c2d794;
+}
+.colorB .peopleGroup li a {
+  background-color: #ebfae0;
+  border: solid 1px #c2d794;
+}
+.colorB .fancybox__content h2 {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  border-left: solid 6px #97bc49;
+}
+.colorB .searchlist > ul > li,
+.colorB .searchlist ol > li {
+  border: solid 1px #b7d181;
+}
+.colorB .dataScreen h3 {
+  border-left: solid 5px #97bc49;
+}
+.colorB .dataScreen .closable-list .active {
+  background-color: #ebfae0;
+}
 
 .colorC a {
   color: #64382a;
@@ -12727,6 +12970,9 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorC h2 {
   color: #64382a;
+}
+.colorC .accessKey {
+  color: #fff9f1;
 }
 .colorC .unit {
   background: #64382a;
@@ -12746,28 +12992,87 @@ body.colorC .videoSlider .swiperArrow::before {
 .colorC input[type=password]:focus-visible,
 .colorC textarea:focus-visible,
 .colorC select:focus-visible {
-  border: 1px solid #00a4f9;
-  box-shadow: 0px 0px 0px 2px #00a4f9;
+  border: 1px solid #da6f0d;
+  box-shadow: 0px 0px 0px 2px #da6f0d;
   outline: none;
 }
 .colorC input[type=checkbox]:checked,
 .colorC input[type=checkbox]:focus,
 .colorC input[type=radio]:checked,
 .colorC input[type=radio]:focus {
-  border-color: #00a4f9;
-  background-color: #00a4f9;
+  border-color: #da6f0d;
+  background-color: #da6f0d;
   outline: none;
 }
 .colorC input[type=radio]:checked,
 .colorC input[type=radio]:focus {
   border-color: #fff;
-  background-color: #00a4f9;
-  box-shadow: #00a4f9 0 0 0 5px inset, #00a4f9 0 0 0 2px;
+  background-color: #da6f0d;
+  box-shadow: #da6f0d 0 0 0 5px inset, #da6f0d 0 0 0 2px;
 }
 .colorC input[type=checkbox]:focus {
-  border-color: #00a4f9;
-  background-color: #00a4f9;
-  box-shadow: #00a4f9 0 0 0 2px;
+  border-color: #da6f0d;
+  background-color: #da6f0d;
+  box-shadow: #da6f0d 0 0 0 2px;
+}
+.colorC .btnGreen {
+  background-color: #159995 !important;
+  border: 1px solid #159995 !important;
+}
+.colorC .btnBlue {
+  background-color: #314868 !important;
+  border: 1px solid #314868 !important;
+}
+.colorC .btnYellow {
+  background: #fec61c;
+}
+.colorC .btnOrange {
+  background: #ff5c46 !important;
+  border: 1px solid #ff5c46 !important;
+}
+.colorC .btnRed {
+  background-color: #d30000;
+  border: 1px solid #d30000;
+}
+.colorC .btnPurple {
+  background: #8c248d;
+}
+.colorC .btnGray {
+  background-color: #555;
+  border: 1px solid #555;
+}
+.colorC .metting table th {
+  background-color: #fff9f1;
+  color: #333;
+  border: solid 1px #eed2b8;
+}
+.colorC .metting table td {
+  border: solid 1px #eed2b8;
+}
+.colorC .metting table thead {
+  border-top: solid 1px #dfab7a;
+  border-bottom: solid 2px #dfab7a;
+}
+.colorC .metting table tbody {
+  border-top: solid 2px #dfab7a;
+  border-bottom: solid 2px #dfab7a;
+}
+.colorC .metting .info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1em;
+  margin: 0 0 0.3em 0.1em;
+  font-weight: bold;
+}
+.colorC .sitemap li a {
+  border-bottom: solid 2px #884c39;
+}
+.colorC .sitemap li a:hover, .colorC .sitemap li a:focus-visible {
+  color: #884c39;
+}
+.colorC .sitemap li ul li a {
+  border-bottom: 1px dotted #ccc;
 }
 .colorC .personalinfo .flexSet .pending li a {
   color: #333;
@@ -12793,7 +13098,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorC .tabSet .tabItems button:focus-visible {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorC .tabSet .tabItems button:focus-visible {
@@ -12813,7 +13118,7 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorC .tabSet .tabContent a:focus {
   outline: none;
-  box-shadow: 0 0px 0px 2px #d04500 inset;
+  box-shadow: 0 0px 0px 2px #00a4f9 inset;
 }
 @media screen and (max-width: 767px) {
   .colorC .tabSet .tabContent a:focus {
@@ -12867,9 +13172,11 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorC .tableList .btn {
   background: #da6f0d;
+  border: solid 1px #da6f0d;
 }
 .colorC .tableList .btn:hover, .colorC .tableList .btn:focus {
-  background: #c2630c;
+  background: #aa560a;
+  border: solid 1px #aa560a;
 }
 .colorC .albumSlider .caption,
 .colorC .videoSlider .caption {
@@ -12959,7 +13266,7 @@ body.colorC .videoSlider .swiperArrow::before {
 .colorC .peopleSearch .btnSubmit:hover, .colorC .peopleSearch .btnSubmit:focus,
 .colorC .eventSearch .btnSubmit:hover,
 .colorC .eventSearch .btnSubmit:focus {
-  background: #aa560a;
+  background: #924a09;
 }
 .colorC .people_list ol li {
   border: solid 1px #dfab7a;
@@ -12998,6 +13305,10 @@ body.colorC .videoSlider .swiperArrow::before {
 }
 .colorC .cp table th {
   background: #fff9f1;
+  color: #333;
+}
+.colorC .cp blockquote {
+  border-left: 5px solid #64382a;
 }
 .colorC .fileDownload span a {
   color: #fff;
@@ -13079,6 +13390,57 @@ body.colorC .videoSlider .swiperArrow::before {
   background: #64382a;
   border: solid 1px #64382a;
   color: #fff;
+}
+.colorC .fileListDel {
+  background: #fff9f1;
+}
+.colorC .fileListDel li {
+  border-bottom: 1px solid #f3dfcc;
+}
+.colorC .listDel {
+  border: 1px solid #f3dfcc;
+}
+.colorC .listDel li {
+  border: 1px solid #f3dfcc;
+  background: #fff9f1;
+}
+.colorC .uploadBtn {
+  background: #64382a;
+  border: 1px solid #64382a;
+}
+.colorC .editBlock fieldset {
+  border: solid 1px #dfab7a;
+}
+.colorC .editBlock fieldset.review {
+  background: #fff9f1;
+}
+.colorC .editlist li {
+  background: #fff9f1;
+}
+.colorC .excelInt {
+  background: #fff9f1;
+}
+.colorC .modaltbList table tr {
+  border-bottom: solid 1px #f3dfcc;
+}
+.colorC .peopleGroup li a {
+  background-color: #fff9f1;
+  border: solid 1px #f3dfcc;
+}
+.colorC .fancybox__content h2 {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  border-left: solid 6px #dfab7a;
+}
+.colorC .searchlist > ul > li,
+.colorC .searchlist ol > li {
+  border: solid 1px #eed2b8;
+}
+.colorC .dataScreen h3 {
+  border-left: solid 5px #dfab7a;
+}
+.colorC .dataScreen .closable-list .active {
+  background-color: #fff9f1;
 }
 
 @media print {

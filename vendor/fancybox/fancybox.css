@@ -297,6 +297,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   top: 0.1rem;
   right: 0;
   color: var(--fancybox-color, #fff);
+  border: none !important;
 }
 .fancybox__no-click,
 .fancybox__no-click button {
@@ -753,7 +754,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 .fancybox__content h2 {
   background: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  color: #fff !important;
   margin: 0 0 1em;
   padding: 0.8rem 1.5rem;
   font-size: 1.35em;

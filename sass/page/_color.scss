@@ -102,6 +102,19 @@ $colorStyleConfig: (
     npLitBorder: #4bc8e1,
     pageSearchBg: #edf9fb,
     textContentBg: #fff,
+    accessKey: #4bc8e1,
+    colorBlue: #314868,
+    colorBlue2: #4bc8e1,
+    colorGreen: #159995,
+    colorGreen2: #1dc2bd,
+    colorOrange: #ff5c46,
+    colorOrange2: #fca15e,
+    colorRed: #d30000,
+    colorYellow: #fec003,
+    colorPurple: #781f79,
+    colorGray: #ccc,
+    colorGray2: #555,
+    colorDark: #333333,
   ),
   colorB: (
     // class 名稱
@@ -126,16 +139,29 @@ $colorStyleConfig: (
     npLitBorder: #97bc49,
     pageSearchBg: #ebfae0,
     textContentBg: #fff,
+    accessKey: #d5eba6,
+    colorBlue: #314868,
+    colorBlue2: #4bc8e1,
+    colorGreen: #159995,
+    colorGreen2: #1dc2bd,
+    colorOrange: #ff5c46,
+    colorOrange2: #fca15e,
+    colorRed: #d30000,
+    colorYellow: #fec003,
+    colorPurple: #781f79,
+    colorGray: #ccc,
+    colorGray2: #555,
+    colorDark: #333333,
   ),
   colorC: (
     // class 名稱
     colorPrimary: #64382a,
-    colorSecondary: red,
+    colorSecondary: #da6f0d,
     aColor: #64382a,
     aHover: #da6f0d,
     aFocus: #da6f0d,
-    formFocus: #00a4f9,
-    form-btn: #00a4f9,
+    formFocus: #da6f0d,
+    form-btn: #b95d07,
     footerBg: #f29845,
     colorWord: #333,
     tabBg: #fff9f1,
@@ -150,6 +176,19 @@ $colorStyleConfig: (
     npLitBorder: #dfab7a,
     pageSearchBg: #fff9f1,
     textContentBg: #fff,
+    accessKey: #fff9f1,
+    colorBlue: #314868,
+    colorBlue2: #4bc8e1,
+    colorGreen: #159995,
+    colorGreen2: #1dc2bd,
+    colorOrange: #ff5c46,
+    colorOrange2: #fca15e,
+    colorRed: #d30000,
+    colorYellow: #fec003,
+    colorPurple: #781f79,
+    colorGray: #ccc,
+    colorGray2: #555,
+    colorDark: #333333,
   ),
 );
 
@@ -167,6 +206,9 @@ $colorStyleConfig: (
     }
     h2 {
       color: map-get($value, colorPrimary);
+    }
+    .accessKey {
+      color: map-get($value, accessKey);
     }
     .unit {
       background: map-get($value, colorPrimary);
@@ -209,6 +251,81 @@ $colorStyleConfig: (
       border-color: map-get($value, formFocus);
       background-color: map-get($value, formFocus);
       box-shadow: map-get($value, formFocus) 0 0 0 2px;
+    }
+
+    //按鈕顏色
+    .btnGreen {
+      background-color: map-get($value, colorGreen) !important;
+      border: 1px solid map-get($value, colorGreen) !important;
+    }
+    .btnBlue {
+      background-color: map-get($value, colorBlue) !important;
+      border: 1px solid map-get($value, colorBlue) !important;
+    }
+    .btnYellow {
+      background: lighten(map-get($value, colorYellow), 5);
+    }
+    .btnOrange {
+      background: lighten(map-get($value, colorOrange), 0) !important;
+      border: 1px solid map-get($value, colorOrange) !important;
+    }
+    .btnRed {
+      background-color: map-get($value, colorRed);
+      border: 1px solid map-get($value, colorRed);
+    }
+    .btnPurple {
+      background: lighten(map-get($value, colorPurple), 5);
+    }
+    .btnGray {
+      background-color: map-get($value, colorGray2);
+      border: 1px solid map-get($value, colorGray2);
+    }
+
+    .metting {
+      table {
+        th {
+          background-color: map-get($value, pageSearchBg);
+          color: map-get($value, colorWord);
+          border: solid 1px lighten(map-get($value, npLitBorder), 15);
+        }
+        td {
+          border: solid 1px lighten(map-get($value, npLitBorder), 15);
+        }
+        thead {
+          border-top: solid 1px lighten(map-get($value, npLitBorder), 0);
+          border-bottom: solid 2px lighten(map-get($value, npLitBorder), 0);
+        }
+        tbody {
+          border-top: solid 2px lighten(map-get($value, npLitBorder), 0);
+          border-bottom: solid 2px lighten(map-get($value, npLitBorder), 0);
+        }
+      }
+      .info {
+        @include liReset;
+        font-size: 1em;
+        margin: 0 0 0.3em 0.1em;
+        font-weight: bold;
+      }
+    }
+
+    //sitemap
+    .sitemap {
+      li {
+        a {
+          border-bottom: solid 2px lighten(map-get($value, colorPrimary), 10);
+          &:hover,
+          &:focus-visible {
+            color: lighten(map-get($value, colorPrimary), 10);
+          }
+        }
+        ul {
+          li {
+            a {
+              border-bottom: 1px dotted #ccc;
+            }
+          }
+        }
+      }
     }
 
     .personalinfo {
@@ -335,9 +452,11 @@ $colorStyleConfig: (
       }
       .btn {
         background: map-get($value, btnBgColor2);
+        border: solid 1px map-get($value, btnBgColor2);
         &:hover,
         &:focus {
-          background: darken(map-get($value, btnBgColor2), 5);
+          background: darken(map-get($value, btnBgColor2), 10);
+          border: solid 1px darken(map-get($value, btnBgColor2), 10);
         }
       }
     }
@@ -455,7 +574,7 @@ $colorStyleConfig: (
         background: map-get($value, btnBgColor2);
         &:hover,
         &:focus {
-          background: darken(map-get($value, btnBgColor2), 10);
+          background: darken(map-get($value, btnBgColor2), 15);
         }
       }
     }
@@ -512,7 +631,11 @@ $colorStyleConfig: (
         border-top: 3px solid map-get($value, npLitBorder);
         th {
           background: map-get($value, thBg);
+          color: map-get($value, colorWord);
         }
+      }
+      blockquote {
+        border-left: 5px solid map-get($value, colorPrimary);
       }
     }
     .fileDownload {
@@ -691,30 +814,78 @@ $colorStyleConfig: (
         }
       }
     }
+    //fileListDel
+    .fileListDel {
+      background: map-get($value, pageSearchBg);
+      li {
+        border-bottom: 1px solid lighten(map-get($value, npLitBorder), 20);
+      }
+    }
+    .listDel {
+      border: 1px solid lighten(map-get($value, npLitBorder), 20);
+      li {
+        border: 1px solid lighten(map-get($value, npLitBorder), 20);
+        background: map-get($value, pageSearchBg);
+      }
+    }
+    .uploadBtn {
+      background: map-get($value, colorPrimary);
+      border: 1px solid map-get($value, colorPrimary);
+    }
 
-    //_form
-    // button:focus-visible,
-    // input[type='text']:focus-visible,
-    // input[type='reset']:focus-visible,
-    // input[type='file']:focus-visible,
-    // input[type='tel']:focus-visible,
-    // input[type='email']:focus-visible,
-    // input[type='password']:focus-visible,
-    // textarea:focus-visible,
-    // select:focus-visible {
-    //   border-color: lighten(map-get($value, colorPrimary), 5);
-    //   box-shadow: 0px 0px 0px 2px lighten(map-get($value, colorPrimary), 5);
-    // }
-    // input[type='checkbox']:checked,
-    // input[type='checkbox']:focus,
-    // input[type='radio']:checked,
-    // input[type='radio']:focus {
-    //   border-color: map-get($value, colorPrimary);
-    //   background-color: map-get($value, colorPrimary);
-    //   outline: none;
-    // }
-    // input[type='radio']:checked {
-    //   box-shadow: #fff 0 0 0 3px inset, map-get($value, colorPrimary) 0 0 0 2px;
-    // }
+    .editBlock {
+      fieldset {
+        border: solid 1px map-get($value, npLitBorder);
+        &.review {
+          background: map-get($value, pageSearchBg);
+        }
+      }
+    }
+    .editlist {
+      li {
+        background: map-get($value, pageSearchBg);
+      }
+    }
+    .excelInt {
+      background: map-get($value, pageSearchBg);
+    }
+    .modaltbList {
+      table {
+        tr {
+          border-bottom: solid 1px lighten(map-get($value, npLitBorder), 20);
+        }
+      }
+    }
+    .peopleGroup {
+      li {
+        a {
+          background-color: map-get($value, pageSearchBg);
+          border: solid 1px lighten(map-get($value, npLitBorder), 20);
+        }
+      }
+    }
+    .fancybox__content h2 {
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff !important;
+      border-left: solid 6px map-get($value, npLitBorder);
+    }
+    .searchlist {
+      & > ul,
+      ol {
+        & > li {
+          border: solid 1px lighten(map-get($value, npLitBorder), 15);
+        }
+      }
+    }
+    .dataScreen {
+      h3 {
+        border-left: solid 5px map-get($value, npLitBorder);
+      }
+      .closable-list {
+        .active {
+          background-color: map-get($value, pageSearchBg);
+        }
+      }
+    }
   }
 }

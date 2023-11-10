@@ -291,6 +291,9 @@
   li {
     display: block;
     margin: 0;
+    &:last-child {
+      border-bottom: none !important;
+    }
 
     a {
       display: block;
