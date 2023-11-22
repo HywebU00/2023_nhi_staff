@@ -768,23 +768,23 @@ section {
           top: 0.5em;
         }
       }
+      // &:nth-child(2) {
+      //   background: $colorBlue2;
+      //   &:before {
+      //     content: '';
+      //     height: 20px;
+      //     width: 20px;
+      //     background: url('../images/meeting_icon2.svg') no-repeat center center;
+      //     background-size: 20px auto;
+      //     position: absolute;
+      //     left: 1em;
+      //     top: 0.5em;
+      //     @include screen('mobile') {
+      //       left: 0.5em;
+      //     }
+      //   }
+      // }
       &:nth-child(2) {
-        background: $colorBlue2;
-        &:before {
-          content: '';
-          height: 20px;
-          width: 20px;
-          background: url('../images/meeting_icon2.svg') no-repeat center center;
-          background-size: 20px auto;
-          position: absolute;
-          left: 1em;
-          top: 0.5em;
-          @include screen('mobile') {
-            left: 0.5em;
-          }
-        }
-      }
-      &:nth-child(3) {
         background: $colorOrange2;
         &:before {
           content: '';

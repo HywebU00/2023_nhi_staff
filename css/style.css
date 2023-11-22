@@ -11131,27 +11131,9 @@ img {
     top: 0.5em;
   }
   .meeting .tabItems .item:nth-child(2) {
-    background: #4bc8e1;
-  }
-  .meeting .tabItems .item:nth-child(2):before {
-    content: "";
-    height: 20px;
-    width: 20px;
-    background: url("../images/meeting_icon2.svg") no-repeat center center;
-    background-size: 20px auto;
-    position: absolute;
-    left: 1em;
-    top: 0.5em;
-  }
-  @media screen and (max-width: 767px) {
-    .meeting .tabItems .item:nth-child(2):before {
-      left: 0.5em;
-    }
-  }
-  .meeting .tabItems .item:nth-child(3) {
     background: #fca15e;
   }
-  .meeting .tabItems .item:nth-child(3):before {
+  .meeting .tabItems .item:nth-child(2):before {
     content: "";
     height: 20px;
     width: 20px;
@@ -11162,7 +11144,7 @@ img {
     top: 0.5em;
   }
   @media screen and (max-width: 767px) {
-    .meeting .tabItems .item:nth-child(3):before {
+    .meeting .tabItems .item:nth-child(2):before {
       left: 0.5em;
     }
   }

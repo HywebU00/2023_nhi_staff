@@ -1,855 +1,925 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zh-Hant">
+  <head>
+    <meta content="noindex" name="robots" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>衛生福利部中央健康保險署 員工入口網</title>
+    <!-- style css -->
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
 
-<head>
-<meta content="noindex" name="robots" />
-<!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<title>衛生福利部中央健康保險署 員工入口網</title>
-<!-- style css -->
-<link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" />
-<!-- favicon -->
-<link href="images/favicon.png" rel="icon" type="image/x-icon" />
-</head>
-
-<body>
-
-<!-- 直接跳主內容區 --><a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
-<!-- wrapper Start -->
-<div class="wrapper">
-	<!-- header Start -->
-	<header class="header typeB">
-		<div class="container">
-			<a id="aU" accesskey="U" class="accessKey" href="#aU" tabindex="2" title="上方導覽列">
-			:::</a>
-			<h1><a href="index.html">
-			<img alt="衛生福利部中央健康保險署" src="images/logo.svg" /><span class="unit">員工入口網</span></a>
-			</h1>
-			<!-- navigation Start -->
-			<nav aria-label="Site" class="navigation" role="navigation">
-				<!-- 新增div navList -->
-				<div class="navList">
-					<ul>
-						<!-- <li><a href="#">回首頁</a></li>
+  <body>
+    <!-- 直接跳主內容區 --><a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header Start -->
+      <header class="header typeB">
+        <div class="container">
+          <a id="aU" accesskey="U" class="accessKey" href="#aU" tabindex="2" title="上方導覽列"> :::</a>
+          <h1>
+            <a href="index.html"> <img alt="衛生福利部中央健康保險署" src="images/logo.svg" /><span class="unit">員工入口網</span></a>
+          </h1>
+          <!-- navigation Start -->
+          <nav aria-label="Site" class="navigation" role="navigation">
+            <!-- 新增div navList -->
+            <div class="navList">
+              <ul>
+                <!-- <li><a href="#">回首頁</a></li>
                 <li><a href="#">網站導覽</a></li>
                 <li><a href="#">常見問答</a></li> -->
-					</ul>
-				</div>
-				<div class="submenuBox">
-					<!-- language -->
-					<div class="language">
-						<button type="button">黃大維</button>
-						<ul>
-							<li><a href="#">待辦事項</a></li>
-							<li><a href="#">訊息通知</a></li>
-							<li><a href="#">登出</a></li>
-						</ul>
-					</div>
-					<!-- language end-->
-					<!-- infomenu -->
-					<div class="language infomenu">
-						<button type="button">網站導覽</button>
-						<ul>
-							<li><a href="#">關於我們</a>
-							<ul>
-								<li><a href="#">署長專區</a></li>
-								<li><a href="#">組室站台</a></li>
-								<li><a href="#">大事紀要</a></li>
-								<li><a href="#">卓越殊榮</a></li>
-								<li><a href="#">分機查號台</a></li>
-								<li><a href="#">新人介紹</a></li>
-							</ul>
-							</li>
-							<li><a href="#">最新消息</a>
-							<ul>
-								<li><a href="#">人事公告</a></li>
-								<li><a href="#">資訊公告</a></li>
-								<li><a href="#">業務公告</a></li>
-								<li><a href="#">活動快報</a></li>
-								<li><a href="#">宣導專區</a></li>
-								<li><a href="#">其他訊息</a></li>
-								<li><a href="#">動態看板</a></li>
-							</ul>
-							</li>
-							<li><a href="#">活動翦影</a>
-							<ul>
-								<li><a href="#">相簿花絮</a></li>
-								<li><a href="#">影音快遞</a></li>
-							</ul>
-							</li>
-							<li><a href="#">主題專區</a>
-							<ul>
-								<li><a href="#">單位資管窗口</a></li>
-								<li><a href="#">重大輿情</a></li>
-								<li><a href="#">新聞剪報</a></li>
-								<li><a href="#">內部控制</a></li>
-							</ul>
-							</li>
-							<li><a href="#">系統管理</a> </li>
-						</ul>
-					</div>
-					<!-- infomenu end-->
-					<div class="webSearchBtn">
-						<button title="全文檢索">全文檢索</button></div>
-				</div>
-			</nav>
-			<!-- navigation End -->
-			<!-- Search Start -->
-			<div class="webSearch typeB" role="search">
-				<div class="content">
-					<div class="formGrp">
-						<label for="mustSameAsId">搜尋</label>
-						<input id="mustSameAsId" accesskey="S" aria-label="搜尋網站內容" name="username" placeholder="全文檢索" title="請輸入文字" type="text" />
-						<button class="btn btnSearch" type="button">查詢</button>
-					</div>
-				</div>
-			</div>
-			<!-- Search End -->
-			<!-- noscript --><noscript>您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ 
-			(+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結             
-			<a href="#">網站導覽</a>           </noscript></div>
-	</header>
-	<!-- header End -->
-	<!-- main Start -->
+              </ul>
+            </div>
+            <div class="submenuBox">
+              <!-- language -->
+              <div class="language">
+                <button type="button">黃大維</button>
+                <ul>
+                  <li><a href="#">待辦事項</a></li>
+                  <li><a href="#">訊息通知</a></li>
+                  <li><a href="#">登出</a></li>
+                </ul>
+              </div>
+              <!-- language end-->
+              <!-- infomenu -->
+              <div class="language infomenu">
+                <button type="button">網站導覽</button>
+                <ul>
+                  <li>
+                    <a href="#">關於我們</a>
+                    <ul>
+                      <li><a href="#">署長專區</a></li>
+                      <li><a href="#">組室站台</a></li>
+                      <li><a href="#">大事紀要</a></li>
+                      <li><a href="#">卓越殊榮</a></li>
+                      <li><a href="#">分機查號台</a></li>
+                      <li><a href="#">新人介紹</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">最新消息</a>
+                    <ul>
+                      <li><a href="#">人事公告</a></li>
+                      <li><a href="#">資訊公告</a></li>
+                      <li><a href="#">業務公告</a></li>
+                      <li><a href="#">活動快報</a></li>
+                      <li><a href="#">宣導專區</a></li>
+                      <li><a href="#">其他訊息</a></li>
+                      <li><a href="#">動態看板</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">活動翦影</a>
+                    <ul>
+                      <li><a href="#">相簿花絮</a></li>
+                      <li><a href="#">影音快遞</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">主題專區</a>
+                    <ul>
+                      <li><a href="#">單位資管窗口</a></li>
+                      <li><a href="#">重大輿情</a></li>
+                      <li><a href="#">新聞剪報</a></li>
+                      <li><a href="#">內部控制</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">系統管理</a></li>
+                </ul>
+              </div>
+              <!-- infomenu end-->
+              <div class="webSearchBtn">
+                <button title="全文檢索">全文檢索</button>
+              </div>
+            </div>
+          </nav>
+          <!-- navigation End -->
+          <!-- Search Start -->
+          <div class="webSearch typeB" role="search">
+            <div class="content">
+              <div class="formGrp">
+                <label for="mustSameAsId">搜尋</label>
+                <input id="mustSameAsId" accesskey="S" aria-label="搜尋網站內容" name="username" placeholder="全文檢索" title="請輸入文字" type="text" />
+                <button class="btn btnSearch" type="button">查詢</button>
+              </div>
+            </div>
+          </div>
+          <!-- Search End -->
+          <!-- noscript --><noscript
+            >您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+            <a href="#">網站導覽</a>
+          </noscript>
+        </div>
+      </header>
+      <!-- header End -->
+      <!-- main Start -->
       <main id="center" class="main innerPage">
         <!-- 內頁新增一個classname-->
-	<a id="aC" accesskey="C" class="accessKey" href="#aC" title="主要內容區">:::</a>
-	<div class="container">
-		<!-- 如果不要sticky效果，就移除stickySidebar classname -->
-		<aside class="leftBlock">
-			<!-- menu Start -->
-			<nav aria-label="左方選單" class="menu mainMenu" role="navigation">
-				<ul>
-					<li><a href="#">個人選單</a>
-					<ul>
-						<li><a href="#">會議室預約系統</a></li>
-						<li><a href="#">分機查號台</a></li>
-						<li><a href="#">電子表單系統</a></li>
-						<li><a href="#">刷卡出勤紀錄查詢</a></li>
-						<li><a href="#">視訊資源管理系統</a></li>
-						<li><a href="#">全球資訊網後台維護(英文版)</a></li>
-						<li><a href="#">無紙化會議系統</a></li>
-					</ul>
-					</li>
-					<li><a href="#">支援面系統</a>
-					<ul>
-						<li><a href="#">入口網子系統</a>
-						<ul>
-							<li><a href="#">權限申辦管理系統</a></li>
-							<li><a href="#">知識管理系統</a></li>
-							<li><a href="#">會議室預約管理系統</a></li>
-							<li><a href="#">無紙化會議系統</a>
-							<ul>
-								<li><a href="#">瀏覽工具下載</a></li>
-								<li><a href="#">會議預約管理</a></li>
-							</ul>
-							</li>
-							<li><a href="#">主管會報管理系統</a></li>
-							<li><a href="#">案件追蹤管理系統</a></li>
-							<li><a href="#">全民健康保險國際交流管理系統</a></li>
-							<li><a href="#">電腦資源管理系統</a></li>
-							<li><a href="#">內容管理系統</a>
-							<ul>
-								<li><a href="#">入口網後台管理</a></li>
-								<li><a href="#">組室站台後台管理</a></li>
-							</ul>
-							</li>
-							<li><a href="#">公職人員財產申報通知管理作業</a></li>
-						</ul>
-						</li>
-						<li>
-						<a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/content/flow.aspx" target="_blank">
-						電子表單系統</a></li>
-						<li><a href="#">公文資訊管理系統</a>
-						<ul>
-							<li>
-							<a href="https://h30wodisap11.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap11)</a></li>
-							<li>
-							<a href="https://h30wodisap18.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap18)</a></li>
-							<li>
-							<a href="https://h30wodisap13.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap13)</a></li>
-							<li>
-							<a href="https://h30wodisap14.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap14)</a></li>
-							<li>
-							<a href="https://h30wodisap15.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap15)</a></li>
-							<li>
-							<a href="https://h30wodisap16.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap16)</a></li>
-							<li>
-							<a href="https://h30wodisap17.intra.nhi.gov.tw/" target="_blank">
-							公文資訊管理系統(odisap17)</a></li>
-						</ul>
-						</li>
-						<li>
-						<a href="https://webfocus3.intra.nhi.gov.tw/NHIGBCE1/Default.aspx" target="_blank">
-						預算控制資訊系統</a></li>
-						<li>
-						<a href="https://h30lproperty.intra.nhi.gov.tw/login.php" target="_blank">
-						財產管理系統</a></li>
-						<li><a href="#">郵務管理系統</a>
-						<ul>
-							<li>
-							<a href="https://postap2.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank">
-							郵務管理系統(postap2)</a></li>
-							<li>
-							<a href="https://postap4.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank">
-							郵務管理系統(postap4)</a></li>
-							<li>
-							<a href="https://postap5.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank">
-							郵務管理系統(postap5)</a></li>
-						</ul>
-						</li>
-						<li>
-						<a href="https://nhihoahr.intra.nhi.gov.tw/login.aspx" target="_blank">
-						人事暨薪資系統</a></li>
-						<li>
-						<a href="https://intraweb.intra.nhi.gov.tw/P_index.aspx" target="_blank">
-						企業資訊網</a></li>
-						<li><a href="#">其他系統</a>
-						<ul>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/OnlineVote/" target="_blank">
-							線上投票暨問卷系統</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/BNHI/PageView_Default.aspx" target="_blank">
-							法學知識管理系統</a></li>
-							<li>
-							<a href="https://nhihoaap.intra.nhi.gov.tw/outer_manage/Query_Current_Card_One.aspx" target="_blank">
-							刷卡出勤紀錄查詢</a></li>
-							<li>
-							<a href="https://nhihdocex189.intra.nhi.gov.tw/liaison_manage/OuterSourcing_CheckIn.aspx" target="_blank">
-							居家辦公出勤簽到退</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/Training/" target="_blank">
-							教育訓練系統</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/TechPlan/Plan/plan4.aspx" target="_blank">
-							科技計畫管理系統</a></li>
-							<li>
-							<a href="https://nhihdocex189.intra.nhi.gov.tw/aspx/file_exchange/" target="_blank">
-							檔案交換系統</a></li>
-							<li>
-							<a href="https://nhihdocex189.intra.nhi.gov.tw/Email_Transfer/Tran_page0.aspx" target="_blank">
-							大量電子郵件傳送系統</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/Law/" target="_blank">
-							人事法規QA交流道</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/Software/" target="_blank">
-							軟體管理攤銷系統</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/Online_Test/" target="_blank">
-							線上測驗系統</a></li>
-							<li>
-							<a href="https://nhihdocex189.intra.nhi.gov.tw/aspx/d2e/default.aspx" target="_blank">
-							對外資料提供統計登錄</a></li>
-							<li>
-							<a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/PC_NOT_ShotDown/Query_PC_NOT_ShotDown.aspx#GridView1_ctl_DetailButton" target="_blank">
-							個人電腦不關機申請暨查詢</a></li>
-							<li>
-							<a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/query/employee/empA/CreateCase/query_CreateCase_perA.aspx" target="_blank">
-							創新資訊需求提案追蹤系統</a></li>
-							<li>
-							<a href="https://nhihdocex189.intra.nhi.gov.tw/library/lib_user_index.aspx" target="_blank">
-							圖書書目查詢系統</a></li>
-							<li>
-							<a href="https://customweb.intra.nhi.gov.tw/CheckIn_Activity/" target="_blank">
-							活動報到系統</a></li>
-						</ul>
-						</li>
-					</ul>
-					</li>
-					<li><a href="#">非支援面系統</a>
-					<ul>
-						<li><a href="#">收入面</a>
-						<ul>
-							<li><a href="#">醫療資訊系統</a>
-							<ul>
-								<li><a href="https://medt.intra.nhi.gov.tw/">醫療資訊系統(medt)</a></li>
-								<li><a href="https://medc.intra.nhi.gov.tw/">醫療資訊系統(medc)</a></li>
-							</ul>
-							</li>
-						</ul>
-						</li>
-						<li><a href="#">支出面</a>
-						<ul>
-							<li><a href="#">醫療資訊系統</a>
-							<ul>
-								<li><a href="https://medt.intra.nhi.gov.tw/">醫療資訊系統(medt)</a></li>
-								<li><a href="https://medc.intra.nhi.gov.tw/">醫療資訊系統(medc)</a></li>
-							</ul>
-							</li>
-							<li>
-							<a href="https://h20wgmed01.intra.nhi.gov.tw/GIAM/Login/LoginAD">
-							新一代醫療資訊系統</a></li>
-							<li>
-							<a href="https://nhihidccs.intra.nhi.gov.tw/ISCI/HOME.aspx">
-							整合式資料中心(SC)客服系統</a></li>
-						</ul>
-						</li>
-						<li><a href="#">加值服務</a>
-						<ul>
-							<li>
-							<a href="https://www.nhi.gov.tw/" target="_blank">全球資訊網首頁</a></li>
-							<li>
-							<a href="https://webadm.intra.nhi.gov.tw/" target="_blank">
-							全球資訊網後台管理系統(中文版)</a></li>
-							<li>
-							<a href="https://hi0wwsys.intra.nhi.gov.tw:4433" target="_blank">
-							全球資訊網後台管理系統(英文版)</a></li>
-							<li>
-							<a href="https://opinion.intra.nhi.gov.tw/" target="_blank">
-							意見信箱管理系統(使用chrome)</a></li>
-							<li>
-							<a href="https://hi0wiccard01.intra.nhi.gov.tw/weblogin.aspx" target="_blank">
-							健保IC卡應用系統(雙因子認證)</a></li>
-						</ul>
-						</li>
-						<li><a href="#">其他</a>
-						<ul>
-							<li>
-							<a href="https://sdwap11.intra.nhi.gov.tw/W02/Logon.aspx" target="_blank">
-							多模型健保資料平台</a></li>
-							<li>
-							<a href="https://dwap23.intra.nhi.gov.tw/InfoCenter/Home/Home.aspx" target="_blank">
-							業務智能分析平台(NHI-BI)</a></li>
-							<li>
-							<a href="https://espkm.nhi.gov.tw/km/login.aspx" target="_blank">
-							立法院資訊傳遞平台</a></li>
-						</ul>
-						</li>
-						<li><a href="#">自屬書籤</a></li>
-					</ul>
-					</li>
-					<li><a href="#">主題連結</a>
-					<ul>
-						<li><a href="#">第二層選單</a></li>
-						<li><a href="#">第二層選單</a></li>
-						<li><a href="http://www.google.com" target="_blank">第二層有連結</a>
-						<ul>
-							<li><a href="http://www.google.com" target="_blank">
-							第三層選單有下層</a>
-							<ul>
-								<li><a href="#">第四層選單</a></li>
-								<li><a href="#">第四層選單</a></li>
-							</ul>
-							</li>
-							<li><a href="http://www.google.com" target="_blank">
-							第三層選單有連結</a></li>
-							<li><a href="#">第三層選單</a></li>
-						</ul>
-						</li>
-						<li><a href="#">第二層選單</a></li>
-					</ul>
-					</li>
-					<li><a href="#">外站連結</a>
-					<ul>
-						<li><a href="#">第二層選單</a></li>
-						<li><a href="#">第二層選單</a></li>
-						<li><a href="#">第二層選單</a></li>
-						<li><a href="#">第二層選單</a></li>
-					</ul>
-					</li>
-				</ul>
-			</nav>
-			<!-- menu End -->
-		</aside>
-		<!-- 主要內容區 -->
-		<div class="centerBlock">
-			<!-- 個人訊息 -->
-			<section class="personalinfo">
-				<div class="flexSet">
-					<div class="col">
-						<h2>個人訊息</h2>
-					</div>
-					<div class="col">
-						<ul class="pending">
-							<li><a href="#">
-							<img alt="" src="images/pending_icon1.svg" />待辦事項<span class="count">99<sup>+</sup></span></a>
-							</li>
-							<li><a href="#">
-							<img alt="" src="images/pending_icon2.svg" />訊息通知<span class="count">99<sup>+</sup></span></a>
-							</li>
-						</ul>
-					</div>
-					<div class="col">
-						<ul class="datetime">
-							<li><span class="title">今日到勤</span>
-							<div class="datetimebox">
-								<span class="time">08:45</span><span class="date">(12/13)</span></div>
-							</li>
-							<li><span class="title">上次退勤</span>
-							<div class="datetimebox">
-								<span class="time">16:55</span><span class="date">(12/12)</span></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- 個人訊息 end-->
-			<!-- 圖片輪播 start -->
-			<section class="bannerSlider">
-				<div class="swiperBox">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<!-- 此區塊以下為一筆 -->
-							<div class="imgContainer swiper-slide" data-title="圖說1">
-								<a href="#" title="">
+        <a id="aC" accesskey="C" class="accessKey" href="#aC" title="主要內容區">:::</a>
+        <div class="container">
+          <!-- 如果不要sticky效果，就移除stickySidebar classname -->
+          <aside class="leftBlock">
+            <!-- menu Start -->
+            <nav aria-label="左方選單" class="menu mainMenu" role="navigation">
+              <ul>
+                <li>
+                  <a href="#">個人選單</a>
+                  <ul>
+                    <li><a href="#">會議室預約系統</a></li>
+                    <li><a href="#">分機查號台</a></li>
+                    <li><a href="#">電子表單系統</a></li>
+                    <li><a href="#">刷卡出勤紀錄查詢</a></li>
+                    <li><a href="#">視訊資源管理系統</a></li>
+                    <li><a href="#">全球資訊網後台維護(英文版)</a></li>
+                    <li><a href="#">無紙化會議系統</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">支援面系統</a>
+                  <ul>
+                    <li>
+                      <a href="#">入口網子系統</a>
+                      <ul>
+                        <li><a href="#">權限申辦管理系統</a></li>
+                        <li><a href="#">知識管理系統</a></li>
+                        <li><a href="#">會議室預約管理系統</a></li>
+                        <li>
+                          <a href="#">無紙化會議系統</a>
+                          <ul>
+                            <li><a href="#">瀏覽工具下載</a></li>
+                            <li><a href="#">會議預約管理</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">主管會報管理系統</a></li>
+                        <li><a href="#">案件追蹤管理系統</a></li>
+                        <li><a href="#">全民健康保險國際交流管理系統</a></li>
+                        <li><a href="#">電腦資源管理系統</a></li>
+                        <li>
+                          <a href="#">內容管理系統</a>
+                          <ul>
+                            <li><a href="#">入口網後台管理</a></li>
+                            <li><a href="#">組室站台後台管理</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">公職人員財產申報通知管理作業</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/content/flow.aspx" target="_blank"> 電子表單系統</a>
+                    </li>
+                    <li>
+                      <a href="#">公文資訊管理系統</a>
+                      <ul>
+                        <li>
+                          <a href="https://h30wodisap11.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap11)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap18.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap18)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap13.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap13)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap14.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap14)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap15.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap15)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap16.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap16)</a>
+                        </li>
+                        <li>
+                          <a href="https://h30wodisap17.intra.nhi.gov.tw/" target="_blank"> 公文資訊管理系統(odisap17)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://webfocus3.intra.nhi.gov.tw/NHIGBCE1/Default.aspx" target="_blank"> 預算控制資訊系統</a>
+                    </li>
+                    <li>
+                      <a href="https://h30lproperty.intra.nhi.gov.tw/login.php" target="_blank"> 財產管理系統</a>
+                    </li>
+                    <li>
+                      <a href="#">郵務管理系統</a>
+                      <ul>
+                        <li>
+                          <a href="https://postap2.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank"> 郵務管理系統(postap2)</a>
+                        </li>
+                        <li>
+                          <a href="https://postap4.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank"> 郵務管理系統(postap4)</a>
+                        </li>
+                        <li>
+                          <a href="https://postap5.intra.nhi.gov.tw/post-app/main/SSM/MFS_ABA/Default.aspx" target="_blank"> 郵務管理系統(postap5)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="https://nhihoahr.intra.nhi.gov.tw/login.aspx" target="_blank"> 人事暨薪資系統</a>
+                    </li>
+                    <li>
+                      <a href="https://intraweb.intra.nhi.gov.tw/P_index.aspx" target="_blank"> 企業資訊網</a>
+                    </li>
+                    <li>
+                      <a href="#">其他系統</a>
+                      <ul>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/OnlineVote/" target="_blank"> 線上投票暨問卷系統</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/BNHI/PageView_Default.aspx" target="_blank"> 法學知識管理系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihoaap.intra.nhi.gov.tw/outer_manage/Query_Current_Card_One.aspx" target="_blank"> 刷卡出勤紀錄查詢</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihdocex189.intra.nhi.gov.tw/liaison_manage/OuterSourcing_CheckIn.aspx" target="_blank"> 居家辦公出勤簽到退</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/Training/" target="_blank"> 教育訓練系統</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/TechPlan/Plan/plan4.aspx" target="_blank"> 科技計畫管理系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihdocex189.intra.nhi.gov.tw/aspx/file_exchange/" target="_blank"> 檔案交換系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihdocex189.intra.nhi.gov.tw/Email_Transfer/Tran_page0.aspx" target="_blank"> 大量電子郵件傳送系統</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/Law/" target="_blank"> 人事法規QA交流道</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/Software/" target="_blank"> 軟體管理攤銷系統</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/Online_Test/" target="_blank"> 線上測驗系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihdocex189.intra.nhi.gov.tw/aspx/d2e/default.aspx" target="_blank"> 對外資料提供統計登錄</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/PC_NOT_ShotDown/Query_PC_NOT_ShotDown.aspx#GridView1_ctl_DetailButton" target="_blank"> 個人電腦不關機申請暨查詢</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihflowap.intra.nhi.gov.tw/bpmflow/query/employee/empA/CreateCase/query_CreateCase_perA.aspx" target="_blank"> 創新資訊需求提案追蹤系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihdocex189.intra.nhi.gov.tw/library/lib_user_index.aspx" target="_blank"> 圖書書目查詢系統</a>
+                        </li>
+                        <li>
+                          <a href="https://customweb.intra.nhi.gov.tw/CheckIn_Activity/" target="_blank"> 活動報到系統</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">非支援面系統</a>
+                  <ul>
+                    <li>
+                      <a href="#">收入面</a>
+                      <ul>
+                        <li>
+                          <a href="#">醫療資訊系統</a>
+                          <ul>
+                            <li><a href="https://medt.intra.nhi.gov.tw/">醫療資訊系統(medt)</a></li>
+                            <li><a href="https://medc.intra.nhi.gov.tw/">醫療資訊系統(medc)</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">支出面</a>
+                      <ul>
+                        <li>
+                          <a href="#">醫療資訊系統</a>
+                          <ul>
+                            <li><a href="https://medt.intra.nhi.gov.tw/">醫療資訊系統(medt)</a></li>
+                            <li><a href="https://medc.intra.nhi.gov.tw/">醫療資訊系統(medc)</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="https://h20wgmed01.intra.nhi.gov.tw/GIAM/Login/LoginAD"> 新一代醫療資訊系統</a>
+                        </li>
+                        <li>
+                          <a href="https://nhihidccs.intra.nhi.gov.tw/ISCI/HOME.aspx"> 整合式資料中心(SC)客服系統</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">加值服務</a>
+                      <ul>
+                        <li>
+                          <a href="https://www.nhi.gov.tw/" target="_blank">全球資訊網首頁</a>
+                        </li>
+                        <li>
+                          <a href="https://webadm.intra.nhi.gov.tw/" target="_blank"> 全球資訊網後台管理系統(中文版)</a>
+                        </li>
+                        <li>
+                          <a href="https://hi0wwsys.intra.nhi.gov.tw:4433" target="_blank"> 全球資訊網後台管理系統(英文版)</a>
+                        </li>
+                        <li>
+                          <a href="https://opinion.intra.nhi.gov.tw/" target="_blank"> 意見信箱管理系統(使用chrome)</a>
+                        </li>
+                        <li>
+                          <a href="https://hi0wiccard01.intra.nhi.gov.tw/weblogin.aspx" target="_blank"> 健保IC卡應用系統(雙因子認證)</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">其他</a>
+                      <ul>
+                        <li>
+                          <a href="https://sdwap11.intra.nhi.gov.tw/W02/Logon.aspx" target="_blank"> 多模型健保資料平台</a>
+                        </li>
+                        <li>
+                          <a href="https://dwap23.intra.nhi.gov.tw/InfoCenter/Home/Home.aspx" target="_blank"> 業務智能分析平台(NHI-BI)</a>
+                        </li>
+                        <li>
+                          <a href="https://espkm.nhi.gov.tw/km/login.aspx" target="_blank"> 立法院資訊傳遞平台</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">自屬書籤</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">主題連結</a>
+                  <ul>
+                    <li><a href="#">第二層選單</a></li>
+                    <li><a href="#">第二層選單</a></li>
+                    <li>
+                      <a href="http://www.google.com" target="_blank">第二層有連結</a>
+                      <ul>
+                        <li>
+                          <a href="http://www.google.com" target="_blank"> 第三層選單有下層</a>
+                          <ul>
+                            <li><a href="#">第四層選單</a></li>
+                            <li><a href="#">第四層選單</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="http://www.google.com" target="_blank"> 第三層選單有連結</a></li>
+                        <li><a href="#">第三層選單</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">第二層選單</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">外站連結</a>
+                  <ul>
+                    <li><a href="#">第二層選單</a></li>
+                    <li><a href="#">第二層選單</a></li>
+                    <li><a href="#">第二層選單</a></li>
+                    <li><a href="#">第二層選單</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <!-- menu End -->
+          </aside>
+          <!-- 主要內容區 -->
+          <div class="centerBlock">
+            <!-- 個人訊息 -->
+            <section class="personalinfo">
+              <div class="flexSet">
+                <div class="col">
+                  <h2>個人訊息</h2>
+                </div>
+                <div class="col">
+                  <ul class="pending">
+                    <li>
+                      <a href="#">
+                        <img alt="" src="images/pending_icon1.svg" />待辦事項<span class="count">99<sup>+</sup></span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img alt="" src="images/pending_icon2.svg" />訊息通知<span class="count">99<sup>+</sup></span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul class="datetime">
+                    <li>
+                      <span class="title">今日到勤</span>
+                      <div class="datetimebox"><span class="time">08:45</span><span class="date">(12/13)</span></div>
+                    </li>
+                    <li>
+                      <span class="title">上次退勤</span>
+                      <div class="datetimebox"><span class="time">16:55</span><span class="date">(12/12)</span></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <!-- 個人訊息 end-->
+            <!-- 圖片輪播 start -->
+            <section class="bannerSlider">
+              <div class="swiperBox">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <!-- 此區塊以下為一筆 -->
+                    <div class="imgContainer swiper-slide" data-title="圖說1">
+                      <a href="#" title="">
                         <picture>
-                          	  <source data-srcset="images/banner01.png" media="(min-width: 1200px)" />
-								<source data-srcset="images/banner01.png" media="(min-width: 992px)" />
-								<source data-srcset="images/banner01.png" media="(min-width: 576px)" />
-								<source data-srcset="images/banner01.png" media="(max-width: 575px)" />
-								<img alt="圖說1" class="swiper-lazy" data-src="images/banner01.png" />
-								<noscript>
-								<img alt="圖說1" src="images/banner01.png" />
-								</noscript>
+                          <source data-srcset="images/banner01.png" media="(min-width: 1200px)" />
+                          <source data-srcset="images/banner01.png" media="(min-width: 992px)" />
+                          <source data-srcset="images/banner01.png" media="(min-width: 576px)" />
+                          <source data-srcset="images/banner01.png" media="(max-width: 575px)" />
+                          <img alt="圖說1" class="swiper-lazy" data-src="images/banner01.png" />
+                          <noscript>
+                            <img alt="圖說1" src="images/banner01.png" />
+                          </noscript>
                         </picture>
-                        		<span class="caption">歡慶全民健保28，響應2023世界衛生日Health 
-								for All in Taiwan</span> </a></div>
-							<!-- 此區塊以上為一筆 -->
-							<!-- 此區塊以下為一筆 -->
-							<div class="imgContainer swiper-slide" data-title="圖說1">
-								<a href="#" title="">
+                        <span class="caption">歡慶全民健保28，響應2023世界衛生日Health for All in Taiwan</span>
+                      </a>
+                    </div>
+                    <!-- 此區塊以上為一筆 -->
+                    <!-- 此區塊以下為一筆 -->
+                    <div class="imgContainer swiper-slide" data-title="圖說1">
+                      <a href="#" title="">
                         <picture>
-                          	  <source data-srcset="images/banner02.png" media="(min-width: 1200px)" />
-								<source data-srcset="images/banner02.png" media="(min-width: 992px)" />
-								<source data-srcset="images/banner02.png" media="(min-width: 576px)" />
-								<source data-srcset="images/banner02.png" media="(max-width: 575px)" />
-								<img alt="圖說2" class="swiper-lazy" data-src="images/banner02.png" />
-								<noscript>
-								<img alt="圖說2" src="images/banner02.png" />
-								</noscript>
+                          <source data-srcset="images/banner02.png" media="(min-width: 1200px)" />
+                          <source data-srcset="images/banner02.png" media="(min-width: 992px)" />
+                          <source data-srcset="images/banner02.png" media="(min-width: 576px)" />
+                          <source data-srcset="images/banner02.png" media="(max-width: 575px)" />
+                          <img alt="圖說2" class="swiper-lazy" data-src="images/banner02.png" />
+                          <noscript>
+                            <img alt="圖說2" src="images/banner02.png" />
+                          </noscript>
                         </picture>
-                        		<span class="caption">圖說2</span> </a></div>
-							<!-- 此區塊以上為一筆 -->
-							<!-- 此區塊以下為一筆 -->
-							<div class="imgContainer swiper-slide" data-title="圖說1">
-								<a href="#" title="">
+                        <span class="caption">圖說2</span>
+                      </a>
+                    </div>
+                    <!-- 此區塊以上為一筆 -->
+                    <!-- 此區塊以下為一筆 -->
+                    <div class="imgContainer swiper-slide" data-title="圖說1">
+                      <a href="#" title="">
                         <picture>
-                          	  <source data-srcset="images/banner03.png" media="(min-width: 1200px)" />
-								<source data-srcset="images/banner03.png" media="(min-width: 992px)" />
-								<source data-srcset="images/banner03.png" media="(min-width: 576px)" />
-								<source data-srcset="images/banner03.png" media="(max-width: 575px)" />
-								<img alt="圖說2" class="swiper-lazy" data-src="images/banner03.png" />
-								<noscript>
-								<img alt="圖說2" src="images/banner03.png" />
-								</noscript>
+                          <source data-srcset="images/banner03.png" media="(min-width: 1200px)" />
+                          <source data-srcset="images/banner03.png" media="(min-width: 992px)" />
+                          <source data-srcset="images/banner03.png" media="(min-width: 576px)" />
+                          <source data-srcset="images/banner03.png" media="(max-width: 575px)" />
+                          <img alt="圖說2" class="swiper-lazy" data-src="images/banner03.png" />
+                          <noscript>
+                            <img alt="圖說2" src="images/banner03.png" />
+                          </noscript>
                         </picture>
-                        		<span class="caption">圖說3</span> </a></div>
-							<!-- 此區塊以上為一筆 -->
-							<!-- 此區塊以下為一筆 -->
-							<div class="imgContainer swiper-slide" data-title="圖說1">
-								<a href="#" title="">
+                        <span class="caption">圖說3</span>
+                      </a>
+                    </div>
+                    <!-- 此區塊以上為一筆 -->
+                    <!-- 此區塊以下為一筆 -->
+                    <div class="imgContainer swiper-slide" data-title="圖說1">
+                      <a href="#" title="">
                         <picture>
-                          	  <source data-srcset="images/banner04.png" media="(min-width: 1200px)" />
-								<source data-srcset="images/banner04.png" media="(min-width: 992px)" />
-								<source data-srcset="images/banner04.png" media="(min-width: 576px)" />
-								<source data-srcset="images/banner04.png" media="(max-width: 575px)" />
-								<img alt="圖說2" class="swiper-lazy" data-src="images/banner04.png" />
-								<noscript>
-								<img alt="圖說2" src="images/banner04.png" />
-								</noscript>
+                          <source data-srcset="images/banner04.png" media="(min-width: 1200px)" />
+                          <source data-srcset="images/banner04.png" media="(min-width: 992px)" />
+                          <source data-srcset="images/banner04.png" media="(min-width: 576px)" />
+                          <source data-srcset="images/banner04.png" media="(max-width: 575px)" />
+                          <img alt="圖說2" class="swiper-lazy" data-src="images/banner04.png" />
+                          <noscript>
+                            <img alt="圖說2" src="images/banner04.png" />
+                          </noscript>
                         </picture>
-                        		<span class="caption">圖說4</span> </a></div>
-							<!-- 此區塊以上為一筆 --></div>
-					</div>
-					<!--操控物件可以隨意放，但注意設定要對應到-->
-					<!--前一筆--><button class="prevSlider swiperArrow"></button>
-					<!--下一筆--><button class="nextSlider swiperArrow"></button>
-					<!--圓點-->
-					<div class="swiperDots">
-					</div>
-				</div>
-			</section>
-			<!-- 圖片輪播 end -->
-			<!-- 最新消息 -->
-			<section class="news">
-				<h2 class="title">最新消息</h2>
-				<div class="container">
-					<!-- tabSet -->
-					<div class="tabSet">
-						<div class="tabItems">
-							<button class="item" type="button">人事公告</button>
-							<button class="item" type="button">資訊公告</button>
-							<button class="item" type="button">業務公告</button>
-						</div>
-						<div class="tabContentGroup">
-							<!-- tabContent -->
-							<div class="tabContent" title="人事公告列表">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/20</time> 再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/12</time> 檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多人事公告</a></div>
-							</div>
-							<!-- tabContent end-->
-							<!-- tabContent -->
-							<div class="tabContent" title="資訊公告內容">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 資訊公告資訊公告資訊公告，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/21</time> 資訊公告資訊公告再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/05</time> 資訊公告資訊公告資訊公告檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多資訊公告</a></div>
-							</div>
-							<!-- tabContent end-->
-							<!-- tabContent -->
-							<div class="tabContent" title="業務公告內容">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 業務公告業務公告，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/21</time> 業務公告業務公告再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/05</time> 業務公告業務公告檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多業務公告</a></div>
-							</div>
-							<!-- tabContent end--></div>
-					</div>
-					<!-- tabSet end-->
-					<!-- tabSet -->
-					<div class="tabSet">
-						<div class="tabItems">
-							<button class="item" type="button">活動快報</button>
-							<button class="item" type="button">宣導專區</button>
-							<button class="item" type="button">其他訊息</button>
-						</div>
-						<div class="tabContentGroup">
-							<!-- tabContent -->
-							<div class="tabContent" title="活動快報列表">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/20</time> 再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/12</time> 檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多活動快報</a></div>
-							</div>
-							<!-- tabContent end-->
-							<!-- tabContent -->
-							<div class="tabContent" title="宣導專區內容">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 宣導專區宣導專區宣導專區，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/21</time> 宣導專區宣導專區再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/05</time> 宣導專區宣導專區宣導專區檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多宣導專區</a></div>
-							</div>
-							<!-- tabContent end-->
-							<!-- tabContent -->
-							<div class="tabContent" title="其他訊息內容">
-								<!-- 文字列表 -->
-								<div class="list">
-									<ul>
-										<li><a href="#"><time>112/02/01</time> 其他訊息其他訊息，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 
-										</a></li>
-										<li><a href="#"><time>112/01/21</time> 其他訊息其他訊息再次提醒，小心健保詐騙喔!
-										</a></li>
-										<li><a href="#"><time>112/01/05</time> 其他訊息其他訊息檢送資訊室第七次採購會議紀錄乙份，請查照 
-										</a></li>
-										<li><a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 
-										</a></li>
-									</ul>
-								</div>
-								<!-- 文字列表 end-->
-								<div class="more">
-									<a href="#">更多其他訊息</a></div>
-							</div>
-							<!-- tabContent end--></div>
-					</div>
-					<!-- tabSet end--></div>
-			</section>
-			<!-- 最新消息 end-->
-			<!-- 會議室預約 -->
-			<section class="meeting">
-				<div class="container">
-					<!-- meetContent -->
-					<div class="meetContent">
-						<h2 class="title">會議室預約</h2>
-						<div class="tabItems">
-							<div class="item">
-								實體會議</div>
-							<div class="item">
-								電子化會議</div>
-							<div class="item">
-								視訊會議</div>
-						</div>
-						<!-- 表格 -->
-						<div class="tableList">
-							<table>
-								<!-- 無障礙 caption 標題預設隱藏 -->
-								<caption>會議預約表格 </caption>
-								<thead>
-									<tr>
-										<th widih="30%">會議室</th>
-										<th widih="20%">會議時間</th>
-										<th widih="30%">會議名稱</th>
-										<th widih="20%">會議類型</th>
-									</tr>
-								</thead>
-								<tr>
-									<td class="room"><a href="#">第一會議室 (9F)</a></td>
-									<td class="time">08:00</td>
-									<td class="meetname">退監勞退會</td>
-									<td class="micon">
-									<img alt="實體會議" class="meeting_icon1" src="images/meeting_icon1.svg" />
-									<img alt="電子化會議" class="meeting_icon2" src="images/meeting_icon2.svg" />
-									<img alt="視訊會議" class="meeting_icon3" src="images/meeting_icon3.svg" />
-									</td>
-								</tr>
-								<tr>
-									<td><a href="#">討論室 (16F)</a></td>
-									<td class="time">08:00</td>
-									<td class="meetname">醫管組研議事項討醫管組研議事項討醫管組研議事項討醫管組研議事項討</td>
-									<td>
-									<img alt="實體會議" class="meeting_icon1" src="images/meeting_icon1.svg" />
-									</td>
-								</tr>
-								<tr>
-									<td><a href="#">禮堂 (18F)</a></td>
-									<td class="time">08:00</td>
-									<td class="meetname">人權教育訓練</td>
-									<td>
-									<img alt="電子化會議" class="meeting_icon2" src="images/meeting_icon2.svg" />
-									<img alt="視訊會議" class="meeting_icon3" src="images/meeting_icon3.svg" />
-									</td>
-								</tr>
-								<tr>
-									<td><a href="#">討論室 (10F)</a></td>
-									<td class="time">08:30</td>
-									<td class="meetname">112年內科系會前會</td>
-									<td>
-									<img alt="實體會議" class="meeting_icon1" src="images/meeting_icon1.svg" />
-									</td>
-								</tr>
-								<tr>
-									<td><a href="#">第二會議室 (9F)</a></td>
-									<td class="time">08:30</td>
-									<td class="meetname">資訊組研議事項討論</td>
-									<td>
-									<img alt="電子化會議" class="meeting_icon2" src="images/meeting_icon2.svg" />
-									</td>
-								</tr>
-							</table>
-						</div>
-						<!-- 表格 end-->
-						<div class="more">
-							<a href="#">更多會議室預約</a></div>
-					</div>
-					<!-- meetContent end--></div>
-			</section>
-			<!-- 會議室預約 end-->
-			<!-- col_6_6 -->
-			<section class="col_6_6">
-				<div class="container">
-					<div class="col">
-						<!-- 相簿花絮輪播 start -->
-						<div class="albumBlock">
-							<h2 class="title">相簿花絮</h2>
-							<div class="albumSlider">
-								<div class="swiperBox">
-									<div class="swiper">
-										<div class="swiper-wrapper">
-											<!-- 此區塊以下為一筆 -->
-											<div class="imgContainer swiper-slide" data-title="圖說1">
-												<a href="#" title="">
+                        <span class="caption">圖說4</span>
+                      </a>
+                    </div>
+                    <!-- 此區塊以上為一筆 -->
+                  </div>
+                </div>
+                <!--操控物件可以隨意放，但注意設定要對應到-->
+                <!--前一筆--><button class="prevSlider swiperArrow"></button>
+                <!--下一筆--><button class="nextSlider swiperArrow"></button>
+                <!--圓點-->
+                <div class="swiperDots"></div>
+              </div>
+            </section>
+            <!-- 圖片輪播 end -->
+            <!-- 最新消息 -->
+            <section class="news">
+              <h2 class="title">最新消息</h2>
+              <div class="container">
+                <!-- tabSet -->
+                <div class="tabSet">
+                  <div class="tabItems">
+                    <button class="item" type="button">人事公告</button>
+                    <button class="item" type="button">資訊公告</button>
+                    <button class="item" type="button">業務公告</button>
+                  </div>
+                  <div class="tabContentGroup">
+                    <!-- tabContent -->
+                    <div class="tabContent" title="人事公告列表">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/20</time> 再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/12</time> 檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多人事公告</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                    <!-- tabContent -->
+                    <div class="tabContent" title="資訊公告內容">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 資訊公告資訊公告資訊公告，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/21</time> 資訊公告資訊公告再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/05</time> 資訊公告資訊公告資訊公告檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多資訊公告</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                    <!-- tabContent -->
+                    <div class="tabContent" title="業務公告內容">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 業務公告業務公告，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/21</time> 業務公告業務公告再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/05</time> 業務公告業務公告檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多業務公告</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                  </div>
+                </div>
+                <!-- tabSet end-->
+                <!-- tabSet -->
+                <div class="tabSet">
+                  <div class="tabItems">
+                    <button class="item" type="button">活動快報</button>
+                    <button class="item" type="button">宣導專區</button>
+                    <button class="item" type="button">其他訊息</button>
+                  </div>
+                  <div class="tabContentGroup">
+                    <!-- tabContent -->
+                    <div class="tabContent" title="活動快報列表">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/20</time> 再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/12</time> 檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多活動快報</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                    <!-- tabContent -->
+                    <div class="tabContent" title="宣導專區內容">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 宣導專區宣導專區宣導專區，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/21</time> 宣導專區宣導專區再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/05</time> 宣導專區宣導專區宣導專區檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多宣導專區</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                    <!-- tabContent -->
+                    <div class="tabContent" title="其他訊息內容">
+                      <!-- 文字列表 -->
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <a href="#"><time>112/02/01</time> 其他訊息其他訊息，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫本服務於112年2月28日下午6時至10時進行系統維護，維護期間將暫 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/21</time> 其他訊息其他訊息再次提醒，小心健保詐騙喔! </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/05</time> 其他訊息其他訊息檢送資訊室第七次採購會議紀錄乙份，請查照 </a>
+                          </li>
+                          <li>
+                            <a href="#"><time>112/01/01</time> 檢送網站新增功能及維護委外服務案文件，請查照 </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 文字列表 end-->
+                      <div class="more">
+                        <a href="#">更多其他訊息</a>
+                      </div>
+                    </div>
+                    <!-- tabContent end-->
+                  </div>
+                </div>
+                <!-- tabSet end-->
+              </div>
+            </section>
+            <!-- 最新消息 end-->
+            <!-- 會議室預約 -->
+            <section class="meeting">
+              <div class="container">
+                <!-- meetContent -->
+                <div class="meetContent">
+                  <h2 class="title">會議室預約</h2>
+                  <div class="tabItems">
+                    <div class="item">實體會議</div>
+                    <div class="item">視訊會議</div>
+                  </div>
+                  <!-- 表格 -->
+                  <div class="tableList">
+                    <table>
+                      <!-- 無障礙 caption 標題預設隱藏 -->
+                      <caption>
+                        會議預約表格
+                      </caption>
+                      <thead>
+                        <tr>
+                          <th widih="30%">會議室</th>
+                          <th widih="20%">會議時間</th>
+                          <th widih="30%">會議名稱</th>
+                          <th widih="20%">會議類型</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="room"><a href="#">第一會議室 (9F)</a></td>
+                          <td class="time">08:00</td>
+                          <td class="meetname">退監勞退會</td>
+                          <td class="micon">
+                            <img src="images/meeting_icon1.svg" alt="實體會議" class="meeting_icon1" />
+                            <img src="images/meeting_icon3.svg" alt="視訊會議" class="meeting_icon3" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">討論室 (16F)</a></td>
+                          <td class="time">08:00</td>
+                          <td class="meetname">醫管組研議事項討醫管組研議事項討醫管組研議事項討醫管組研議事項討</td>
+                          <td>
+                            <img src="images/meeting_icon1.svg" alt="實體會議" class="meeting_icon1" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">禮堂 (18F)</a></td>
+                          <td class="time">08:00</td>
+                          <td class="meetname">人權教育訓練</td>
+                          <td>
+                            <img src="images/meeting_icon3.svg" alt="視訊會議" class="meeting_icon3" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">討論室 (10F)</a></td>
+                          <td class="time">08:30</td>
+                          <td class="meetname">112年內科系會前會</td>
+                          <td>
+                            <img src="images/meeting_icon1.svg" alt="實體會議" class="meeting_icon1" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">第二會議室 (9F)</a></td>
+                          <td class="time">08:30</td>
+                          <td class="meetname">資訊組研議事項討論</td>
+                          <td>
+                            <img src="images/meeting_icon1.svg" alt="電子化會議" class="meeting_icon1" />
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- 表格 end-->
+                  <div class="more">
+                    <a href="#">更多會議室預約</a>
+                  </div>
+                </div>
+                <!-- meetContent end-->
+              </div>
+            </section>
+            <!-- 會議室預約 end-->
+            <!-- col_6_6 -->
+            <section class="col_6_6">
+              <div class="container">
+                <div class="col">
+                  <!-- 相簿花絮輪播 start -->
+                  <div class="albumBlock">
+                    <h2 class="title">相簿花絮</h2>
+                    <div class="albumSlider">
+                      <div class="swiperBox">
+                        <div class="swiper">
+                          <div class="swiper-wrapper">
+                            <!-- 此區塊以下為一筆 -->
+                            <div class="imgContainer swiper-slide" data-title="圖說1">
+                              <a href="#" title="">
                                 <picture>
-                                  			  <source data-srcset="images/album_p01.jpg" media="(min-width: 1200px)" />
-												<source data-srcset="images/album_p01.jpg" media="(min-width: 992px)" />
-												<source data-srcset="images/album_p01.jpg" media="(min-width: 576px)" />
-												<source data-srcset="images/album_p01.jpg" media="(max-width: 575px)" />
-												<img alt="圖說1" class="cover swiper-lazy" data-src="images/album_p01.jpg" />
-												<noscript>
-												<img alt="圖說1" src="images/album_p01.jpg" />
-												</noscript>
+                                  <source data-srcset="images/album_p01.jpg" media="(min-width: 1200px)" />
+                                  <source data-srcset="images/album_p01.jpg" media="(min-width: 992px)" />
+                                  <source data-srcset="images/album_p01.jpg" media="(min-width: 576px)" />
+                                  <source data-srcset="images/album_p01.jpg" media="(max-width: 575px)" />
+                                  <img alt="圖說1" class="cover swiper-lazy" data-src="images/album_p01.jpg" />
+                                  <noscript>
+                                    <img alt="圖說1" src="images/album_p01.jpg" />
+                                  </noscript>
                                 </picture>
-                                				<span class="caption">健保快易通APP實用功能開箱健保快易通APP實用功能開箱1</span>
-												</a></div>
-											<!-- 此區塊以上為一筆 -->
-											<!-- 此區塊以下為一筆 -->
-											<div class="imgContainer swiper-slide" data-title="圖說1">
-												<a href="#" title="">
+                                <span class="caption">健保快易通APP實用功能開箱健保快易通APP實用功能開箱1</span>
+                              </a>
+                            </div>
+                            <!-- 此區塊以上為一筆 -->
+                            <!-- 此區塊以下為一筆 -->
+                            <div class="imgContainer swiper-slide" data-title="圖說1">
+                              <a href="#" title="">
                                 <picture>
-                                  			  <source data-srcset="images/demo/01.jpg" media="(min-width: 1200px)" />
-												<source data-srcset="images/demo/01.jpg" media="(min-width: 992px)" />
-												<source data-srcset="images/demo/01.jpg" media="(min-width: 576px)" />
-												<source data-srcset="images/demo/01.jpg" media="(max-width: 575px)" />
-												<img alt="圖說1" class="cover swiper-lazy" data-src="images/demo/01.jpg" />
-												<noscript>
-												<img alt="圖說1" src="images/demo/01.jpg" />
-												</noscript>
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 1200px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 992px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 576px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(max-width: 575px)" />
+                                  <img alt="圖說1" class="cover swiper-lazy" data-src="images/demo/01.jpg" />
+                                  <noscript>
+                                    <img alt="圖說1" src="images/demo/01.jpg" />
+                                  </noscript>
                                 </picture>
-                                				<span class="caption">圖說2</span>
-												</a></div>
-											<!-- 此區塊以上為一筆 --></div>
-									</div>
-									<!--操控物件可以隨意放，但注意設定要對應到-->
-									<!--前一筆-->
-									<button class="prevSlider swiperArrow">
-									</button>
-									<!--下一筆-->
-									<button class="nextSlider swiperArrow">
-									</button>
-									<!--圓點-->
-									<div class="swiperDots">
-									</div>
-								</div>
-							</div>
-							<div class="more">
-								<a href="#">更多相簿花絮</a></div>
-						</div>
-						<!-- 相簿花絮輪播 end --></div>
-					<div class="col">
-						<!-- 影音快遞輪播 start -->
-						<div class="videoBlock">
-							<h2 class="title">影音快遞</h2>
-							<div class="videoSlider">
-								<div class="swiperBox">
-									<div class="swiper">
-										<div class="swiper-wrapper">
-											<!-- 此區塊以下為一筆 -->
-											<div class="imgContainer swiper-slide" data-title="圖說1">
-												<a href="#" title="">
-												<div class="playimg">
-												</div>
+                                <span class="caption">圖說2</span>
+                              </a>
+                            </div>
+                            <!-- 此區塊以上為一筆 -->
+                          </div>
+                        </div>
+                        <!--操控物件可以隨意放，但注意設定要對應到-->
+                        <!--前一筆-->
+                        <button class="prevSlider swiperArrow"></button>
+                        <!--下一筆-->
+                        <button class="nextSlider swiperArrow"></button>
+                        <!--圓點-->
+                        <div class="swiperDots"></div>
+                      </div>
+                    </div>
+                    <div class="more">
+                      <a href="#">更多相簿花絮</a>
+                    </div>
+                  </div>
+                  <!-- 相簿花絮輪播 end -->
+                </div>
+                <div class="col">
+                  <!-- 影音快遞輪播 start -->
+                  <div class="videoBlock">
+                    <h2 class="title">影音快遞</h2>
+                    <div class="videoSlider">
+                      <div class="swiperBox">
+                        <div class="swiper">
+                          <div class="swiper-wrapper">
+                            <!-- 此區塊以下為一筆 -->
+                            <div class="imgContainer swiper-slide" data-title="圖說1">
+                              <a href="#" title="">
+                                <div class="playimg"></div>
                                 <picture>
-                                  			  <source data-srcset="images/video_p01.jpg" media="(min-width: 1200px)" />
-												<source data-srcset="images/video_p01.jpg" media="(min-width: 992px)" />
-												<source data-srcset="images/video_p01.jpg" media="(min-width: 576px)" />
-												<source data-srcset="images/video_p01.jpg" media="(max-width: 575px)" />
-												<img alt="圖說1" class="cover swiper-lazy" data-src="images/video_p01.jpg" />
-												<noscript>
-												<img alt="圖說1" src="images/video_p01.jpg" />
-												</noscript>
+                                  <source data-srcset="images/video_p01.jpg" media="(min-width: 1200px)" />
+                                  <source data-srcset="images/video_p01.jpg" media="(min-width: 992px)" />
+                                  <source data-srcset="images/video_p01.jpg" media="(min-width: 576px)" />
+                                  <source data-srcset="images/video_p01.jpg" media="(max-width: 575px)" />
+                                  <img alt="圖說1" class="cover swiper-lazy" data-src="images/video_p01.jpg" />
+                                  <noscript>
+                                    <img alt="圖說1" src="images/video_p01.jpg" />
+                                  </noscript>
                                 </picture>
-                                				<span class="caption">健保快易通APP實用功能開箱健保快易通APP實用功能開箱1</span>
-												</a></div>
-											<!-- 此區塊以上為一筆 -->
-											<!-- 此區塊以下為一筆 -->
-											<div class="imgContainer swiper-slide" data-title="圖說1">
-												<a href="#" title="">
-												<div class="playimg">
-												</div>
+                                <span class="caption">健保快易通APP實用功能開箱健保快易通APP實用功能開箱1</span>
+                              </a>
+                            </div>
+                            <!-- 此區塊以上為一筆 -->
+                            <!-- 此區塊以下為一筆 -->
+                            <div class="imgContainer swiper-slide" data-title="圖說1">
+                              <a href="#" title="">
+                                <div class="playimg"></div>
                                 <picture>
-                                  			  <source data-srcset="images/demo/01.jpg" media="(min-width: 1200px)" />
-												<source data-srcset="images/demo/01.jpg" media="(min-width: 992px)" />
-												<source data-srcset="images/demo/01.jpg" media="(min-width: 576px)" />
-												<source data-srcset="images/demo/01.jpg" media="(max-width: 575px)" />
-												<img alt="圖說1" class="cover swiper-lazy" data-src="images/demo/01.jpg" />
-												<noscript>
-												<img alt="圖說1" src="images/demo/01.jpg" />
-												</noscript>
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 1200px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 992px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(min-width: 576px)" />
+                                  <source data-srcset="images/demo/01.jpg" media="(max-width: 575px)" />
+                                  <img alt="圖說1" class="cover swiper-lazy" data-src="images/demo/01.jpg" />
+                                  <noscript>
+                                    <img alt="圖說1" src="images/demo/01.jpg" />
+                                  </noscript>
                                 </picture>
-                                				<span class="caption">圖說2</span>
-												</a></div>
-											<!-- 此區塊以上為一筆 --></div>
-									</div>
-									<!--操控物件可以隨意放，但注意設定要對應到-->
-									<!--前一筆-->
-									<button class="prevSlider swiperArrow">
-									</button>
-									<!--下一筆-->
-									<button class="nextSlider swiperArrow">
-									</button>
-									<!--圓點-->
-									<div class="swiperDots">
-									</div>
-								</div>
-							</div>
-							<div class="more">
-								<a href="#">更多影音快遞</a></div>
-						</div>
-						<!-- 影音快遞輪播 end --></div>
-				</div>
-			</section>
-			<!-- col_6_6 end--></div>
-	</div>
+                                <span class="caption">圖說2</span>
+                              </a>
+                            </div>
+                            <!-- 此區塊以上為一筆 -->
+                          </div>
+                        </div>
+                        <!--操控物件可以隨意放，但注意設定要對應到-->
+                        <!--前一筆-->
+                        <button class="prevSlider swiperArrow"></button>
+                        <!--下一筆-->
+                        <button class="nextSlider swiperArrow"></button>
+                        <!--圓點-->
+                        <div class="swiperDots"></div>
+                      </div>
+                    </div>
+                    <div class="more">
+                      <a href="#">更多影音快遞</a>
+                    </div>
+                  </div>
+                  <!-- 影音快遞輪播 end -->
+                </div>
+              </div>
+            </section>
+            <!-- col_6_6 end-->
+          </div>
+        </div>
       </main>
       <!-- footer Start-->
-	<footer>
-		<div class="container">
-			<a id="aZ" accesskey="Z" class="accessKey" href="#aZ" title="頁尾區">:::</a>
-			<div class="footerInfo">
-				<ul class="footerLink">
-					<li><a href="javascript:;">資訊安全政策</a></li>
-					<li><a href="javascript:;">資訊終端設備及網域資源服務使用管理要點</a></li>
-				</ul>
-				<p class="Copyright">衛生福利部中央健康保險署</p>
-			</div>
-		</div>
-	</footer>
-	<!-- footer End --></div>
-<a class="scrollToTop" href="javascript:;" role="button">回頁首</a>
-<!-- lazyload -->
-<script src="vendor/lazyload/lazyload.js"></script>
-<!-- picturefill -->
-<script async="" src="vendor/picturefill/picturefill.min.js"></script>
-<!-- swiper -->
-<script src="vendor/swiper/swiper-bundle.min.js"></script>
-<!-- main js-->
-<script src="js/main.js"></script>
-<!-- fancybox -->
-<script src="vendor/fancybox/fancybox.js"></script>
-<!-- js -->
-<script src="js/customize.js"></script>
-<script>
+      <footer>
+        <div class="container">
+          <a id="aZ" accesskey="Z" class="accessKey" href="#aZ" title="頁尾區">:::</a>
+          <div class="footerInfo">
+            <ul class="footerLink">
+              <li><a href="javascript:;">資訊安全政策</a></li>
+              <li><a href="javascript:;">資訊終端設備及網域資源服務使用管理要點</a></li>
+            </ul>
+            <p class="Copyright">衛生福利部中央健康保險署</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
+    </div>
+    <a class="scrollToTop" href="javascript:;" role="button">回頁首</a>
+    <!-- lazyload -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- picturefill -->
+    <script async="" src="vendor/picturefill/picturefill.min.js"></script>
+    <!-- swiper -->
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- main js-->
+    <script src="js/main.js"></script>
+    <!-- fancybox -->
+    <script src="vendor/fancybox/fancybox.js"></script>
+    <!-- js -->
+    <script src="js/customize.js"></script>
+    <script>
       let a = document.querySelectorAll('.navigation');
       console.log(a[1].innerHTML);
       // a.forEach((value, index) => {
@@ -858,7 +928,5 @@
       //   });
       // });
     </script>
-
-</body>
-
+  </body>
 </html>
