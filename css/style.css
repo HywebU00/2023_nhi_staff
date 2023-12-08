@@ -4864,18 +4864,6 @@ img {
     padding: 0.4em 0 0.4em 1.2em;
     font-weight: bold;
   }
-  .mainMenu ul li ul li a:after {
-    content: "";
-    position: absolute;
-    left: 0.5rem;
-    top: 0.9rem;
-    width: 4px;
-    height: 4px;
-    border: 2px solid #314868;
-    transform: rotate(45deg);
-    border-bottom: none;
-    border-left: none;
-  }
   .mainMenu ul li ul li a:focus-visible {
     box-shadow: 0 0 0 2px inset #00a4f9;
   }
@@ -4893,9 +4881,21 @@ img {
     left: 1em;
     font-size: 0.938em;
   }
-  .mainMenu ul li ul li.hasChild > a:hover:after, .mainMenu ul li ul li.hasChild > a:focus-visible:after {
+  .mainMenu ul li ul li.hasChild > a:hover:after, .mainMenu ul li ul li.hasChild > a:focus:after {
     transform: rotate(135deg);
     top: 0.8em;
+  }
+  .mainMenu ul li ul li.hasChild > a:after {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0.9rem;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #314868;
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-left: none;
   }
   .mainMenu ul li ul ul {
     top: 0;

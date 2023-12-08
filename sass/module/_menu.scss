@@ -172,21 +172,20 @@
             padding: 0.4em 0 0.4em 1.2em;
             // color: #fff;
             font-weight: bold;
-            &:after {
-              content: '';
-              position: absolute;
-              left: 0.5rem;
-              top: 0.9rem;
-              width: 4px;
-              height: 4px;
-              border: 2px solid $colorWord;
-              // transform: rotate(135deg);
-              transform: rotate(45deg);
-              border-bottom: none;
-              border-left: none;
-            }
+            // &:after {
+            //   content: '';
+            //   position: absolute;
+            //   left: 0.5rem;
+            //   top: 0.9rem;
+            //   width: 4px;
+            //   height: 4px;
+            //   border: 2px solid $colorWord;
+            //   transform: rotate(45deg);
+            //   border-bottom: none;
+            //   border-left: none;
+            // }
             &:hover,
-            &:focus-visible {
+            &:focus {
               // color: #fff;
               // background: $aHover;
               // border: solid 1px #fff;
@@ -222,7 +221,7 @@
           & > a {
             // padding-left: 2em;
             &:hover,
-            &:focus-visible {
+            &:focus {
               // background: rgba(255, 255, 255, 0.8);
               // border-left: solid 5px $colorWord;
               // border-radius: 5px;
@@ -234,7 +233,18 @@
                 top: 0.8em;
               }
             }
-
+            &:after {
+              content: '';
+              position: absolute;
+              left: 0.5rem;
+              top: 0.9rem;
+              width: 4px;
+              height: 4px;
+              border: 2px solid $colorWord;
+              transform: rotate(45deg);
+              border-bottom: none;
+              border-left: none;
+            }
             // &:after {
             //   content: '';
             //   position: absolute;
