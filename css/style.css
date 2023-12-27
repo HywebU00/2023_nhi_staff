@@ -11932,6 +11932,74 @@ img {
   .textContent a:hover, .textContent a:focus {
     text-decoration: none;
   }
+  .cpPhotolist {
+    margin: 0 0 1em 0;
+    background: #fff;
+    overflow: hidden;
+  }
+  .cpPhotolist h3 {
+    font-size: 1.5em;
+    padding: 12px 0px 15px 0px;
+    margin: 0.5em 0px 1.2em;
+    border-bottom: 1px solid #005382;
+  }
+  .cpPhotolist ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .cpPhotolist ul li {
+    flex-basis: calc(25% - 0px);
+    max-width: calc(25% - 0px);
+    position: relative;
+    min-height: 1px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 767px) {
+    .cpPhotolist ul li {
+      flex-basis: calc(50% - 0px);
+      max-width: calc(50% - 0px);
+    }
+  }
+  .cpPhotolist .imgContainer {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+  }
+  .cpPhotolist .imgContainer img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: block;
+    object-fit: contain;
+    object-position: 50% 50%;
+  }
+  .cpPhotolist .caption {
+    padding: 0.5em;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    bottom: -2em;
+    left: 0;
+    font-size: 0.938em;
+    height: 2em;
+    line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 0.3s ease-out;
+  }
+  .cpPhotolist a {
+    color: #555;
+    display: block;
+  }
+  .cpPhotolist a:hover .caption, .cpPhotolist a:focus-visible .caption {
+    bottom: 0;
+  }
 }
 body.colorA {
   background: url("../images/body_bg.jpg") no-repeat left top;

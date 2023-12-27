@@ -400,3 +400,60 @@ h2.title {
     }
   }
 }
+
+//cpPhotolist
+.cpPhotolist {
+  margin: 0 0 1em 0;
+  background: #fff;
+  overflow: hidden;
+
+  h3 {
+    font-size: 1.5em;
+    padding: 12px 0px 15px 0px;
+    margin: 0.5em 0px 1.2em;
+    border-bottom: 1px solid $colorPrimary;
+  }
+  ul {
+    @include liReset;
+    display: flex;
+    flex-flow: row wrap;
+    li {
+      flex-basis: calc(100% / 4 - 0px);
+      max-width: calc(100% / 4 - 0px);
+      @include gutter(15px);
+      @include screen('mobile') {
+        flex-basis: calc(100% / 2 - 0px);
+        max-width: calc(100% / 2 - 0px);
+      }
+    }
+  }
+
+  .imgContainer {
+    @include aspectRatio(4, 3);
+    overflow: hidden;
+  }
+  .caption {
+    padding: 0.5em;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    bottom: -2em;
+    left: 0;
+    font-size: 0.938em;
+    height: 2em;
+    line-height: 1;
+    width: 100%;
+    @include textOverflow;
+    transition: 0.3s ease-out;
+  }
+  a {
+    color: #555;
+    display: block;
+    &:hover,
+    &:focus-visible {
+      .caption {
+        bottom: 0;
+      }
+    }
+  }
+}
