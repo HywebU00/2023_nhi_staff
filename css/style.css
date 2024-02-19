@@ -7856,11 +7856,11 @@ img {
     top: 1.1em !important;
   }
   .people_list dl {
-    float: left;
-    margin: 1em 1em 0 1em;
+    margin: 1em 1em 0 130px;
+    width: calc(100% - 130px);
   }
   .people_list dl dt {
-    padding: 0.5em 0;
+    padding: 0.3em;
   }
   .editlist {
     margin: 0;
