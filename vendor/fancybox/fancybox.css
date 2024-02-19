@@ -500,14 +500,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 .has-image[data-image-fit='contain'] .fancybox__content {
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 .has-image[data-image-fit='contain'] .fancybox__image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  margin: 0 auto;
-
 }
 .has-image[data-image-fit='contain-w'] {
   overflow-x: hidden;
@@ -751,7 +748,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 .fancybox__content {
   max-width: 1000px;
-  width: 100% !important;
+  width: 100%;
   padding: 0 0 0.5em 0;
   border-radius: 10px;
 }
