@@ -690,6 +690,7 @@
         box-shadow: 0 0px 0px 2px $aFocus;
       }
     }
+
     button,
     .btn,
     .btnSearch {
@@ -735,6 +736,13 @@
       a {
         @include aSetting($colorWord);
       }
+    }
+  }
+  .formInline {
+    button,
+    select,
+    input[type='text'] {
+      flex: 1 1 auto !important;
     }
   }
 }

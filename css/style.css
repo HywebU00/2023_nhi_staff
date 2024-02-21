@@ -3262,6 +3262,11 @@ img {
   .fullSearch .keywordHot ul a:focus-visible {
     outline: #333c46 2px solid;
   }
+  .fullSearch .formInline button,
+  .fullSearch .formInline select,
+  .fullSearch .formInline input[type=text] {
+    flex: 1 1 auto !important;
+  }
   .btnGrp {
     text-align: center;
     padding: 1em 0;
@@ -6649,9 +6654,9 @@ img {
   }
   select {
     line-height: 1.35em;
-    padding: 0.6em 1.2em;
+    padding: 0.6em 1.5em 0.6em 1.2em;
     border: 1px solid #bde6f2;
-    background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 8px center;
+    background: #fff url(../images/icon/icon_select_arrow.svg) no-repeat right 6px center;
     background-size: 16px;
   }
   select option {
