@@ -10343,6 +10343,13 @@ img {
     object-fit: contain;
     margin: 0 auto;
   }
+  .popupSlider iframe {
+    width: 80%;
+    aspect-ratio: 6/4;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+  }
   .popupSlider .caption {
     position: relative;
     width: 80%;
