@@ -7818,9 +7818,6 @@ img {
       margin-right: 0;
     }
   }
-  .people_list ol li:nth-child(n+10) {
-    display: none;
-  }
   .people_list ol li img {
     width: 120px;
     float: left;
