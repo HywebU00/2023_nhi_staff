@@ -8207,6 +8207,7 @@ img {
     box-shadow: none;
     background: rgba(255, 255, 255, 0);
     cursor: pointer;
+    position: relative;
   }
   @media screen and (max-width: 767px) {
     .tabSet .tabItems button {
@@ -8238,6 +8239,24 @@ img {
     bottom: -6px;
     left: 0;
     border-radius: 5px;
+  }
+  .tabSet .tabItems button .count {
+    background: #ff5c46;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.2em 0.6em 0.2em;
+    border-radius: 30px;
+    position: absolute;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: 0 0 0 0.2em;
+  }
+  @media screen and (max-width: 767px) {
+    .tabSet .tabItems button .count {
+      font-size: 0.875rem;
+      top: -0.5em;
+      right: 0;
+    }
   }
   .tabSet .tabContent {
     display: none;

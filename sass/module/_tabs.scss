@@ -27,6 +27,7 @@
       box-shadow: none;
       background: rgba(255, 255, 255, 0);
       cursor: pointer;
+      position: relative;
       @include screen('mobile') {
         font-size: 1em;
       }
@@ -58,6 +59,22 @@
           bottom: -6px;
           left: 0;
           border-radius: 5px;
+        }
+      }
+      .count {
+        background: $colorOrange;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.2em 0.6em 0.2em;
+        border-radius: 30px;
+        position: absolute;
+        line-height: 1rem;
+        font-size: 1rem;
+        margin: 0 0 0 0.2em;
+        @include screen('mobile') {
+          font-size: 0.875rem;
+          top: -0.5em;
+          right: 0;
         }
       }
     }
