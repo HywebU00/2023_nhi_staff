@@ -5748,6 +5748,10 @@ img {
   .flexForm .formContent .datePick > input[type=text] {
     padding-right: 2em;
   }
+  .flexForm .formContent .txt_content {
+    display: block;
+    line-height: 1.6;
+  }
   .flexForm [class*=formCol] {
     flex-basis: 100%;
     max-width: 100%;
